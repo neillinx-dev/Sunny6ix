@@ -198,13 +198,6 @@ export default function LandingPage() {
               We grew up dodging shade between the condos. So we built a tool that tells you exactly where the sun is &mdash; and which patio it’s landing on next.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-2.5">
-              <TonePill color="#FFC72C" text="#0D1B2A">Friendly</TonePill>
-              <TonePill color="#0D1B2A" text="#FFC72C">Local</TonePill>
-              <TonePill color="#7EC8E3" text="#0D1B2A">Helpful</TonePill>
-              <TonePill color="#2ECC71" text="#0D1B2A">Optimistic</TonePill>
-            </div>
-
             <p className="mt-12 font-serif-italic text-xl opacity-60">Chase the sun. Love the city.</p>
           </div>
         </div>
@@ -291,17 +284,6 @@ function Step({ n, title, body }: { n: string; title: string; body: string }) {
       <h3 className="mt-5 font-display text-xl font-medium tracking-tight">{title}</h3>
       <p className="mt-3 text-[15px] leading-[1.6] opacity-65 max-w-[34ch]">{body}</p>
     </div>
-  )
-}
-
-function TonePill({ color, text, children }: { color: string; text: string; children: React.ReactNode }) {
-  return (
-    <span
-      className="inline-flex items-center px-4 py-1.5 rounded-full font-display text-[11px] font-semibold tracking-[0.18em] uppercase"
-      style={{ background: color, color: text }}
-    >
-      {children}
-    </span>
   )
 }
 
