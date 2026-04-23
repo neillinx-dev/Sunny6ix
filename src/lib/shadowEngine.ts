@@ -1,12 +1,10 @@
 import SunCalc from 'suncalc'
-import type maplibregl from 'maplibre-gl'
 
-// Small interface for what we need from a venue (avoids circular import)
 export interface VenueLike {
   lat: number
   lng: number
   patioPolygon?: [number, number][]
-  covered?: boolean
+  covered?: boolean | 'partial' | 'retractable'
 }
 
 const TORONTO_LAT = 43.6500
@@ -32,66 +30,6 @@ export function getSunInfo(date: Date) {
     sunset: times.sunset,
     isUp: pos.altitude > 0.05, // slightly above horizon
   }
-}
-
-/**
- * Extract building footprints from MapLibre vector tile data.
- * Queries the rendered building features from the map's vector source.
- */
-export function extractBuildingsFromMap(map: maplibregl.Map): Building[] {
-  const buildings: Building[] = []
-
-  try {
-    // Find all layers that reference building data
-    const buildingLayerIds = map.getStyle().layers
-      ?.filter(l => 'source-layer' in l && l['source-layer'] === 'building')
-      .map(l => l.id) || []
-
-    // Include our 3D layer
-    if (map.getLayer('buildings-3d') && !buildingLayerIds.includes('buildings-3d')) {
-      buildingLayerIds.push('buildings-3d')
-    }
-
-    if (buildingLayerIds.length === 0) return []
-
-    // Query building source features directly (more reliable than queryRenderedFeatures for fill-extrusion)
-    // Find the source that has building data
-    const style = map.getStyle()
-    let buildingSource = ''
-    for (const l of style.layers || []) {
-      if ('source-layer' in l && l['source-layer'] === 'building' && 'source' in l) {
-        buildingSource = l.source as string
-        break
-      }
-    }
-
-    const features = buildingSource
-      ? map.querySourceFeatures(buildingSource, { sourceLayer: 'building' })
-      : []
-
-    const seen = new Set<string>()
-
-    for (const f of features) {
-      if (!f.geometry || f.geometry.type !== 'Polygon') continue
-
-      const id = `bld-${f.id || Math.random()}`
-      if (seen.has(id)) continue
-      seen.add(id)
-
-      const height = (f.properties?.render_height as number) ||
-                     (f.properties?.height as number) ||
-                     10 // default 10m (~3 floors)
-
-      const coords = (f.geometry as GeoJSON.Polygon).coordinates[0] as [number, number][]
-      if (coords.length < 4) continue
-
-      buildings.push({ id, footprint: coords, height })
-    }
-  } catch {
-    // Query might fail if layers don't exist
-  }
-
-  return buildings
 }
 
 /**
@@ -149,28 +87,6 @@ export function calculateBuildingShadow(
 }
 
 /**
- * Generate shadow GeoJSON from buildings
- */
-export function generateShadowGeoJSON(
-  buildings: Building[],
-  date: Date
-): GeoJSON.FeatureCollection {
-  const features: GeoJSON.Feature[] = []
-
-  for (const b of buildings) {
-    const shadow = calculateBuildingShadow(b, date)
-    if (!shadow) continue
-    features.push({
-      type: 'Feature',
-      properties: { height: b.height },
-      geometry: { type: 'Polygon', coordinates: [[...shadow, shadow[0]]] },
-    })
-  }
-
-  return { type: 'FeatureCollection', features }
-}
-
-/**
  * Check if a point is inside a polygon (ray casting)
  */
 export function isPointInPolygon(
@@ -187,54 +103,6 @@ export function isPointInPolygon(
     }
   }
   return inside
-}
-
-/**
- * Calculate what percentage of a patio polygon is in sun.
- * Samples grid points across the patio and checks each against shadow polygons.
- */
-export function calculatePatioSunPercentage(
-  patioPolygon: [number, number][],
-  shadowPolygons: [number, number][][],
-  gridSize: number = 4 // sample grid resolution
-): number {
-  // Get bounding box of patio
-  let minLng = Infinity, maxLng = -Infinity, minLat = Infinity, maxLat = -Infinity
-  for (const [lng, lat] of patioPolygon) {
-    minLng = Math.min(minLng, lng)
-    maxLng = Math.max(maxLng, lng)
-    minLat = Math.min(minLat, lat)
-    maxLat = Math.max(maxLat, lat)
-  }
-
-  let totalPoints = 0
-  let sunnyPoints = 0
-
-  const dLng = (maxLng - minLng) / gridSize
-  const dLat = (maxLat - minLat) / gridSize
-
-  for (let i = 0; i <= gridSize; i++) {
-    for (let j = 0; j <= gridSize; j++) {
-      const p: [number, number] = [minLng + i * dLng, minLat + j * dLat]
-
-      // Check if sample point is inside patio
-      if (!isPointInPolygon(p, patioPolygon)) continue
-      totalPoints++
-
-      // Check if point is in any shadow
-      let inShadow = false
-      for (const shadow of shadowPolygons) {
-        if (isPointInPolygon(p, shadow)) {
-          inShadow = true
-          break
-        }
-      }
-
-      if (!inShadow) sunnyPoints++
-    }
-  }
-
-  return totalPoints === 0 ? 100 : Math.round((sunnyPoints / totalPoints) * 100)
 }
 
 /**
@@ -320,7 +188,7 @@ export function computeVenueSunPct(
   nearbyBuildings: Building[],
   shadowCache?: Map<string, [number, number][] | null>
 ): number {
-  if (venue.covered) return 0
+  if (venue.covered === true) return 0
   const sun = getSunInfo(date)
   if (!sun.isUp) return 0
 

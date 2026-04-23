@@ -24,22 +24,22 @@ export default function HourlySunChart({ forecast }: HourlySunChartProps) {
               <div
                 className={`w-full rounded-[3px] transition-all duration-500 ease-out ${
                   isSunny
-                    ? 'bg-gradient-to-t from-amber-400 to-amber-300'
+                    ? 'bg-gradient-to-t from-[#FFC72C] to-[#FFD65A]'
                     : isPartial
-                    ? 'bg-gradient-to-t from-amber-300/60 to-amber-200/40'
-                    : 'bg-gray-200/60'
-                } ${isCurrent ? 'ring-[1.5px] ring-amber-500 ring-offset-1' : ''}`}
+                    ? 'bg-gradient-to-t from-[#FFC72C]/60 to-[#FFD65A]/40'
+                    : 'bg-[#0D1B2A]/10'
+                } ${isCurrent ? 'ring-[1.5px] ring-[#0D1B2A] ring-offset-1' : ''}`}
                 style={{ height: `${Math.max(percentage, 6)}%` }}
                 title={`${formatHour(hour)}: ${percentage}% sun`}
               />
             </div>
             <span
-              className={`text-[8px] leading-none tabular-nums ${
+              className={`text-[8px] leading-none tabular-nums font-medium ${
                 isCurrent
-                  ? 'text-amber-600 font-bold'
+                  ? 'text-[#0D1B2A] font-bold'
                   : isSunny
-                  ? 'text-gray-500'
-                  : 'text-gray-300'
+                  ? 'text-[#0D1B2A]/60'
+                  : 'text-[#0D1B2A]/30'
               }`}
             >
               {formatHour(hour)}

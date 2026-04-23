@@ -160,8 +160,6 @@ export default function MapContainer({ venues }: MapContainerProps) {
       })
 
       mapRef.current = map
-      ;(window as any).__map = map // for debugging
-      console.log('[PatioSun] Google Maps loaded!')
 
       // Add venue markers
       const newMarkers: google.maps.Marker[] = []
@@ -173,7 +171,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
           icon: {
             path: google.maps.SymbolPath.CIRCLE,
             scale: 10,
-            fillColor: '#64748b',
+            fillColor: '#0D1B2A',
             fillOpacity: 1,
             strokeColor: '#ffffff',
             strokeWeight: 3,
@@ -193,17 +191,17 @@ export default function MapContainer({ venues }: MapContainerProps) {
       shadowOverlayRef.current = shadowOverlay
 
       // Render real patio polygons (OSM-sourced or hand-drawn).
-      // Amber outline, visible at zoom >= 16 to avoid clutter at lower zooms.
+      // Brand yellow outline, visible at zoom >= 16 to avoid clutter at lower zooms.
       const patioPolys: google.maps.Polygon[] = []
       for (const v of venues) {
         if (!v.patioPolygon || v.patioPolygon.length < 3) continue
         const poly = new google.maps.Polygon({
           paths: v.patioPolygon.map(([lng, lat]) => ({ lat, lng })),
-          strokeColor: '#f59e0b',
+          strokeColor: '#E6A800',
           strokeOpacity: 0.95,
           strokeWeight: 2,
-          fillColor: '#fbbf24',
-          fillOpacity: 0.18,
+          fillColor: '#FFC72C',
+          fillOpacity: 0.2,
           clickable: false,
           visible: false, // toggled on zoom >= 16
         })
@@ -255,14 +253,14 @@ export default function MapContainer({ venues }: MapContainerProps) {
 
       marker.setVisible(visible)
 
-      // Color based on sun percentage
-      let color = '#64748b'
-      if (pct >= 60) color = '#22c55e'
-      else if (pct >= 20) color = '#f59e0b'
+      // Sunny6ix marker palette: yellow = sunny, navy = shade, sky = partial
+      let color = '#0D1B2A'
+      if (pct >= 60) color = '#FFC72C'
+      else if (pct >= 20) color = '#7EC8E3'
 
       const scale = venueId === selectedVenueId ? 14 : 10
       const strokeWeight = venueId === selectedVenueId ? 4 : 3
-      const strokeColor = venueId === selectedVenueId ? '#f59e0b' : '#ffffff'
+      const strokeColor = venueId === selectedVenueId ? '#FFC72C' : '#ffffff'
 
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
@@ -348,11 +346,11 @@ export default function MapContainer({ venues }: MapContainerProps) {
 
   let banner: null | { bg: string; emoji: string; label: string } = null
   if (isNight) {
-    banner = { bg: 'rgba(15,23,42,0.90)', emoji: '🌙', label: 'Sun has set — no sun on any patio' }
+    banner = { bg: 'rgba(13,27,42,0.92)', emoji: '🌙', label: 'Sun has set — no sun on any patio' }
   } else if (tRain) {
-    banner = { bg: 'rgba(30,41,59,0.90)', emoji: '☔', label: 'Raining — no sun on any patio' }
+    banner = { bg: 'rgba(13,27,42,0.90)', emoji: '☔', label: 'Raining — no sun on any patio' }
   } else if (tCloud >= 85) {
-    banner = { bg: 'rgba(51,65,85,0.90)', emoji: '☁️', label: 'Overcast — no direct sun on any patio' }
+    banner = { bg: 'rgba(30,41,59,0.88)', emoji: '☁️', label: 'Overcast — no direct sun on any patio' }
   }
 
   return (
@@ -367,14 +365,14 @@ export default function MapContainer({ venues }: MapContainerProps) {
             left: '50%',
             transform: 'translateX(-50%)',
             background: banner.bg,
-            color: '#F1F5F9',
+            color: '#FFFFFF',
             padding: '10px 20px',
             borderRadius: 999,
             fontSize: 13,
             fontWeight: 600,
             letterSpacing: '0.015em',
-            boxShadow: '0 6px 24px rgba(0,0,0,0.28)',
-            border: '1px solid rgba(148,163,184,0.22)',
+            boxShadow: '0 6px 24px rgba(13,27,42,0.32)',
+            border: '1px solid rgba(255,199,44,0.25)',
             backdropFilter: 'blur(14px)',
             WebkitBackdropFilter: 'blur(14px)',
             pointerEvents: 'none',
