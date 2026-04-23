@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@source "./**/*.{ts,tsx}";
+@source "../index.html";
+
 @theme {
   --color-sun: #F59E0B;
   --color-sun-bright: #FBBF24;
@@ -12,26 +15,77 @@
   --color-surface-hover: rgba(255, 255, 255, 0.97);
   --color-warm-50: #FFFBEB;
   --color-warm-100: #FEF3C7;
-  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* Sunny6ix brand palette */
+  --color-brand-yellow: #FFC72C;
+  --color-brand-yellow-soft: #FFE59A;
+  --color-brand-navy: #0D1B2A;
+  --color-brand-navy-soft: #1B2A3D;
+  --color-brand-sky: #7EC8E3;
+  --color-brand-green: #2ECC71;
+  --color-brand-cream: #FBF7EE;
+  --color-brand-paper: #F5EFE0;
+  --color-brand-mist: #F2F4F7;
+
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
 }
 
 html, body, #root {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+}
+
+html, body {
+  background: var(--color-brand-cream);
 }
 
 body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-brand-navy);
 }
+
+/* App route locks viewport; landing route scrolls. */
+body[data-route="app"], body[data-route="app"] #root {
+  overflow: hidden;
+  height: 100%;
+}
+body[data-route="landing"] { overflow-x: hidden; }
+body[data-route="landing"] #root { height: auto; min-height: 100%; }
+
+/* ── Landing page ── */
+.font-display { font-family: var(--font-display); letter-spacing: -0.015em; }
+.font-serif-italic { font-family: var(--font-serif); font-style: italic; font-variation-settings: "SOFT" 50; }
+
+.btn-min {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.6rem;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: -0.005em;
+  color: var(--color-brand-navy);
+  background: var(--color-brand-yellow);
+  border-radius: 999px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.2s ease;
+}
+.btn-min:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px -10px rgba(255, 199, 44, 0.7);
+}
+.btn-min svg { transition: transform 0.25s ease; }
+.btn-min:hover svg { transform: translateX(3px); }
+
+.btn-min-solid {
+  background: var(--color-brand-navy);
+  color: var(--color-brand-yellow);
+}
+.btn-min-solid:hover { box-shadow: 0 10px 24px -10px rgba(13, 27, 42, 0.5); }
 
 /* ── Map attribution tuck ── */
 .maplibregl-ctrl-bottom-left,
