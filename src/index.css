@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sun: #F59E0B;
+  --color-sun-bright: #FBBF24;
+  --color-sun-deep: #D97706;
+  --color-sun-glow: #FEF3C7;
+  --color-shade: #64748B;
+  --color-shade-deep: #475569;
+  --color-surface: rgba(255, 255, 255, 0.92);
+  --color-surface-solid: #ffffff;
+  --color-surface-hover: rgba(255, 255, 255, 0.97);
+  --color-warm-50: #FFFBEB;
+  --color-warm-100: #FEF3C7;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Map attribution tuck ── */
+.maplibregl-ctrl-bottom-left,
+.maplibregl-ctrl-bottom-right {
+  z-index: 1 !important;
+}
+.maplibregl-ctrl-bottom-right {
+  opacity: 0.6;
+}
+.maplibregl-ctrl-top-right {
+  top: 60px !important;
+}
+
+/* ── Venue dots are GPU-rendered via GeoJSON circle layers ── */
+
+/* ── Custom Range Slider ── */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #FEF3C7 0%, #FBBF24 40%, #F59E0B 60%, #78716C 80%, #1E293B 100%);
+  outline: none;
+  position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #FBBF24, #F59E0B);
+  cursor: grab;
+  border: 3px solid white;
+  box-shadow:
+    0 2px 8px rgba(245, 158, 11, 0.4),
+    0 0 12px rgba(245, 158, 11, 0.15);
+  transition: box-shadow 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  box-shadow:
+    0 2px 12px rgba(245, 158, 11, 0.6),
+    0 0 20px rgba(245, 158, 11, 0.25);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #FBBF24, #F59E0B);
+  cursor: grab;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+}
+
+/* ── Glass card surfaces ── */
+.glass-card {
+  background: var(--color-surface);
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* ── Smooth transitions ── */
+.slide-up-enter {
+  animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.2); }
+  50% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+}
+
+.live-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}

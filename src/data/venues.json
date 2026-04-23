@@ -1,0 +1,2817 @@
+[
+  {
+    "id": "score-on-queen",
+    "name": "Score on Queen",
+    "address": "298 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6496014,
+    "lng": -79.3932608,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3932608,
+        43.6496014
+      ],
+      [
+        -79.39316079999999,
+        43.649701400000005
+      ]
+    ],
+    "tags": [
+      "sports-bar",
+      "beer",
+      "wings"
+    ],
+    "website": "https://scoreonqueen.com",
+    "patioPolygon": [
+      [
+        -79.3934931,
+        43.6497592
+      ],
+      [
+        -79.3934126,
+        43.6495503
+      ],
+      [
+        -79.3933118,
+        43.6495706
+      ],
+      [
+        -79.3933923,
+        43.6497796
+      ],
+      [
+        -79.3934931,
+        43.6497592
+      ]
+    ],
+    "patioSource": "osm"
+  },
+  {
+    "id": "bellwoods-brewery",
+    "name": "Bellwoods Brewery",
+    "address": "124 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6470327,
+    "lng": -79.4201764,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 270,
+    "samplePoints": [
+      [
+        -79.4201764,
+        43.6470327
+      ],
+      [
+        -79.4200764,
+        43.6471327
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery"
+    ],
+    "website": "https://bellwoodsbrewery.com",
+    "patioPolygon": [
+      [
+        -79.4202964,
+        43.6469977
+      ],
+      [
+        -79.4201964,
+        43.6469977
+      ],
+      [
+        -79.4201964,
+        43.6470677
+      ],
+      [
+        -79.4202964,
+        43.6470677
+      ]
+    ]
+  },
+  {
+    "id": "amsterdam-brewhouse",
+    "name": "Amsterdam BrewHouse",
+    "address": "245 Queens Quay W",
+    "neighborhood": "Harbourfront",
+    "lat": 43.6385384,
+    "lng": -79.3849965,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3849965,
+        43.6385384
+      ],
+      [
+        -79.3848965,
+        43.638638400000005
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "waterfront"
+    ],
+    "website": "https://amsterdambeer.com/pages/amsterdam-brewhouse",
+    "patioPolygon": [
+      [
+        -79.3851765,
+        43.6386384
+      ],
+      [
+        -79.3850765,
+        43.6386384
+      ],
+      [
+        -79.3850765,
+        43.6384784
+      ],
+      [
+        -79.3848965,
+        43.6384784
+      ],
+      [
+        -79.3848965,
+        43.6384284
+      ],
+      [
+        -79.3851765,
+        43.6384284
+      ]
+    ]
+  },
+  {
+    "id": "king-taps",
+    "name": "King Taps",
+    "address": "100 King St W",
+    "neighborhood": "Financial District",
+    "lat": 43.6487681,
+    "lng": -79.3816921,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3816921,
+        43.6487681
+      ],
+      [
+        -79.38159209999999,
+        43.6488681
+      ]
+    ],
+    "tags": [
+      "beer",
+      "sports-bar",
+      "craft-beer"
+    ],
+    "website": "https://kingtaps.com",
+    "patioPolygon": [
+      [
+        -79.3817671,
+        43.6487481
+      ],
+      [
+        -79.3816171,
+        43.6487481
+      ],
+      [
+        -79.3816171,
+        43.6487751
+      ],
+      [
+        -79.3817671,
+        43.6487751
+      ]
+    ]
+  },
+  {
+    "id": "the-rex",
+    "name": "The Rex Hotel Jazz & Blues Bar",
+    "address": "194 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6505363,
+    "lng": -79.3884696,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3884696,
+        43.6505363
+      ],
+      [
+        -79.38836959999999,
+        43.6506363
+      ]
+    ],
+    "tags": [
+      "jazz",
+      "live-music",
+      "beer"
+    ],
+    "website": "https://therex.ca",
+    "patioPolygon": [
+      [
+        -79.388582,
+        43.650605
+      ],
+      [
+        -79.388458,
+        43.650605
+      ],
+      [
+        -79.388458,
+        43.65063
+      ],
+      [
+        -79.388582,
+        43.65063
+      ]
+    ]
+  },
+  {
+    "id": "the-drake",
+    "name": "The Drake Hotel",
+    "address": "1150 Queen St W",
+    "neighborhood": "West Queen West",
+    "lat": 43.6432545,
+    "lng": -79.424546,
+    "patioType": "rooftop",
+    "covered": true,
+    "patioFloor": 5,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.424546,
+        43.6432545
+      ],
+      [
+        -79.424446,
+        43.6433545
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "rooftop",
+      "boutique"
+    ],
+    "website": "https://thedrake.ca",
+    "patioPolygon": [
+      [
+        -79.424621,
+        43.643191
+      ],
+      [
+        -79.424471,
+        43.643191
+      ],
+      [
+        -79.424471,
+        43.643218
+      ],
+      [
+        -79.424621,
+        43.643218
+      ]
+    ]
+  },
+  {
+    "id": "bar-hop",
+    "name": "Bar Hop",
+    "address": "391 King St W",
+    "neighborhood": "King West",
+    "lat": 43.6455,
+    "lng": -79.3938,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3938,
+        43.6455
+      ],
+      [
+        -79.3937,
+        43.6456
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "beer-bar"
+    ],
+    "website": "https://barhopbar.com",
+    "patioPolygon": [
+      [
+        -79.393213,
+        43.645668
+      ],
+      [
+        -79.393089,
+        43.645668
+      ],
+      [
+        -79.393089,
+        43.64569
+      ],
+      [
+        -79.393213,
+        43.64569
+      ]
+    ]
+  },
+  {
+    "id": "wvrst",
+    "name": "WVRST Beer Hall",
+    "address": "609 King St W",
+    "neighborhood": "King West",
+    "lat": 43.644231,
+    "lng": -79.400671,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.400671,
+        43.644231
+      ],
+      [
+        -79.400571,
+        43.644331
+      ]
+    ],
+    "tags": [
+      "beer",
+      "sausages",
+      "german"
+    ],
+    "website": "https://wvrst.com",
+    "patioPolygon": [
+      [
+        -79.400789,
+        43.644099
+      ],
+      [
+        -79.400639,
+        43.644099
+      ],
+      [
+        -79.400639,
+        43.644126
+      ],
+      [
+        -79.400789,
+        43.644126
+      ]
+    ]
+  },
+  {
+    "id": "the-rivoli",
+    "name": "The Rivoli",
+    "address": "334 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.649408,
+    "lng": -79.3949432,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3949432,
+        43.649408
+      ],
+      [
+        -79.3948432,
+        43.649508000000004
+      ]
+    ],
+    "tags": [
+      "live-music",
+      "cocktails",
+      "pub"
+    ],
+    "website": "https://rivolitoronto.com"
+  },
+  {
+    "id": "sneaky-dees",
+    "name": "Sneaky Dee's",
+    "address": "431 College St",
+    "neighborhood": "College",
+    "lat": 43.6562463,
+    "lng": -79.4074325,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4074325,
+        43.6562463
+      ],
+      [
+        -79.4073325,
+        43.6563463
+      ]
+    ],
+    "tags": [
+      "nachos",
+      "beer",
+      "dive-bar"
+    ],
+    "website": "https://sneakydees.com"
+  },
+  {
+    "id": "baro",
+    "name": "Baro",
+    "address": "485 King St W",
+    "neighborhood": "King West",
+    "lat": 43.6448911,
+    "lng": -79.3969769,
+    "patioType": "rooftop",
+    "covered": true,
+    "patioFloor": 4,
+    "orientation": 180,
+    "buildingHeight": 14,
+    "patioSide": "roof",
+    "sunNotes": "4th floor glassed-in and enclosed rooftop patio. Heated and covered year-round. The glass enclosure means no direct sun exposure for sun-tracking purposes even though it is a rooftop. Surrounded by taller King West condo towers.",
+    "samplePoints": [
+      [
+        -79.3969769,
+        43.6448911
+      ],
+      [
+        -79.3968769,
+        43.644991100000006
+      ]
+    ],
+    "tags": [
+      "latin",
+      "cocktails",
+      "rooftop"
+    ],
+    "website": "https://barotoronto.com",
+    "manualSunWindows": [],
+    "patioPolygon": [
+      [
+        -79.397726,
+        43.6454262
+      ],
+      [
+        -79.3976741,
+        43.6454372
+      ],
+      [
+        -79.3976246,
+        43.6453143
+      ],
+      [
+        -79.3976765,
+        43.6453034
+      ],
+      [
+        -79.397726,
+        43.6454262
+      ]
+    ],
+    "patioSource": "osm"
+  },
+  {
+    "id": "el-catrin",
+    "name": "El Catrin Destileria",
+    "address": "18 Tank House Lane",
+    "neighborhood": "Distillery District",
+    "lat": 43.6505721,
+    "lng": -79.3587031,
+    "patioType": "courtyard",
+    "covered": true,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3587031,
+        43.6505721
+      ],
+      [
+        -79.3586031,
+        43.6506721
+      ]
+    ],
+    "tags": [
+      "mexican",
+      "cocktails",
+      "tequila"
+    ],
+    "website": "https://elcatrin.ca",
+    "patioPolygon": [
+      [
+        -79.3588581,
+        43.6502384
+      ],
+      [
+        -79.3585481,
+        43.6502384
+      ],
+      [
+        -79.3585481,
+        43.6503744
+      ],
+      [
+        -79.3588581,
+        43.6503744
+      ]
+    ]
+  },
+  {
+    "id": "broadview-hotel-rooftop",
+    "name": "The Broadview Hotel - Rooftop",
+    "address": "106 Broadview Ave",
+    "neighborhood": "Riverside",
+    "lat": 43.6590468,
+    "lng": -79.3501246,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 7,
+    "orientation": 270,
+    "samplePoints": [
+      [
+        -79.3501246,
+        43.6590468
+      ],
+      [
+        -79.3500246,
+        43.6591468
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "views"
+    ],
+    "website": "https://thebroadviewhotel.ca"
+  },
+  {
+    "id": "harriets-rooftop",
+    "name": "Harriet's Rooftop",
+    "address": "550 Wellington St W",
+    "neighborhood": "King West",
+    "lat": 43.642841,
+    "lng": -79.401797,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 16,
+    "orientation": 180,
+    "buildingHeight": 56,
+    "patioSide": "roof",
+    "sunNotes": "16th floor rooftop at 1 Hotel Toronto (~56m). Open-air terrace with retractable glass roof (can be open in good weather). High enough to clear most King West mid-rises. Some taller condo towers nearby may shade briefly in early morning or late evening. Excellent sun exposure most of the day. Pool area adjacent.",
+    "samplePoints": [
+      [
+        -79.401797,
+        43.642841
+      ],
+      [
+        -79.401697,
+        43.642941
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "upscale",
+      "pool"
+    ],
+    "website": "https://www.1hotels.com/toronto/taste/harriets-rooftop",
+    "manualSunWindows": [
+      {
+        "start": 9,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "id": "lavelle",
+    "name": "Lavelle",
+    "address": "627 King St W",
+    "neighborhood": "King West",
+    "lat": 43.6439813,
+    "lng": -79.4016111,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 16,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4016111,
+        43.6439813
+      ],
+      [
+        -79.4015111,
+        43.6440813
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "pool"
+    ],
+    "website": "https://chezlavelle.com"
+  },
+  {
+    "id": "gusto-101",
+    "name": "Gusto 101",
+    "address": "101 Portland St",
+    "neighborhood": "King West",
+    "lat": 43.644,
+    "lng": -79.3993,
+    "patioType": "courtyard",
+    "covered": true,
+    "patioFloor": 0,
+    "orientation": 0,
+    "samplePoints": [
+      [
+        -79.3993,
+        43.644
+      ],
+      [
+        -79.3992,
+        43.6441
+      ]
+    ],
+    "tags": [
+      "italian",
+      "wine-bar",
+      "retractable-roof"
+    ],
+    "website": "https://gusto101.com"
+  },
+  {
+    "id": "wheat-sheaf",
+    "name": "Wheat Sheaf Tavern",
+    "address": "667 King St W",
+    "neighborhood": "King West",
+    "lat": 43.643743,
+    "lng": -79.402846,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.402846,
+        43.643743
+      ],
+      [
+        -79.402746,
+        43.643843000000004
+      ]
+    ],
+    "tags": [
+      "pub",
+      "beer",
+      "historic"
+    ],
+    "website": "https://wheatsheaftavern.com"
+  },
+  {
+    "id": "cest-what",
+    "name": "C'est What",
+    "address": "67 Front St E",
+    "neighborhood": "St. Lawrence",
+    "lat": 43.6484394,
+    "lng": -79.3734464,
+    "patioType": "backyard",
+    "covered": "partial",
+    "patioFloor": 0,
+    "orientation": 90,
+    "buildingHeight": 10.5,
+    "patioSide": "E",
+    "sunNotes": "Beer garden is in a parking lot east of the building, accessed off The Esplanade. Canopies cover some seating. Financial district towers to the west cast long afternoon shadows. Gets morning and early afternoon sun from the east/south. Loses sun by mid-afternoon as tall buildings to the west shade the area.",
+    "samplePoints": [
+      [
+        -79.3734464,
+        43.6484394
+      ],
+      [
+        -79.3733464,
+        43.648539400000004
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "pub",
+      "brewery",
+      "beer-garden"
+    ],
+    "website": "https://cestwhat.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "bar-raval",
+    "name": "Bar Raval",
+    "address": "505 College St",
+    "neighborhood": "Little Italy",
+    "lat": 43.655877,
+    "lng": -79.4099236,
+    "patioType": "sidewalk",
+    "covered": true,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Tiny heated sidewalk patio on the south side of College St. Covered/sheltered seating means no direct sun reaches the patio regardless of time of day. A shaded spot by design.",
+    "samplePoints": [
+      [
+        -79.4099236,
+        43.655877
+      ],
+      [
+        -79.4098236,
+        43.655977
+      ]
+    ],
+    "tags": [
+      "wine-bar",
+      "tapas",
+      "cocktails",
+      "michelin-bib"
+    ],
+    "website": "https://www.thisisbarraval.com",
+    "manualSunWindows": []
+  },
+  {
+    "id": "birreria-volo",
+    "name": "Birreria Volo",
+    "address": "612 College St",
+    "neighborhood": "Little Italy",
+    "lat": 43.6551875,
+    "lng": -79.4146032,
+    "patioType": "backyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 7,
+    "patioSide": "N",
+    "sunNotes": "Backyard patio behind a 2-storey building on the south side of College St. Cedar-walled laneway leads to picnic tables at rear. Building shades patio in afternoon as sun moves west. Best sun midday when sun is high enough to clear the roofline. Loses sun by mid-afternoon.",
+    "samplePoints": [
+      [
+        -79.4146032,
+        43.6551875
+      ],
+      [
+        -79.4145032,
+        43.6552875
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "italian",
+      "wine-bar"
+    ],
+    "website": "https://birreriavolo.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "handlebar",
+    "name": "Handlebar",
+    "address": "159 Augusta Ave",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6528226,
+    "lng": -79.4011849,
+    "patioType": "backyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 190,
+    "samplePoints": [
+      [
+        -79.4011849,
+        43.6528226
+      ],
+      [
+        -79.4010849,
+        43.652922600000004
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "brunch",
+      "backyard"
+    ]
+  },
+  {
+    "id": "earls-king-west",
+    "name": "Earls Kitchen + Bar King West",
+    "address": "595 King St W",
+    "neighborhood": "King West",
+    "lat": 43.6442934,
+    "lng": -79.4003713,
+    "patioType": "rooftop",
+    "covered": true,
+    "patioFloor": 3,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4003713,
+        43.6442934
+      ],
+      [
+        -79.4002713,
+        43.644393400000006
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "casual-dining"
+    ],
+    "website": "https://earls.ca/locations/king-west/"
+  },
+  {
+    "id": "boxcar-social-harbourfront",
+    "name": "Boxcar Social Harbourfront",
+    "address": "235 Queens Quay W",
+    "neighborhood": "Harbourfront",
+    "lat": 43.6389026,
+    "lng": -79.3828426,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3828426,
+        43.6389026
+      ],
+      [
+        -79.3827426,
+        43.639002600000005
+      ]
+    ],
+    "tags": [
+      "coffee",
+      "cocktails",
+      "waterfront"
+    ],
+    "website": "https://boxcarsocial.ca/pages/harbourfront"
+  },
+  {
+    "id": "the-horseshoe-tavern",
+    "name": "The Horseshoe Tavern",
+    "address": "370 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6490494,
+    "lng": -79.395904,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Small sidewalk patio on the south side of Queen St W at the northeast corner of Queen and Spadina. Historic 2-storey building (built 1861) is behind (north). South-facing so gets midday sun. Buildings across Queen are low-rise. Gets decent afternoon sun until late afternoon when western buildings start shading.",
+    "samplePoints": [
+      [
+        -79.395904,
+        43.6490494
+      ],
+      [
+        -79.395804,
+        43.649149400000006
+      ]
+    ],
+    "tags": [
+      "live-music",
+      "beer",
+      "dive-bar"
+    ],
+    "website": "https://horseshoetavern.com",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "rendezviews",
+    "name": "RendezViews",
+    "address": "229 Richmond St W",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6491985,
+    "lng": -79.389953,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "samplePoints": [
+      [
+        -79.389953,
+        43.6491985
+      ],
+      [
+        -79.389853,
+        43.6492985
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "open-air",
+      "social"
+    ],
+    "website": "https://rendezviews.ca"
+  },
+  {
+    "id": "bar-isabel",
+    "name": "Bar Isabel",
+    "address": "797 College St",
+    "neighborhood": "Little Italy",
+    "lat": 43.654669,
+    "lng": -79.420714,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "CafeTO sidewalk patio on the south side of College St. 2-storey building is behind (north) so it does not block sun. South-facing with low-rise buildings across the street. Gets good midday and afternoon sun until buildings to the west start shading it.",
+    "samplePoints": [
+      [
+        -79.420714,
+        43.654669
+      ],
+      [
+        -79.420614,
+        43.654769
+      ]
+    ],
+    "tags": [
+      "tapas",
+      "wine-bar",
+      "michelin",
+      "spanish"
+    ],
+    "website": "https://barisabel.com",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "id": "the-cameron-house",
+    "name": "The Cameron House",
+    "address": "408 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6486214,
+    "lng": -79.3975842,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Tiny sidewalk cafe patio on south side of Queen St W. 2-storey building with famous psychedelic mural is behind (north). South-facing with low-rise buildings across the street. Gets midday through early afternoon sun. Very small patio so even partial shadow covers the whole space.",
+    "samplePoints": [
+      [
+        -79.3975842,
+        43.6486214
+      ],
+      [
+        -79.3974842,
+        43.64872140000001
+      ]
+    ],
+    "tags": [
+      "live-music",
+      "dive-bar",
+      "arts"
+    ],
+    "website": "https://www.thecameron.com",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "get-well",
+    "name": "Get Well",
+    "address": "1181 Dundas St W",
+    "neighborhood": "Dundas West",
+    "lat": 43.6492509,
+    "lng": -79.4219201,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 7,
+    "patioSide": "N",
+    "sunNotes": "Patio on the north side of Dundas St W (south side of the building). Dundas runs roughly east-west here. The bar's own building is to the south, and the patio faces north toward the street. Gets limited sun when the sun is high enough to clear rooflines. Best midday sun in summer only. Patio lanterns suggest it is used more for evening ambiance.",
+    "samplePoints": [
+      [
+        -79.4219201,
+        43.6492509
+      ],
+      [
+        -79.42182009999999,
+        43.6493509
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "arcade",
+      "dive-bar",
+      "pizza"
+    ],
+    "website": "https://www.getwellbar.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "the-fifth-social-club",
+    "name": "The Fifth Social Club",
+    "address": "225 Richmond St W",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6491276,
+    "lng": -79.3892066,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 5,
+    "orientation": 180,
+    "buildingHeight": 18,
+    "patioSide": "roof",
+    "sunNotes": "Rooftop terrace atop the 5-storey heritage Gelber warehouse. At ~18m the patio clears most immediate neighbours but taller entertainment district towers to the east and west will shade it in early morning and late afternoon. Good midday and afternoon sun. Open-air section gets direct sun most of the day.",
+    "samplePoints": [
+      [
+        -79.3892066,
+        43.6491276
+      ],
+      [
+        -79.38910659999999,
+        43.6492276
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "nightclub",
+      "upscale"
+    ],
+    "website": "https://fifthsocialclub.thefifth.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "id": "kost",
+    "name": "Kost",
+    "address": "80 Blue Jays Way",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6455904,
+    "lng": -79.392261,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 44,
+    "orientation": 180,
+    "buildingHeight": 154,
+    "patioSide": "roof",
+    "sunNotes": "44th floor rooftop at the Bisha Hotel, ~154m elevation. At this height, virtually nothing blocks the sun. Panoramic 360-degree views of the city and Lake Ontario. Only the CN Tower spire is taller nearby but it is too thin to cast meaningful shadow. Gets sun from sunrise to sunset, all day long. The best sun exposure of any patio in Toronto.",
+    "samplePoints": [
+      [
+        -79.392261,
+        43.6455904
+      ],
+      [
+        -79.392161,
+        43.64569040000001
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "cocktails",
+      "upscale",
+      "pool",
+      "views"
+    ],
+    "website": "https://kosttoronto.com",
+    "manualSunWindows": [
+      {
+        "start": 8,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "id": "terroni-adelaide",
+    "name": "Terroni on Adelaide",
+    "address": "57 Adelaide St E",
+    "neighborhood": "Old Toronto",
+    "lat": 43.6509252,
+    "lng": -79.3756948,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 14,
+    "patioSide": "S",
+    "sunNotes": "Secret garden courtyard patio behind the 1852 York County Courthouse heritage building (3 storeys). Courtyard is somewhat enclosed by the building itself and neighbouring structures. Financial district towers are several blocks away but cast long shadows. Gets midday sun when the sun is high and to the south, but loses it by mid-afternoon. Charming but limited sun window.",
+    "samplePoints": [
+      [
+        -79.3756948,
+        43.6509252
+      ],
+      [
+        -79.3755948,
+        43.65102520000001
+      ]
+    ],
+    "tags": [
+      "italian",
+      "wine-bar",
+      "heritage",
+      "courtyard"
+    ],
+    "website": "https://www.terroni.com/locations/terroni-adelaide",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "cibo-wine-bar",
+    "name": "Cibo Wine Bar",
+    "address": "1055 Yonge St",
+    "neighborhood": "Summerhill",
+    "lat": 43.6785182,
+    "lng": -79.3899129,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 270,
+    "buildingHeight": 10.5,
+    "patioSide": "W",
+    "sunNotes": "NOTE: No confirmed Cibo Wine Bar at 1055 Yonge. Yonge St location was at 2472 Yonge (now closed). Active Cibo locations are 522 King St W and 133 Yorkville Ave. If this address is correct, patio would be west-facing on Yonge. Gets afternoon and evening sun as sun moves west. Own building to the east blocks morning sun. Good late-afternoon sun in summer.",
+    "samplePoints": [
+      [
+        -79.3899129,
+        43.6785182
+      ],
+      [
+        -79.3898129,
+        43.6786182
+      ]
+    ],
+    "tags": [
+      "wine-bar",
+      "italian",
+      "upscale"
+    ],
+    "website": "https://www.cibo.menu",
+    "manualSunWindows": [
+      {
+        "start": 14,
+        "end": 20
+      }
+    ]
+  },
+  {
+    "id": "paupers-pub",
+    "name": "Pauper's Pub",
+    "address": "539 Bloor St W",
+    "neighborhood": "The Annex",
+    "lat": 43.6652165,
+    "lng": -79.4101099,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 3,
+    "orientation": 180,
+    "buildingHeight": 10.5,
+    "patioSide": "roof",
+    "sunNotes": "3rd floor rooftop patio atop a century-old building (former CIBC bank branch). At ~10.5m the rooftop is above the surrounding Annex low-rise buildings. High fences provide privacy but do not significantly block sun. Excellent sun exposure from late morning through evening. The Annex neighbourhood is mostly 2-3 storey houses so very few shadows. Also has a sidewalk patio at ground level.",
+    "samplePoints": [
+      [
+        -79.4101099,
+        43.6652165
+      ],
+      [
+        -79.41000989999999,
+        43.6653165
+      ]
+    ],
+    "tags": [
+      "rooftop",
+      "pub",
+      "beer",
+      "brunch"
+    ],
+    "website": "https://pauperspub.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "id": "sweaty-bettys",
+    "name": "Sweaty Betty's",
+    "address": "13 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6445976,
+    "lng": -79.4187776,
+    "patioType": "backyard",
+    "covered": true,
+    "patioFloor": 0,
+    "orientation": 270,
+    "buildingHeight": 7,
+    "patioSide": "W",
+    "sunNotes": "Rear backyard patio behind the bar, covered with a pergola-style roof. The covered/sheltered design means no direct sun reaches patrons. Heated for cooler weather. A cozy shaded retreat by design, not a sun-seeking destination.",
+    "samplePoints": [
+      [
+        -79.4187776,
+        43.6445976
+      ],
+      [
+        -79.4186776,
+        43.6446976
+      ]
+    ],
+    "tags": [
+      "dive-bar",
+      "cocktails",
+      "dog-friendly"
+    ],
+    "website": "https://sweatybettysbar.com",
+    "manualSunWindows": []
+  },
+  {
+    "id": "pennylick",
+    "name": "Pennylick",
+    "address": "163 Augusta Ave",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6529913,
+    "lng": -79.401235,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 190,
+    "buildingHeight": 7,
+    "patioSide": "W",
+    "sunNotes": "NOTE: Could not verify this venue exists at this address. Augusta Ave runs roughly north-south in Kensington Market. If on the west side of Augusta, patio faces west with the building to the east. Would get afternoon and evening sun. Kensington is low-rise (2-3 storeys) so few tall shadows. Assuming a typical Kensington sidewalk setup.",
+    "samplePoints": [
+      [
+        -79.401235,
+        43.6529913
+      ],
+      [
+        -79.401135,
+        43.6530913
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "kensington"
+    ],
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "id": "the-harbord-room",
+    "name": "Bar Eugenie (formerly The Harbord Room)",
+    "address": "89 Harbord St",
+    "neighborhood": "Harbord Village",
+    "lat": 43.6626481,
+    "lng": -79.4034098,
+    "patioType": "backyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 10.5,
+    "patioSide": "N",
+    "sunNotes": "NOTE: The Harbord Room is permanently closed. Now Bar Eugenie (opened Sept 2025). Backyard patio behind the building (north side). ~30-40 seats outdoors. Building is to the south, shading the patio for much of the day. Gets sun when it is high enough to clear the 3-storey roofline (midday in summer). Harbord Village is low-rise residential so no tall towers. Loses sun by mid-afternoon as building casts shadow northward.",
+    "samplePoints": [
+      [
+        -79.4034098,
+        43.6626481
+      ],
+      [
+        -79.4033098,
+        43.6627481
+      ]
+    ],
+    "tags": [
+      "wine-bar",
+      "cocktails",
+      "fine-dining",
+      "backyard"
+    ],
+    "website": "https://www.bareugenie.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "the-emmet-ray",
+    "name": "The Emmet Ray",
+    "address": "924 College St",
+    "neighborhood": "College / Dovercourt",
+    "lat": 43.6538735,
+    "lng": -79.4256994,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Small 16-seat sidewalk patio on the south side of College St. 2-storey building behind (north). South-facing with low-rise buildings across the street. Gets midday through mid-afternoon sun. College St runs E-W here; buildings to west shade in late afternoon.",
+    "samplePoints": [
+      [
+        -79.4256994,
+        43.6538735
+      ],
+      [
+        -79.4255994,
+        43.653973500000006
+      ]
+    ],
+    "tags": [
+      "whisky",
+      "jazz",
+      "live-music"
+    ],
+    "website": "https://www.theemmetray.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "eastbound-brewing",
+    "name": "Eastbound Brewing Co.",
+    "address": "700 Queen St E",
+    "neighborhood": "Riverside / Leslieville",
+    "lat": 43.6589147,
+    "lng": -79.3502292,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 5,
+    "patioSide": "S",
+    "sunNotes": "Streetside sidewalk patio on south side of Queen St E. Single-storey brewery behind (north). South-facing in low-rise Riverside. Wide Queen St and low buildings across the street. Excellent midday through late afternoon sun.",
+    "samplePoints": [
+      [
+        -79.3502292,
+        43.6589147
+      ],
+      [
+        -79.3501292,
+        43.6590147
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "tex-mex"
+    ],
+    "website": "https://eastboundbeer.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "id": "left-field-brewery",
+    "name": "Left Field Brewery",
+    "address": "36 Wagstaff Dr",
+    "neighborhood": "Leslieville",
+    "lat": 43.6736896,
+    "lng": -79.3304789,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 6,
+    "patioSide": "S",
+    "sunNotes": "Industrial warehouse brewery on short dead-end street. Outdoor picnic tables in parking area south/front of building. Low-rise industrial surroundings with no tall structures. Excellent sun from late morning through sunset. One of the sunniest brewery patios in the east end.",
+    "samplePoints": [
+      [
+        -79.3304789,
+        43.6736896
+      ],
+      [
+        -79.3303789,
+        43.673789600000006
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "dog-friendly"
+    ],
+    "website": "https://www.leftfieldbrewery.ca",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 18
+      }
+    ]
+  },
+  {
+    "id": "bandit-brewery",
+    "name": "Bandit Brewery",
+    "address": "2125 Dundas St W",
+    "neighborhood": "Roncesvalles / Junction Triangle",
+    "lat": 43.6524904,
+    "lng": -79.4495922,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Large tree-lined sidewalk patio on south side of Dundas St W with picnic tables and string lights. Also has heated glass-enclosed section (no direct sun there). Open patio is south-facing in low-rise area. Midday through mid-afternoon sun. Trees provide dappled shade in summer.",
+    "samplePoints": [
+      [
+        -79.4495922,
+        43.6524904
+      ],
+      [
+        -79.4494922,
+        43.6525904
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "dog-friendly"
+    ],
+    "website": "https://www.banditbrewery.ca",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "blood-brothers-brewing",
+    "name": "Blood Brothers Brewing",
+    "address": "165 Geary Ave",
+    "neighborhood": "Davenport / Geary Ave",
+    "lat": 43.6700062,
+    "lng": -79.4358924,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 5,
+    "patioSide": "S",
+    "sunNotes": "50-seat patio in front of renovated century-old horse stable on south side of Geary Ave. Low-rise industrial strip running E-W. Single-storey buildings across street, no tall buildings nearby. Excellent sun from mid-morning through late afternoon.",
+    "samplePoints": [
+      [
+        -79.4358924,
+        43.6700062
+      ],
+      [
+        -79.4357924,
+        43.670106200000006
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "comfort-food"
+    ],
+    "website": "https://www.bloodbrothersbrewing.com",
+    "manualSunWindows": [
+      {
+        "start": 10,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "id": "henderson-brewing",
+    "name": "Henderson Brewing",
+    "address": "128A Sterling Rd",
+    "neighborhood": "Junction Triangle / Sterling Rd",
+    "lat": 43.653678,
+    "lng": -79.44507,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 90,
+    "buildingHeight": 6,
+    "patioSide": "E",
+    "sunNotes": "Courtyard patio on east side of brewery in Sterling Rd arts/industrial cluster. Surrounded by converted industrial buildings of similar height. East-facing means good morning sun but brewery building blocks afternoon sun from west. Best sun mid-morning to early afternoon.",
+    "samplePoints": [
+      [
+        -79.44507,
+        43.653678
+      ],
+      [
+        -79.44497,
+        43.653778
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "dog-friendly",
+      "pizza"
+    ],
+    "website": "https://shophendersonbrewing.com",
+    "manualSunWindows": [
+      {
+        "start": 10,
+        "end": 14
+      }
+    ]
+  },
+  {
+    "id": "radical-road-brewing",
+    "name": "Radical Road Brewing",
+    "address": "1177 Queen St E",
+    "neighborhood": "Leslieville",
+    "lat": 43.662636,
+    "lng": -79.3324398,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 5,
+    "patioSide": "S",
+    "sunNotes": "Small sidewalk and curb lane patio on south side of Queen St E with astro-turf and vine-covered fence. Single-storey storefront. South-facing in low-rise Leslieville. Midday through mid-afternoon sun. Small enough that even slight shadows cover entire space.",
+    "samplePoints": [
+      [
+        -79.3324398,
+        43.662636
+      ],
+      [
+        -79.3323398,
+        43.662736
+      ]
+    ],
+    "tags": [
+      "craft-beer",
+      "brewery",
+      "dog-friendly"
+    ],
+    "website": "https://www.radicalroadbrew.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "aloette-spadina",
+    "name": "Aloette Spadina",
+    "address": "163 Spadina Ave",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6485014,
+    "lng": -79.3959394,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 270,
+    "buildingHeight": 10,
+    "patioSide": "W",
+    "sunNotes": "Streetside patio on west side of Spadina Ave (Alo restaurant is on 3rd floor above). Spadina is a wide N-S avenue. West-facing so no morning sun; building is to east. Gets afternoon and evening sun. Best from 1pm onward in summer. Wide Spadina means less shading from across the street.",
+    "samplePoints": [
+      [
+        -79.3959394,
+        43.6485014
+      ],
+      [
+        -79.3958394,
+        43.648601400000004
+      ]
+    ],
+    "tags": [
+      "french",
+      "bistro",
+      "upscale"
+    ],
+    "website": "https://www.aloetterestaurant.com/spadina",
+    "manualSunWindows": [
+      {
+        "start": 13,
+        "end": 19
+      }
+    ]
+  },
+  {
+    "id": "beso-by-patria",
+    "name": "Beso by Patria",
+    "address": "478 King St W",
+    "neighborhood": "King West",
+    "lat": 43.6455571,
+    "lng": -79.3963398,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 9,
+    "patioSide": "N",
+    "sunNotes": "Screened-in courtyard patio behind building (north side) with exposed brick and white globe lanterns. Enclosed on multiple sides by 2-3 storey buildings. Limited direct sun. Gets overhead sun midday in summer only. Mostly shaded, atmospheric patio.",
+    "samplePoints": [
+      [
+        -79.3963398,
+        43.6455571
+      ],
+      [
+        -79.3962398,
+        43.6456571
+      ]
+    ],
+    "tags": [
+      "spanish",
+      "wine-bar",
+      "cocktails"
+    ],
+    "website": "https://www.opentable.com/patria-toronto",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "miss-things",
+    "name": "Miss Thing's",
+    "address": "1279 Queen St W",
+    "neighborhood": "Parkdale",
+    "lat": 43.6414522,
+    "lng": -79.431875,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Small sidewalk patio on south side of Queen St W in Parkdale. 2-storey commercial building behind (north). South-facing in low-rise stretch. Midday through mid-afternoon sun. Some shade from awnings and neighbouring buildings late afternoon.",
+    "samplePoints": [
+      [
+        -79.431875,
+        43.6414522
+      ],
+      [
+        -79.431775,
+        43.64155220000001
+      ]
+    ],
+    "tags": [
+      "tiki",
+      "cocktails",
+      "hawaiian"
+    ],
+    "website": "https://missthings.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "reposado",
+    "name": "Reposado Bar & Bodega",
+    "address": "136 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6472839,
+    "lng": -79.4200939,
+    "patioType": "backyard",
+    "covered": true,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 7,
+    "patioSide": "N",
+    "sunNotes": "Covered back garden patio behind bar (north side). Dark stained wood and green plants. Covered/heated structure means very limited direct sun. Surrounding 2-3 storey Ossington buildings further block sun. Only midday overhead sun in summer reaches uncovered sections. A deliberately shaded, moody space.",
+    "samplePoints": [
+      [
+        -79.4200939,
+        43.6472839
+      ],
+      [
+        -79.4199939,
+        43.6473839
+      ]
+    ],
+    "tags": [
+      "tequila",
+      "mezcal",
+      "mexican",
+      "jazz"
+    ],
+    "website": "https://www.reposadobar.ca",
+    "manualSunWindows": [
+      {
+        "start": 12,
+        "end": 15
+      }
+    ]
+  },
+  {
+    "id": "supermarket-kensington",
+    "name": "Supermarket",
+    "address": "268 Augusta Ave",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6566122,
+    "lng": -79.403059,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 7,
+    "patioSide": "E",
+    "sunNotes": "Sidewalk patio on Augusta Ave facing east, south of College St in Kensington Market. Augusta runs N-S. Iron gate separates from pedestrians. String lights and greenery. East-facing gets morning and midday sun. Buildings across narrow Augusta block afternoon western sun. Best sun before 2pm.",
+    "samplePoints": [
+      [
+        -79.403059,
+        43.6566122
+      ],
+      [
+        -79.402959,
+        43.6567122
+      ]
+    ],
+    "tags": [
+      "asian-fusion",
+      "cocktails",
+      "live-music"
+    ],
+    "website": "https://www.supermarkettoronto.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "northern-belle",
+    "name": "Northern Belle",
+    "address": "913 Dundas St W",
+    "neighborhood": "Trinity Bellwoods",
+    "lat": 43.6508609,
+    "lng": -79.4125842,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Street-level sidewalk patio on south side of Dundas St W, one block from Trinity Bellwoods Park. 2-storey building behind (north). South-facing with low-rise neighbourhood. Midday through mid-afternoon sun. Prime Dundas West people-watching patio.",
+    "samplePoints": [
+      [
+        -79.4125842,
+        43.6508609
+      ],
+      [
+        -79.4124842,
+        43.6509609
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "coffee",
+      "charcuterie"
+    ],
+    "website": "https://www.northernbelle.ca",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "the-dock-ellis",
+    "name": "The Dock Ellis",
+    "address": "1280 Dundas St W",
+    "neighborhood": "Little Portugal / Dundas West",
+    "lat": 43.6496036,
+    "lng": -79.4253314,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 7,
+    "patioSide": "S",
+    "sunNotes": "Small sidewalk patio on south side of Dundas St W at Dovercourt. 2-storey building behind (north). South-facing on low-rise stretch. Midday through mid-afternoon sun. Same owner as Emmet Ray, similar small-bar sidewalk setup.",
+    "samplePoints": [
+      [
+        -79.4253314,
+        43.6496036
+      ],
+      [
+        -79.4252314,
+        43.6497036
+      ]
+    ],
+    "tags": [
+      "sports-bar",
+      "craft-beer",
+      "bar-games"
+    ],
+    "website": "https://thedockellis.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 16
+      }
+    ]
+  },
+  {
+    "id": "bettys-east",
+    "name": "Betty's East",
+    "address": "1301 Queen St E",
+    "neighborhood": "Leslieville",
+    "lat": 43.6636321,
+    "lng": -79.3275421,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "buildingHeight": 5,
+    "patioSide": "S",
+    "sunNotes": "Spacious sidewalk patio with large orange umbrellas and picnic tables on south side of Queen St E outside CoMMO building in Leslieville. South-facing in low-rise stretch. Wide Queen St and low buildings across street mean excellent sun. Late morning through late afternoon sun. One of Leslieville's sunniest patios.",
+    "samplePoints": [
+      [
+        -79.3275421,
+        43.6636321
+      ],
+      [
+        -79.3274421,
+        43.663732100000004
+      ]
+    ],
+    "tags": [
+      "pub",
+      "beer",
+      "burgers",
+      "brunch"
+    ],
+    "website": "https://www.bettystoronto.com",
+    "manualSunWindows": [
+      {
+        "start": 11,
+        "end": 17
+      }
+    ]
+  },
+  {
+    "id": "chamberlains-pony-bar",
+    "name": "Chamberlain's Pony Bar",
+    "address": "585 King St W",
+    "neighborhood": "King West",
+    "lat": 43.644278,
+    "lng": -79.399855,
+    "patioType": "sidewalk",
+    "covered": "partial",
+    "patioFloor": 0,
+    "orientation": 0,
+    "buildingHeight": 7,
+    "patioSide": "N",
+    "sunNotes": "Front patio faces north onto King St, partially covered by awnings. Side patio on Portland St faces west - gets strong afternoon sun from 2pm onward.",
+    "samplePoints": [
+      [
+        -79.399855,
+        43.644278
+      ],
+      [
+        -79.399755,
+        43.644378
+      ]
+    ],
+    "tags": [
+      "cocktails",
+      "pub",
+      "tex-mex",
+      "patio"
+    ],
+    "website": "https://chamberlainsponybar.com",
+    "manualSunWindows": [
+      {
+        "start": 14,
+        "end": 20
+      }
+    ],
+    "patioPolygon": [
+      [
+        -79.399635,
+        43.644265
+      ],
+      [
+        -79.39951,
+        43.644265
+      ],
+      [
+        -79.39951,
+        43.644288
+      ],
+      [
+        -79.399605,
+        43.644288
+      ],
+      [
+        -79.399605,
+        43.644312
+      ],
+      [
+        -79.399635,
+        43.644312
+      ]
+    ]
+  },
+  {
+    "id": "the-porch",
+    "name": "The Porch",
+    "address": "250 Adelaide St W",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6483222,
+    "lng": -79.3891121,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3891121,
+        43.6483222
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "bar-poet",
+    "name": "Bar Poet",
+    "address": "1090 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6437297,
+    "lng": -79.4223001,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4223001,
+        43.6437297
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "cabana-pool-bar",
+    "name": "Cabana Pool Bar",
+    "address": "11 Polson St",
+    "neighborhood": "Port Lands",
+    "lat": 43.6400802,
+    "lng": -79.354445,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 1,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.354445,
+        43.6400802
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "soluna",
+    "name": "Soluna",
+    "address": "568 College St",
+    "neighborhood": "Little Italy",
+    "lat": 43.6555871,
+    "lng": -79.412821,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.412821,
+        43.6555871
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "writers-room",
+    "name": "Writers Room",
+    "address": "4 Avenue Rd",
+    "neighborhood": "Yorkville",
+    "lat": 43.6691956,
+    "lng": -79.3946177,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 1,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3946177,
+        43.6691956
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "evangeline",
+    "name": "Evangeline",
+    "address": "51 Camden St",
+    "neighborhood": "Queen West",
+    "lat": 43.6467145,
+    "lng": -79.3980546,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3980546,
+        43.6467145
+      ]
+    ],
+    "tags": [],
+    "website": "",
+    "patioPolygon": [
+      [
+        -79.3987166,
+        43.6468839
+      ],
+      [
+        -79.3985562,
+        43.6469168
+      ],
+      [
+        -79.3985071,
+        43.646801
+      ],
+      [
+        -79.3986715,
+        43.6467689
+      ],
+      [
+        -79.3987166,
+        43.6468839
+      ]
+    ],
+    "patioSource": "osm"
+  },
+  {
+    "id": "valerie",
+    "name": "Valerie",
+    "address": "18 Mercer St",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6458129,
+    "lng": -79.3904737,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3904737,
+        43.6458129
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "broadview-hotel-rooftop",
+    "name": "Broadview Hotel Rooftop",
+    "address": "106 Broadview Ave",
+    "neighborhood": "Riverside",
+    "lat": 43.6590468,
+    "lng": -79.3501246,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 1,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3501246,
+        43.6590468
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "aera",
+    "name": "Aera",
+    "address": "81 Bay St",
+    "neighborhood": "Financial District",
+    "lat": 43.6441686,
+    "lng": -79.3773512,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 1,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3773512,
+        43.6441686
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "grey-gardens",
+    "name": "Grey Gardens",
+    "address": "199 Augusta Ave",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6537875,
+    "lng": -79.4015526,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4015526,
+        43.6537875
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "bar-piquette",
+    "name": "Bar Piquette",
+    "address": "197 Baldwin St",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6545022,
+    "lng": -79.401552,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.401552,
+        43.6545022
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "le-swan",
+    "name": "Le Swan",
+    "address": "892 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6451485,
+    "lng": -79.4148967,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4148967,
+        43.6451485
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "la-palma",
+    "name": "La Palma",
+    "address": "849 Dundas St W",
+    "neighborhood": "Little Portugal",
+    "lat": 43.6513475,
+    "lng": -79.4101178,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4101178,
+        43.6513475
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "rasa",
+    "name": "Rasa",
+    "address": "196 Robert St",
+    "neighborhood": "Harbord",
+    "lat": 43.6629591,
+    "lng": -79.4041528,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4041528,
+        43.6629591
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "enoteca-sociale",
+    "name": "Enoteca Sociale",
+    "address": "1288 Dundas St W",
+    "neighborhood": "Little Portugal",
+    "lat": 43.6496011,
+    "lng": -79.4256385,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4256385,
+        43.6496011
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "cluny-bistro",
+    "name": "Cluny Bistro",
+    "address": "35 Tank House Lane",
+    "neighborhood": "Distillery District",
+    "lat": 43.650592,
+    "lng": -79.357805,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.357805,
+        43.650592
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "chubby-s-jamaican",
+    "name": "Chubby’s Jamaican",
+    "address": "104 Portland St",
+    "neighborhood": "King West",
+    "lat": 43.645313,
+    "lng": -79.4005818,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4005818,
+        43.645313
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "giulietta",
+    "name": "Giulietta",
+    "address": "972 College St",
+    "neighborhood": "Little Italy",
+    "lat": 43.6534627,
+    "lng": -79.4276471,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4276471,
+        43.6534627
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "maison-selby",
+    "name": "Maison Selby",
+    "address": "592 Sherbourne St",
+    "neighborhood": "Cabbagetown",
+    "lat": 43.671281,
+    "lng": -79.3765959,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3765959,
+        43.671281
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "paris-paris",
+    "name": "Paris Paris",
+    "address": "119 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6466723,
+    "lng": -79.4195699,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4195699,
+        43.6466723
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "bar-vendetta",
+    "name": "Bar Vendetta",
+    "address": "900 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6450545,
+    "lng": -79.4152959,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4152959,
+        43.6450545
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "union",
+    "name": "Union",
+    "address": "72 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6458348,
+    "lng": -79.4195977,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4195977,
+        43.6458348
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "c-te-de-b-uf",
+    "name": "Côte de Bœuf",
+    "address": "130 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.647174,
+    "lng": -79.420054,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.420054,
+        43.647174
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "foxley",
+    "name": "Foxley",
+    "address": "207 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6486121,
+    "lng": -79.4202992,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4202992,
+        43.6486121
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "oddseoul",
+    "name": "OddSeoul",
+    "address": "90 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.646141,
+    "lng": -79.4196866,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4196866,
+        43.646141
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "dakota-tavern",
+    "name": "Dakota Tavern",
+    "address": "249 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6497529,
+    "lng": -79.4207279,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4207279,
+        43.6497529
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "archive",
+    "name": "Archive",
+    "address": "909 Dundas St W",
+    "neighborhood": "Trinity-Bellwoods",
+    "lat": 43.6508755,
+    "lng": -79.4124729,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4124729,
+        43.6508755
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "ronnie-s-local",
+    "name": "Ronnie’s Local",
+    "address": "69 Nassau St",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6550499,
+    "lng": -79.4025294,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4025294,
+        43.6550499
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "superpoint",
+    "name": "Superpoint",
+    "address": "184 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6483817,
+    "lng": -79.4207041,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4207041,
+        43.6483817
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "paradise-grapevine",
+    "name": "Paradise Grapevine",
+    "address": "841 Bloor St W",
+    "neighborhood": "Bloorcourt",
+    "lat": 43.6623476,
+    "lng": -79.4234464,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4234464,
+        43.6623476
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "el-rey",
+    "name": "El Rey",
+    "address": "2A Kensington Ave",
+    "neighborhood": "Kensington Market",
+    "lat": 43.6536552,
+    "lng": -79.4002845,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4002845,
+        43.6536552
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "little-jerry",
+    "name": "Little Jerry",
+    "address": "1078 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6438163,
+    "lng": -79.421756,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.421756,
+        43.6438163
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "civil-liberties",
+    "name": "Civil Liberties",
+    "address": "878 Bloor St W",
+    "neighborhood": "Bloorcourt",
+    "lat": 43.6622195,
+    "lng": -79.4252129,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4252129,
+        43.6622195
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "maison-t",
+    "name": "Maison T",
+    "address": "200 Bay St",
+    "neighborhood": "Financial District",
+    "lat": 43.6463615,
+    "lng": -79.3797549,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3797549,
+        43.6463615
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "public-gardens",
+    "name": "Public Gardens",
+    "address": "1051 Yonge St",
+    "neighborhood": "Rosedale",
+    "lat": 43.6431896,
+    "lng": -79.3753453,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3753453,
+        43.6431896
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "crack-burger",
+    "name": "Crack Burger",
+    "address": "78 Ossington Ave",
+    "neighborhood": "Ossington",
+    "lat": 43.6459212,
+    "lng": -79.4196202,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4196202,
+        43.6459212
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "nom-nom-nom-poutine",
+    "name": "Nom Nom Nom Poutine",
+    "address": "707 Dundas St W",
+    "neighborhood": "Chinatown",
+    "lat": 43.6521023,
+    "lng": -79.4050576,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4050576,
+        43.6521023
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "trinity-market",
+    "name": "Trinity Market",
+    "address": "1026 Queen St W",
+    "neighborhood": "Trinity-Bellwoods",
+    "lat": 43.6441396,
+    "lng": -79.4197647,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4197647,
+        43.6441396
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "the-black-bull",
+    "name": "The Black Bull",
+    "address": "298 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6496301,
+    "lng": -79.3932125,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3932125,
+        43.6496301
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "belfast-love",
+    "name": "Belfast Love",
+    "address": "194 Queen St W",
+    "neighborhood": "Queen West",
+    "lat": 43.6505363,
+    "lng": -79.3884696,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3884696,
+        43.6505363
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  },
+  {
+    "id": "milou",
+    "name": "Milou",
+    "address": "1375 Queen St W",
+    "neighborhood": "Parkdale",
+    "lat": 43.6411852,
+    "lng": -79.4370921,
+    "patioType": "patio",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4370921,
+        43.6411852
+      ]
+    ],
+    "tags": [],
+    "website": ""
+  }
+]
