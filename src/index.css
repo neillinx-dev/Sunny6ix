@@ -4,18 +4,6 @@
 @source "../index.html";
 
 @theme {
-  --color-sun: #F59E0B;
-  --color-sun-bright: #FBBF24;
-  --color-sun-deep: #D97706;
-  --color-sun-glow: #FEF3C7;
-  --color-shade: #64748B;
-  --color-shade-deep: #475569;
-  --color-surface: rgba(255, 255, 255, 0.92);
-  --color-surface-solid: #ffffff;
-  --color-surface-hover: rgba(255, 255, 255, 0.97);
-  --color-warm-50: #FFFBEB;
-  --color-warm-100: #FEF3C7;
-
   /* Sunny6ix brand palette */
   --color-brand-yellow: #FFC72C;
   --color-brand-yellow-soft: #FFE59A;
@@ -27,6 +15,14 @@
   --color-brand-paper: #F5EFE0;
   --color-brand-mist: #F2F4F7;
 
+  /* App UI neutrals */
+  --color-shade: #64748B;
+  --color-shade-deep: #475569;
+  --color-surface: rgba(255, 255, 255, 0.94);
+  --color-surface-solid: #ffffff;
+  --color-surface-hover: rgba(255, 255, 255, 0.98);
+
+  /* Typography — DM Sans body, Poppins display, Fraunces serif accents */
   --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
   --font-display: "Poppins", system-ui, -apple-system, sans-serif;
   --font-serif: "Fraunces", Georgia, serif;
@@ -56,7 +52,7 @@ body[data-route="app"], body[data-route="app"] #root {
 body[data-route="landing"] { overflow-x: hidden; }
 body[data-route="landing"] #root { height: auto; min-height: 100%; }
 
-/* ── Landing page ── */
+/* ── Landing page typography + primary CTAs ── */
 .font-display { font-family: var(--font-display); letter-spacing: -0.015em; }
 .font-serif-italic { font-family: var(--font-serif); font-style: italic; font-variation-settings: "SOFT" 50; }
 
@@ -87,27 +83,13 @@ body[data-route="landing"] #root { height: auto; min-height: 100%; }
 }
 .btn-min-solid:hover { box-shadow: 0 10px 24px -10px rgba(13, 27, 42, 0.5); }
 
-/* ── Map attribution tuck ── */
-.maplibregl-ctrl-bottom-left,
-.maplibregl-ctrl-bottom-right {
-  z-index: 1 !important;
-}
-.maplibregl-ctrl-bottom-right {
-  opacity: 0.6;
-}
-.maplibregl-ctrl-top-right {
-  top: 60px !important;
-}
-
-/* ── Venue dots are GPU-rendered via GeoJSON circle layers ── */
-
-/* ── Custom Range Slider ── */
+/* ── Time slider (brand yellow → sky → navy) ── */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   height: 8px;
   border-radius: 100px;
-  background: linear-gradient(90deg, #FEF3C7 0%, #FBBF24 40%, #F59E0B 60%, #78716C 80%, #1E293B 100%);
+  background: linear-gradient(90deg, #FFF4CC 0%, #FFD65A 35%, #FFC72C 55%, #7EC8E3 78%, #0D1B2A 100%);
   outline: none;
   position: relative;
 }
@@ -118,44 +100,44 @@ input[type="range"]::-webkit-slider-thumb {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #FBBF24, #F59E0B);
+  background: radial-gradient(circle at 40% 35%, #FFD65A, #FFC72C);
   cursor: grab;
   border: 3px solid white;
   box-shadow:
-    0 2px 8px rgba(245, 158, 11, 0.4),
-    0 0 12px rgba(245, 158, 11, 0.15);
+    0 2px 8px rgba(255, 199, 44, 0.45),
+    0 0 12px rgba(255, 199, 44, 0.18);
   transition: box-shadow 0.2s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
   cursor: grabbing;
   box-shadow:
-    0 2px 12px rgba(245, 158, 11, 0.6),
-    0 0 20px rgba(245, 158, 11, 0.25);
+    0 2px 12px rgba(255, 199, 44, 0.65),
+    0 0 20px rgba(255, 199, 44, 0.28);
 }
 
 input[type="range"]::-moz-range-thumb {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 35%, #FBBF24, #F59E0B);
+  background: radial-gradient(circle at 40% 35%, #FFD65A, #FFC72C);
   cursor: grab;
   border: 3px solid white;
-  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 2px 8px rgba(255, 199, 44, 0.45);
 }
 
-/* ── Glass card surfaces ── */
+/* ── Glass card surfaces (app UI) ── */
 .glass-card {
   background: var(--color-surface);
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   border: 1px solid rgba(255, 255, 255, 0.6);
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.06),
-    0 1px 3px rgba(0, 0, 0, 0.04);
+    0 4px 24px rgba(13, 27, 42, 0.08),
+    0 1px 3px rgba(13, 27, 42, 0.05);
 }
 
-/* ── Smooth transitions ── */
+/* ── Animations ── */
 .slide-up-enter {
   animation: slideUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -172,8 +154,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.2); }
-  50% { box-shadow: 0 0 0 6px rgba(245, 158, 11, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 199, 44, 0.25); }
+  50% { box-shadow: 0 0 0 6px rgba(255, 199, 44, 0); }
 }
 
 .live-pulse {

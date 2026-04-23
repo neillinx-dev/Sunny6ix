@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react'
+import { useCallback, useMemo, useRef } from 'react'
 import { useAppStore, type HourlyCloud } from '../../store/useAppStore'
 import { wmoEmoji } from '../../hooks/useWeather'
 
@@ -55,16 +55,27 @@ export default function TimeSlider() {
   const clampedHour = Math.max(BAR_OPEN, Math.min(BAR_CLOSE, currentHour))
   const isOutsideHours = currentHour < BAR_OPEN || currentHour > BAR_CLOSE
 
+  // rAF-coalesce slider updates so dragging doesn't queue more work than one
+  // commit per frame. Without this, shadow + sun recomputation piles up and
+  // drag feels laggy; this caps to ~60Hz.
+  const rafRef = useRef<number | null>(null)
+  const pendingHourRef = useRef<number | null>(null)
   const handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
-      const hour = parseFloat(e.target.value)
-      const newTime = new Date()
-      newTime.setDate(newTime.getDate() + selectedDayOffset)
-      const h = Math.floor(hour)
-      const m = Math.round((hour - h) * 60)
-      newTime.setHours(h, m, 0, 0)
-      setCurrentTime(newTime)
-      setIsLiveTime(false)
+      pendingHourRef.current = parseFloat(e.target.value)
+      if (rafRef.current !== null) return
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = null
+        const hour = pendingHourRef.current
+        if (hour === null) return
+        const newTime = new Date()
+        newTime.setDate(newTime.getDate() + selectedDayOffset)
+        const h = Math.floor(hour)
+        const m = Math.round((hour - h) * 60)
+        newTime.setHours(h, m, 0, 0)
+        setCurrentTime(newTime)
+        setIsLiveTime(false)
+      })
     },
     [selectedDayOffset, setCurrentTime, setIsLiveTime]
   )
@@ -92,24 +103,25 @@ export default function TimeSlider() {
     <div className="absolute bottom-5 left-4 right-4 z-10 flex justify-center">
       <div className="glass-card rounded-[22px] max-w-2xl w-full slide-up-enter overflow-hidden">
         {/* Day selector with weather icons */}
-        <div className="flex border-b border-gray-100">
+        <div className="flex border-b border-[#0D1B2A]/8">
           {[0, 1, 2, 3].map((offset) => {
             const forecast = dailyForecast?.[offset]
+            const active = selectedDayOffset === offset
             return (
               <button
                 key={offset}
                 onClick={() => handleDaySelect(offset)}
                 className={`flex-1 py-2.5 flex flex-col items-center gap-1 transition-all ${
-                  selectedDayOffset === offset
-                    ? 'text-amber-600 border-b-2 border-amber-400 bg-amber-50/50'
-                    : 'text-gray-400 hover:text-gray-600'
+                  active
+                    ? 'text-[#0D1B2A] border-b-2 border-[#FFC72C] bg-[#FFC72C]/10'
+                    : 'text-[#0D1B2A]/45 hover:text-[#0D1B2A]/80'
                 }`}
               >
-                <span className="text-[12px] font-medium">{getDayLabel(offset)}</span>
+                <span className="text-[12px] font-semibold">{getDayLabel(offset)}</span>
                 {forecast && (
                   <div className="flex items-center gap-1.5">
                     <span className="text-[13px]">{wmoEmoji(forecast.weatherCode)}</span>
-                    <span className="text-[11px] tabular-nums">{forecast.tempMax}°</span>
+                    <span className="text-[11px] tabular-nums font-medium">{forecast.tempMax}°</span>
                   </div>
                 )}
               </button>
@@ -121,23 +133,23 @@ export default function TimeSlider() {
           <div className="flex items-center justify-between mb-4">
             <div>
               {isOutsideHours && selectedDayOffset === 0 ? (
-                <span className="text-[15px] font-medium text-gray-400">Patios closed</span>
+                <span className="text-[15px] font-medium text-[#0D1B2A]/40">Patios closed</span>
               ) : (
-                <span className="text-[23px] font-semibold text-gray-900 tabular-nums tracking-tight leading-none">
+                <span className="text-[23px] font-bold text-[#0D1B2A] tabular-nums tracking-tight leading-none">
                   {formatTime(clampedHour)}
                 </span>
               )}
             </div>
             <button
               onClick={handleNowClick}
-              className={`flex items-center gap-1.5 text-[13px] px-3.5 py-1.5 rounded-full font-medium transition-all ${
+              className={`flex items-center gap-1.5 text-[13px] px-3.5 py-1.5 rounded-full font-semibold transition-all ${
                 isLiveTime && selectedDayOffset === 0
-                  ? 'bg-amber-400 text-white shadow-sm live-pulse'
-                  : 'bg-gray-100 text-gray-500 hover:bg-amber-50 hover:text-amber-600'
+                  ? 'bg-[#FFC72C] text-[#0D1B2A] shadow-sm live-pulse'
+                  : 'bg-[#0D1B2A]/5 text-[#0D1B2A]/55 hover:bg-[#FFC72C]/15 hover:text-[#0D1B2A]'
               }`}
             >
               {isLiveTime && selectedDayOffset === 0 && (
-                <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0D1B2A] animate-pulse" />
               )}
               {isLiveTime && selectedDayOffset === 0 ? 'LIVE' : 'NOW'}
             </button>
@@ -162,12 +174,12 @@ export default function TimeSlider() {
               // Color scale for precip %: stronger blue the higher the chance
               const precipColor =
                 precipProb >= 50
-                  ? 'text-sky-600 font-semibold'
+                  ? 'text-[#4FA6C9] font-bold'
                   : precipProb >= 30
-                  ? 'text-sky-500 font-semibold'
+                  ? 'text-[#7EC8E3] font-semibold'
                   : precipProb >= 10
-                  ? 'text-sky-400 font-medium'
-                  : 'text-gray-300'
+                  ? 'text-[#7EC8E3]/70 font-medium'
+                  : 'text-[#0D1B2A]/25'
               return (
                 <div
                   key={h}
@@ -178,7 +190,7 @@ export default function TimeSlider() {
                   </span>
                   <span
                     className={`text-[12px] tabular-nums leading-none ${
-                      isCurrent ? 'text-amber-600 font-bold' : 'text-gray-500 font-medium'
+                      isCurrent ? 'text-[#0D1B2A] font-bold' : 'text-[#0D1B2A]/55 font-semibold'
                     }`}
                   >
                     {w ? `${w.temperature}°` : ''}
@@ -188,7 +200,7 @@ export default function TimeSlider() {
                   </span>
                   <span
                     className={`text-[10px] tabular-nums leading-none ${
-                      isCurrent ? 'text-amber-600 font-bold' : 'text-gray-300'
+                      isCurrent ? 'text-[#0D1B2A] font-bold' : 'text-[#0D1B2A]/30'
                     }`}
                   >
                     {h > 12 ? h - 12 : h}{h >= 12 ? 'p' : 'a'}
