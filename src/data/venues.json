@@ -2476,27 +2476,6 @@
     "popularity": 3
   },
   {
-    "id": "broadview-hotel-rooftop",
-    "name": "Broadview Hotel Rooftop",
-    "address": "106 Broadview Ave",
-    "neighborhood": "Riverside",
-    "lat": 43.6590468,
-    "lng": -79.3501246,
-    "patioType": "rooftop",
-    "covered": false,
-    "patioFloor": 1,
-    "orientation": 180,
-    "samplePoints": [
-      [
-        -79.3501246,
-        43.6590468
-      ]
-    ],
-    "tags": [],
-    "website": "",
-    "popularity": 5
-  },
-  {
     "id": "aera",
     "name": "Aera",
     "address": "81 Bay St",

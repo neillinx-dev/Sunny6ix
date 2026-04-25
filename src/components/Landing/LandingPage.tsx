@@ -51,11 +51,34 @@ export default function LandingPage() {
     }
   }, [now])
 
+  // Pick the actual best-light patios from the venue catalog rather than
+  // hard-coding. Logic:
+  //  - drop covered patios (they never see direct sun, so "best light" is a lie)
+  //  - prefer rooftops + courtyards (sky-exposed > sidewalk caves)
+  //  - sort by popularity tier desc, then by whether we have a hand-drawn
+  //    polygon (signals we've actually vetted the patio), then by name
+  //  - take top 5
   const featured = useMemo(() => {
-    const ids = ['bellwoods-brewery', 'amsterdam-brewhouse', 'score-on-queen']
-    const picked = ids.map((id) => venues.find((v) => v.id === id)).filter(Boolean) as Venue[]
-    if (picked.length < 3) return venues.slice(0, 3)
-    return picked
+    const patioRank: Record<Venue['patioType'], number> = {
+      rooftop: 0,
+      courtyard: 1,
+      backyard: 2,
+      sidewalk: 3,
+    }
+    return venues
+      .filter((v) => v.covered !== true)
+      .filter((v) => (v.popularity ?? 2) >= 4)
+      .sort((a, b) => {
+        const popDiff = (b.popularity ?? 2) - (a.popularity ?? 2)
+        if (popDiff) return popDiff
+        const typeDiff = patioRank[a.patioType] - patioRank[b.patioType]
+        if (typeDiff) return typeDiff
+        const aHasPoly = a.patioPolygon && a.patioPolygon.length >= 3 ? 0 : 1
+        const bHasPoly = b.patioPolygon && b.patioPolygon.length >= 3 ? 0 : 1
+        if (aHasPoly !== bHasPoly) return aHasPoly - bHasPoly
+        return a.name.localeCompare(b.name)
+      })
+      .slice(0, 5)
   }, [])
 
   return (
