@@ -2906,5 +2906,459 @@
     "tags": [],
     "website": "",
     "popularity": 3
+  },
+  {
+    "id": "local-public-eatery-adelaide",
+    "name": "LOCAL Public Eatery Adelaide",
+    "address": "141 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.648957599999996,
+    "lng": -79.38434079999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38434079999999,
+        43.648957599999996
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://localpubliceatery.com/neighbourhoods/adelaide/",
+    "popularity": 4
+  },
+  {
+    "id": "st-louis-bar-and-grill",
+    "name": "St. Louis Bar & Grill",
+    "address": "595 Bay St. A09, Toronto",
+    "neighborhood": "Financial District",
+    "lat": 43.656219799999995,
+    "lng": -79.38329089999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38329089999999,
+        43.656219799999995
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant",
+      "cocktails",
+      "pizza"
+    ],
+    "website": "https://locations.stlouiswings.com/on-toronto-5216/",
+    "popularity": 4
+  },
+  {
+    "id": "the-goodman-pub-and-kitchen",
+    "name": "The Goodman Pub and Kitchen",
+    "address": "207 Queens Quay W, Toronto",
+    "neighborhood": "Harbourfront",
+    "lat": 43.638354799999995,
+    "lng": -79.3801917,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3801917,
+        43.638354799999995
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "popularity": 4
+  },
+  {
+    "id": "queens-harbour",
+    "name": "Queens Harbour",
+    "address": "245 Queens Quay W, Toronto",
+    "neighborhood": "Harbourfront",
+    "lat": 43.638597999999995,
+    "lng": -79.3850531,
+    "patioType": "courtyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3850531,
+        43.638597999999995
+      ]
+    ],
+    "tags": [
+      "restaurant"
+    ],
+    "website": "https://queensharbour.ca/",
+    "popularity": 5
+  },
+  {
+    "id": "scotland-yard-pub",
+    "name": "Scotland Yard Pub",
+    "address": "56 The Esplanade, Toronto",
+    "neighborhood": "",
+    "lat": 43.6470917,
+    "lng": -79.37404169999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.37404169999999,
+        43.6470917
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://www.scotlandyard.ca/",
+    "popularity": 5
+  },
+  {
+    "id": "anejo-restaurant",
+    "name": "Añejo Restaurant",
+    "address": "600 King St W, Toronto",
+    "neighborhood": "Financial District",
+    "lat": 43.6447447,
+    "lng": -79.39998109999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39998109999999,
+        43.6447447
+      ]
+    ],
+    "tags": [
+      "restaurant"
+    ],
+    "website": "https://www.anejo.ca/en/locations/on/toronto/600-king-street-west",
+    "popularity": 2
+  },
+  {
+    "id": "score-on-king",
+    "name": "Score on King",
+    "address": "107 King St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.64983730000001,
+    "lng": -79.37407859999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.37407859999999,
+        43.64983730000001
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://scoreonking.com/",
+    "popularity": 4
+  },
+  {
+    "id": "kellys-landing",
+    "name": "Kellys Landing",
+    "address": "123 Front St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.645019,
+    "lng": -79.3827441,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3827441,
+        43.645019
+      ]
+    ],
+    "tags": [
+      "restaurant"
+    ],
+    "website": "https://www.thelandinggroup.ca/en/locations/on/toronto/123-front-st.-w",
+    "popularity": 5
+  },
+  {
+    "id": "jack-astors-bar-and-grill-front-street",
+    "name": "Jack Astor's Bar & Grill Front Street",
+    "address": "144 Front St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6454042,
+    "lng": -79.383916,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.383916,
+        43.6454042
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://jackastors.com/?locationId=937",
+    "popularity": 5
+  },
+  {
+    "id": "boston-pizza",
+    "name": "Boston Pizza",
+    "address": "Canadian Broadcasting Centre, 250 Front St W Unit 1c201, Toronto",
+    "neighborhood": "",
+    "lat": 43.644206499999996,
+    "lng": -79.3885659,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3885659,
+        43.644206499999996
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant",
+      "pizza"
+    ],
+    "website": "https://bostonpizza.com/en/locations/front-and-john.html",
+    "popularity": 5
+  },
+  {
+    "id": "lulu-bar-toronto",
+    "name": "Lulu Bar Toronto",
+    "address": "427 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643429999999995,
+    "lng": -79.39591000000001,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39591000000001,
+        43.643429999999995
+      ]
+    ],
+    "tags": [
+      "restaurant"
+    ],
+    "website": "https://www.lulubar.ca/toronto",
+    "popularity": 3
+  },
+  {
+    "id": "cherry-s-high-dive",
+    "name": "Cherry’s High Dive",
+    "address": "488 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643448600000006,
+    "lng": -79.39842019999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39842019999999,
+        43.643448600000006
+      ]
+    ],
+    "tags": [
+      "bar"
+    ],
+    "website": "https://cherryshighdive.com/",
+    "popularity": 5
+  },
+  {
+    "id": "bar-wellington",
+    "name": "Bar Wellington",
+    "address": "520 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643308,
+    "lng": -79.399379,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.399379,
+        43.643308
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://www.barwellington.ca/",
+    "popularity": 4
+  },
+  {
+    "id": "the-wheat-sheaf-tavern",
+    "name": "The Wheat Sheaf Tavern",
+    "address": "667 King St W #2, Toronto",
+    "neighborhood": "King West",
+    "lat": 43.6437065,
+    "lng": -79.4028589,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4028589,
+        43.6437065
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://www.wheatsheaftavern.com/",
+    "popularity": 5
+  },
+  {
+    "id": "greedy-goose-kitchen-bar",
+    "name": "Greedy Goose Kitchen + Bar",
+    "address": "803 King St W, Toronto",
+    "neighborhood": "King West",
+    "lat": 43.6428941,
+    "lng": -79.4072258,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4072258,
+        43.6428941
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://www.greedygoosetoronto.com/",
+    "popularity": 2
+  },
+  {
+    "id": "liberty-soho",
+    "name": "Liberty Soho",
+    "address": "139 E Liberty St, Toronto",
+    "neighborhood": "",
+    "lat": 43.63847,
+    "lng": -79.41682999999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.41682999999999,
+        43.63847
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://liberty-soho.com/",
+    "popularity": 4
+  },
+  {
+    "id": "brazen-head-irish-pub",
+    "name": "Brazen Head Irish Pub",
+    "address": "165 E Liberty St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6384423,
+    "lng": -79.4172366,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4172366,
+        43.6384423
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://www.brazenhead.ca/",
+    "popularity": 5
+  },
+  {
+    "id": "local-public-eatery-liberty-village",
+    "name": "LOCAL Public Eatery Liberty Village",
+    "address": "100, 171 E Liberty St Unit 100, Toronto",
+    "neighborhood": "",
+    "lat": 43.6383844,
+    "lng": -79.41935529999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.41935529999999,
+        43.6383844
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://localpubliceatery.com/neighbourhoods/liberty-village/",
+    "popularity": 5
+  },
+  {
+    "id": "left-field-brewery-liberty-village",
+    "name": "Left Field Brewery (Liberty Village)",
+    "address": "40 Hanna Ave Suite G1, Toronto",
+    "neighborhood": "",
+    "lat": 43.6388513,
+    "lng": -79.41993939999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.41993939999999,
+        43.6388513
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant",
+      "brewery"
+    ],
+    "website": "https://www.leftfieldbrewery.ca/",
+    "popularity": 3
   }
 ]
