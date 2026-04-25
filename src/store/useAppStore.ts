@@ -43,6 +43,7 @@ interface AppState {
     neighborhood: string | null
     patioType: string | null
   }
+  showShadows: boolean
 
   setSelectedVenue: (id: string | null) => void
   setCurrentTime: (time: Date) => void
@@ -57,6 +58,7 @@ interface AppState {
   toggleRooftopOnly: () => void
   setNeighborhood: (n: string | null) => void
   setPatioType: (t: string | null) => void
+  toggleShowShadows: () => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -74,6 +76,7 @@ export const useAppStore = create<AppState>((set) => ({
     neighborhood: null,
     patioType: null,
   },
+  showShadows: true,
 
   setSelectedVenue: (id) => set({ selectedVenueId: id }),
   setCurrentTime: (time) => set({ currentTime: time }),
@@ -97,4 +100,5 @@ export const useAppStore = create<AppState>((set) => ({
     set((state) => ({ filters: { ...state.filters, neighborhood: n } })),
   setPatioType: (t) =>
     set((state) => ({ filters: { ...state.filters, patioType: t } })),
+  toggleShowShadows: () => set((state) => ({ showShadows: !state.showShadows })),
 }))

@@ -31,6 +31,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
   const weather = useAppStore((s) => s.weather)
   const selectedDayOffset = useAppStore((s) => s.selectedDayOffset)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
+  const showShadows = useAppStore((s) => s.showShadows)
 
   const getCloudForTime = useCallback((time: Date): { cloud: number; raining: boolean } => {
     if (!hourlyCloud || hourlyCloud.length === 0) {
@@ -284,7 +285,9 @@ export default function MapContainer({ venues }: MapContainerProps) {
     const sunDown = sunPos.altitude <= 0.05
     const tooZoomedOut = !zoom || zoom < 15
 
-    if (sunDown || tooZoomedOut) {
+    // Skip rendering when user has toggled shadows off, sun is down, or
+    // zoomed out far enough that individual shadows aren't readable.
+    if (!showShadows || sunDown || tooZoomedOut) {
       overlay.setShadows([])
       return
     }
@@ -305,7 +308,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
     }
 
     overlay.setShadows(shadows)
-  }, [currentTime])
+  }, [currentTime, showShadows])
 
   // Re-render shadows when time changes
   useEffect(() => {
@@ -357,18 +360,18 @@ export default function MapContainer({ venues }: MapContainerProps) {
     <div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh' }}>
       <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
 
+      {/*
+        Banner sits beside the Filters pill on mobile (left ≈ 130px, in line
+        with the pill at top-5) and snaps back to centered on sm+ where the
+        brand mark + filters share the left edge with plenty of room to spare.
+      */}
       {banner && (
         <div
+          className="absolute top-5 left-[125px] right-3 z-[15] flex items-center gap-2 rounded-full px-4 py-2 sm:top-[22px] sm:left-1/2 sm:-translate-x-1/2 sm:right-auto sm:px-5 sm:py-2.5 sm:gap-[9px]"
           style={{
-            position: 'absolute',
-            top: 22,
-            left: '50%',
-            transform: 'translateX(-50%)',
             background: banner.bg,
             color: '#FFFFFF',
-            padding: '10px 20px',
-            borderRadius: 999,
-            fontSize: 13,
+            fontSize: 12,
             fontWeight: 600,
             letterSpacing: '0.015em',
             boxShadow: '0 6px 24px rgba(13,27,42,0.32)',
@@ -376,15 +379,13 @@ export default function MapContainer({ venues }: MapContainerProps) {
             backdropFilter: 'blur(14px)',
             WebkitBackdropFilter: 'blur(14px)',
             pointerEvents: 'none',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 9,
-            whiteSpace: 'nowrap',
-            zIndex: 15,
+            minWidth: 0,
           }}
         >
-          <span style={{ fontSize: 15 }}>{banner.emoji}</span>
-          {banner.label}
+          <span className="text-[14px] shrink-0">{banner.emoji}</span>
+          <span className="truncate sm:whitespace-nowrap sm:overflow-visible sm:text-[13px]">
+            {banner.label}
+          </span>
         </div>
       )}
     </div>
