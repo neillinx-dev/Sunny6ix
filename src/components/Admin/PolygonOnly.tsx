@@ -22,7 +22,6 @@ type ViewMode = 'needs' | 'all'
 export default function PolygonOnly({ existingVenues }: Props) {
   const [activeId, setActiveId] = useState<string | null>(null)
   const [poly, setPoly] = useState<[number, number][] | null>(null)
-  const [savedIds, setSavedIds] = useState<Set<string>>(new Set())
   const [savingMsg, setSavingMsg] = useState<string | null>(null)
   const [view, setView] = useState<ViewMode>('needs')
   const [search, setSearch] = useState('')
@@ -52,7 +51,6 @@ export default function PolygonOnly({ existingVenues }: Props) {
         patioSource: 'manual',
       } as Venue & { patioSource: string }
       await saveVenue(updated, 'update')
-      setSavedIds((s) => new Set(s).add(active.id))
       setSavingMsg(`✓ saved polygon for "${active.name}" — reload page to see updated state`)
       setActiveId(null)
       setPoly(null)
