@@ -3698,5 +3698,1938 @@
     ],
     "website": "https://www.villagegeniuspub.com/",
     "popularity": 4
+  },
+  {
+    "id": "pai",
+    "name": "PAI",
+    "address": "18 Duncan St, Toronto",
+    "neighborhood": "",
+    "lat": 43.647852799999995,
+    "lng": -79.3887403,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3887403,
+        43.647852799999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJ1ZGZKNk0K4gRaouNzuptWV8",
+    "website": "http://www.paitoronto.com/"
+  },
+  {
+    "id": "black-blue-toronto",
+    "name": "Black+Blue Toronto",
+    "address": "130 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.648099599999995,
+    "lng": -79.3831247,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3831247,
+        43.648099599999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJ243-C381K4gRHMKWCGU86iM",
+    "website": "https://blackandbluesteakhouse.ca/toronto-home/"
+  },
+  {
+    "id": "jacks-sankofa-square",
+    "name": "Jack's Sankofa Square",
+    "address": "10 Dundas St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.6567473,
+    "lng": -79.3804851,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3804851,
+        43.6567473
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJk3f-0co0K4gRLptE9VtASRo",
+    "website": "https://jackastors.com/?locationId=922"
+  },
+  {
+    "id": "cactus-club-cafe",
+    "name": "Cactus Club Cafe",
+    "address": "First Canadian Place, 77 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6495374,
+    "lng": -79.3817104,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3817104,
+        43.6495374
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJE65wodI0K4gRGHR5w5d4YPI",
+    "website": "https://www.cactusclubcafe.com/locations/first-canadian-place/"
+  },
+  {
+    "id": "rodney-s-oyster-house",
+    "name": "Rodney’s Oyster House",
+    "address": "469 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6449661,
+    "lng": -79.3969109,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3969109,
+        43.6449661
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJ3av9_j7L1IkR-4usmJxvhyk",
+    "website": "http://rodneysoysterhouse.com/"
+  },
+  {
+    "id": "craft-beer-market-toronto",
+    "name": "CRAFT Beer Market Toronto",
+    "address": "1 Adelaide St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.6499671,
+    "lng": -79.37805929999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.37805929999999,
+        43.6499671
+      ]
+    ],
+    "tags": [],
+    "popularity": 5,
+    "place_id": "ChIJi6Ta8jLL1IkRzzQWPcDj0KQ",
+    "website": "https://www.craftbeermarket.ca/locations/toronto/?utm_source=google&utm_medium=organic&utm_campaign=gmb"
+  },
+  {
+    "id": "the-carbon-bar",
+    "name": "The Carbon Bar",
+    "address": "99 Queen St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.653190099999996,
+    "lng": -79.3747981,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3747981,
+        43.653190099999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJv6F6Usw0K4gRQt20A8k3Jws",
+    "website": "https://thecarbonbar.ca/"
+  },
+  {
+    "id": "canoe",
+    "name": "Canoe",
+    "address": "Toronto-Dominion Centre, 66 Wellington St W 54th floor, Toronto",
+    "neighborhood": "",
+    "lat": 43.6475793,
+    "lng": -79.38090369999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38090369999999,
+        43.6475793
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJKSp50NI0K4gR6C6L3yYqpYY",
+    "website": "http://www.canoerestaurant.com/"
+  },
+  {
+    "id": "the-ballroom-bowl-john-st",
+    "name": "The Ballroom Bowl - John St",
+    "address": "145 John St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6489907,
+    "lng": -79.3905521,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3905521,
+        43.6489907
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJL41yFNA0K4gRMmZ2AnkGc_w",
+    "website": "https://www.theballroombowl.ca/"
+  },
+  {
+    "id": "paris-texas",
+    "name": "Paris Texas",
+    "address": "461 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6447806,
+    "lng": -79.3960637,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3960637,
+        43.6447806
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJmYso8K81K4gRA4L2hOFdZ9Y",
+    "website": "http://www.paristexas.ca/"
+  },
+  {
+    "id": "ruby-soho",
+    "name": "Ruby Soho",
+    "address": "587 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.644187800000005,
+    "lng": -79.4001593,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4001593,
+        43.644187800000005
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJRWiBLtc1K4gR-ASQvfjWtlM",
+    "website": "http://www.rubysohobar.com/"
+  },
+  {
+    "id": "le-select-bistro",
+    "name": "Le Sélect Bistro",
+    "address": "432 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643898,
+    "lng": -79.3968546,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3968546,
+        43.643898
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJx8LPLtk0K4gRVkpHcrMIYKE",
+    "website": "http://www.leselectbistro.com/"
+  },
+  {
+    "id": "oretta-king-west",
+    "name": "Oretta King West",
+    "address": "633 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643917599999995,
+    "lng": -79.4016209,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4016209,
+        43.643917599999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJe56zxIw1K4gRtP5JWO98q9Y",
+    "website": "https://www.oretta.to/kingwest/home"
+  },
+  {
+    "id": "bisha-a-luxury-collection-hotel-toronto",
+    "name": "BISHA, a Luxury Collection Hotel, Toronto",
+    "address": "80 Blue Jays Way, Toronto",
+    "neighborhood": "",
+    "lat": 43.645296099999996,
+    "lng": -79.3924474,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3924474,
+        43.645296099999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJiTuiAto0K4gRcsMSKhnVjVw",
+    "website": "https://www.marriott.com/en-us/hotels/yyzld-bisha-a-luxury-collection-hotel-toronto/overview/?cid=NAT_google_hotel_url"
+  },
+  {
+    "id": "the-morning-after",
+    "name": "The Morning After",
+    "address": "88 Fort York Blvd, Toronto",
+    "neighborhood": "",
+    "lat": 43.640155199999995,
+    "lng": -79.3971406,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3971406,
+        43.640155199999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJJcgWYOc1K4gRpcLAuIQ2o3g",
+    "website": "http://www.themorningafterto.com/"
+  },
+  {
+    "id": "hemingways-restaurant-and-bar",
+    "name": "Hemingway's Restaurant and Bar",
+    "address": "142 Cumberland St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6700598,
+    "lng": -79.3927925,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3927925,
+        43.6700598
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJqyTGRqU0K4gRMmMQTiN6cR8",
+    "website": "http://www.hemingways.to/"
+  },
+  {
+    "id": "hunters-landing",
+    "name": "Hunters Landing",
+    "address": "82 Fort York Blvd, Toronto",
+    "neighborhood": "",
+    "lat": 43.6400977,
+    "lng": -79.3966736,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3966736,
+        43.6400977
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJMbymaSc1K4gRqa1Vg2FaF90",
+    "website": "https://www.thelandinggroup.ca/en/locations/on/toronto/82-fort-york-blvd"
+  },
+  {
+    "id": "the-queen-and-beaver-public-house",
+    "name": "The Queen & Beaver Public House",
+    "address": "35 Elm St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6574024,
+    "lng": -79.3833882,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3833882,
+        43.6574024
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJgZGqX8o0K4gR13cE_3RaqR8",
+    "website": "http://queenandbeaverpub.ca/"
+  },
+  {
+    "id": "hair-of-the-dog-neighbourhood-pub-and-restaurant",
+    "name": "Hair Of The Dog Neighbourhood Pub & Restaurant",
+    "address": "425 Church St, Toronto",
+    "neighborhood": "",
+    "lat": 43.662959699999995,
+    "lng": -79.37957759999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.37957759999999,
+        43.662959699999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJMxVoV0vL1IkRyYXXHW_eFmE",
+    "website": "https://hairofthedogpub.ca/"
+  },
+  {
+    "id": "one-eyed-jack-restaurant-and-bar-toronto",
+    "name": "One Eyed Jack Restaurant & Bar Toronto",
+    "address": "287 Richmond St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.648594599999996,
+    "lng": -79.39263319999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39263319999999,
+        43.648594599999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJuQ3P9E01K4gRyQ1vY1HZERM",
+    "website": "https://oneeyedjackpub.com/toronto"
+  },
+  {
+    "id": "pogue-mahone-pub-and-kitchen",
+    "name": "Pogue Mahone Pub & Kitchen",
+    "address": "777 Bay St., Toronto",
+    "neighborhood": "",
+    "lat": 43.660819,
+    "lng": -79.384492,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.384492,
+        43.660819
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ4agbuLU0K4gRnmYcIrfhyuA",
+    "website": "http://www.poguemahone.ca/"
+  },
+  {
+    "id": "moxies-toronto-downtown-restaurant",
+    "name": "Moxies Toronto Downtown Restaurant",
+    "address": "70 University Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6464675,
+    "lng": -79.3844654,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3844654,
+        43.6464675
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ7XMHydM0K4gRpKItDSOPH9w",
+    "website": "https://moxies.com/restaurants/toronto-downtown?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic"
+  },
+  {
+    "id": "street-grill-bar",
+    "name": "Street Grill Bar",
+    "address": "20 Baldwin St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6562092,
+    "lng": -79.39311359999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39311359999999,
+        43.6562092
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ_Tu52b41K4gRoU8ep9AKQ0g"
+  },
+  {
+    "id": "petros82-restaurant",
+    "name": "Petros82 Restaurant",
+    "address": "299 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6475103,
+    "lng": -79.39095999999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39095999999999,
+        43.6475103
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJT6VInRo1K4gRS9yQ4qAb8Cg",
+    "website": "https://www.petros82.com/"
+  },
+  {
+    "id": "el-furniture-warehouse",
+    "name": "El Furniture Warehouse",
+    "address": "232 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6502335,
+    "lng": -79.3902518,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3902518,
+        43.6502335
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJyUsC3s80K4gR2Svsdtv57Es",
+    "website": "https://warehousegroup.ca/locations/el-furniture-warehouse-queen-st/"
+  },
+  {
+    "id": "chotto-matte-toronto",
+    "name": "Chotto Matte Toronto",
+    "address": "161 Bay St., Toronto",
+    "neighborhood": "",
+    "lat": 43.646369299999996,
+    "lng": -79.3786192,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3786192,
+        43.646369299999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ-xvxk5HL1IkRWAbA4TilX-w",
+    "website": "https://www.chotto-matte.com/toronto/"
+  },
+  {
+    "id": "drom-taberna",
+    "name": "DROM Taberna",
+    "address": "458 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.648188499999996,
+    "lng": -79.3995908,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3995908,
+        43.648188499999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJx6iMpok1K4gRmc5_9R5iUT0",
+    "website": "https://www.dromtaberna.com/"
+  },
+  {
+    "id": "the-blake-house",
+    "name": "The Blake House",
+    "address": "449 Jarvis St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6644946,
+    "lng": -79.3772072,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3772072,
+        43.6644946
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJfX69WEzL1IkRNsQ0GTgmM2U",
+    "website": "http://www.theblakehouse.ca/"
+  },
+  {
+    "id": "walrus-pub-and-beer-hall",
+    "name": "Walrus Pub & Beer Hall",
+    "address": "187 Bay St., Toronto",
+    "neighborhood": "",
+    "lat": 43.6474749,
+    "lng": -79.3795693,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3795693,
+        43.6474749
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJFR3SOS3L1IkR-YBjvlYwYoM",
+    "website": "https://www.freehouse.co/locations/walrus?utm_source=google&utm_medium=organic&utm_campaign=gmb"
+  },
+  {
+    "id": "7-west-cafe",
+    "name": "7 West Cafe",
+    "address": "7 Charles St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6684876,
+    "lng": -79.386714,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.386714,
+        43.6684876
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJs_Gr4rE0K4gR4PCci36eEkg",
+    "website": "http://www.7westcafe.com/"
+  },
+  {
+    "id": "the-chase",
+    "name": "The Chase",
+    "address": "10 Temperance St Fl 5, Toronto",
+    "neighborhood": "",
+    "lat": 43.651067,
+    "lng": -79.3793318,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3793318,
+        43.651067
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ6-AX2TLL1IkRKyaUu8mAcAY",
+    "website": "http://www.thechasetoronto.com/"
+  },
+  {
+    "id": "myth",
+    "name": "Myth",
+    "address": "522 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.645367,
+    "lng": -79.3975651,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3975651,
+        43.645367
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ_0CAst40K4gRjafxFNhlago",
+    "website": "https://mythrestaurant.com/"
+  },
+  {
+    "id": "queen-mother-cafe",
+    "name": "Queen Mother Cafe",
+    "address": "208 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6504607,
+    "lng": -79.3891443,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3891443,
+        43.6504607
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJZx0E0s80K4gRerQhyTLjiRI",
+    "website": "http://www.queenmothercafe.ca/"
+  },
+  {
+    "id": "beerbistro-restaurant-and-bar",
+    "name": "Beerbistro restaurant and bar",
+    "address": "18 King St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.6494526,
+    "lng": -79.3771663,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3771663,
+        43.6494526
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJcQGmZDLL1IkR5bU0JChM464",
+    "website": "http://www.beerbistro.com/"
+  },
+  {
+    "id": "el-trompo",
+    "name": "El Trompo",
+    "address": "277 Augusta Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6558485,
+    "lng": -79.4024282,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4024282,
+        43.6558485
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ8Su7-ME0K4gRK_OfqwTtE-4",
+    "website": "http://www.eltrompo.ca/"
+  },
+  {
+    "id": "the-pint-public-house",
+    "name": "The Pint Public House",
+    "address": "Up The Stairs!, 277 Front St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6437883,
+    "lng": -79.38827859999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38827859999999,
+        43.6437883
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJq6qqptY0K4gR90v2Ho2x4Ns",
+    "website": "http://thepintto.com/"
+  },
+  {
+    "id": "gusto-501",
+    "name": "Gusto 501",
+    "address": "501 King St E, Toronto",
+    "neighborhood": "",
+    "lat": 43.654691299999996,
+    "lng": -79.3595502,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3595502,
+        43.654691299999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJw4YZdbrL1IkRqqzP0ul-aa8",
+    "website": "http://gusto501.com/"
+  },
+  {
+    "id": "milagro-cantina",
+    "name": "Milagro Cantina",
+    "address": "On the Corner of, 5 Mercer Street, John St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6457685,
+    "lng": -79.38979669999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38979669999999,
+        43.6457685
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ1xfqxNA0K4gRoCu5DCcf-Ms",
+    "website": "https://www.milagrocantina.ca/"
+  },
+  {
+    "id": "bar-reyna",
+    "name": "Bar Reyna",
+    "address": "158 Cumberland St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6699899,
+    "lng": -79.3933892,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3933892,
+        43.6699899
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJt47UO6U0K4gRxbP7T8IfVK8",
+    "website": "https://www.barreyna.com/"
+  },
+  {
+    "id": "daphne",
+    "name": "Daphne",
+    "address": "67 Richmond St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6509356,
+    "lng": -79.3818958,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3818958,
+        43.6509356
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJW9guGM00K4gRQmC01u3UnEI",
+    "website": "https://daphnetoronto.com/"
+  },
+  {
+    "id": "minami-toronto",
+    "name": "Minami Toronto",
+    "address": "225 King St W Suite 100, Toronto",
+    "neighborhood": "",
+    "lat": 43.6466821,
+    "lng": -79.38817430000002,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38817430000002,
+        43.6466821
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ8-dl3uI1K4gRU3PPV9HVoVQ",
+    "website": "http://minamitoronto.com/"
+  },
+  {
+    "id": "donatello-restaurant",
+    "name": "Donatello Restaurant",
+    "address": "37 Elm St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6573753,
+    "lng": -79.383461,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.383461,
+        43.6573753
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJ7ZeFXso0K4gRqGxxcej0DjY",
+    "website": "http://www.donatellorestaurant.ca/"
+  },
+  {
+    "id": "laissez-faire",
+    "name": "Laissez Faire",
+    "address": "589 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6441589,
+    "lng": -79.40024720000001,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.40024720000001,
+        43.6441589
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJIVSL3sY1K4gRhANM6Wrwzrc",
+    "website": "http://www.laissezfairetoronto.com/"
+  },
+  {
+    "id": "hey-lucy",
+    "name": "Hey Lucy",
+    "address": "295 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.646333999999996,
+    "lng": -79.3901302,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901302,
+        43.646333999999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJTb_p6tA0K4gR2QhOW7xb6Mg",
+    "website": "http://www.heylucy.ca/"
+  },
+  {
+    "id": "bovine-sex-club",
+    "name": "Bovine Sex Club",
+    "address": "542 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6476403,
+    "lng": -79.4027839,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4027839,
+        43.6476403
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJoRVmit00K4gR2NDjcJcLB2A",
+    "website": "http://www.bovinesexclub.com/"
+  },
+  {
+    "id": "yuugi-izakaya",
+    "name": "Yuugi Izakaya",
+    "address": "49 Baldwin St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6557877,
+    "lng": -79.3938575,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3938575,
+        43.6557877
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJGfHQXxc1K4gRoC0sS6UQ8xM",
+    "website": "http://www.yuugiizakaya.com/"
+  },
+  {
+    "id": "the-pilot",
+    "name": "The Pilot",
+    "address": "22 Cumberland St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6709707,
+    "lng": -79.38826310000002,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38826310000002,
+        43.6709707
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJEZNNVq40K4gRRHaO0sxjU_Q",
+    "website": "http://thepilot.ca/"
+  },
+  {
+    "id": "light-cafe",
+    "name": "Light Cafe",
+    "address": "23 Baldwin Street - Floor Unit, Toronto",
+    "neighborhood": "",
+    "lat": 43.656002799999996,
+    "lng": -79.3930056,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3930056,
+        43.656002799999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJq6ouFcY0K4gRsJLACJqy2J4",
+    "website": "https://www.lightcafe.ca/"
+  },
+  {
+    "id": "irene",
+    "name": "IRENE",
+    "address": "25 Dockside Dr, Toronto",
+    "neighborhood": "",
+    "lat": 43.643436799999996,
+    "lng": -79.36604439999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.36604439999999,
+        43.643436799999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJrffyVHfL1IkRFI8XdW_xuBs",
+    "website": "https://fabrestaurants.ca/restaurant/irene-corus-quay/"
+  },
+  {
+    "id": "peter-pan-bistro",
+    "name": "Peter Pan Bistro",
+    "address": "373 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.649223,
+    "lng": -79.393481,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.393481,
+        43.649223
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJrWJ6w9o0K4gReSmgRRvag0I",
+    "website": "https://bistro.peterpantry.ca/"
+  },
+  {
+    "id": "kasa-moto",
+    "name": "Kasa Moto",
+    "address": "115 Yorkville Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6706159,
+    "lng": -79.39277539999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39277539999999,
+        43.6706159
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJddMGbaU0K4gR9_K5VZ45XBE",
+    "website": "https://www.kasamoto.ca/"
+  },
+  {
+    "id": "library-bar",
+    "name": "LIBRARY BAR",
+    "address": "100 Front St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.645945999999995,
+    "lng": -79.38151479999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38151479999999,
+        43.645945999999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJe1A28Ys1K4gRqgUyNDHkh2w",
+    "website": "https://www.librarybartoronto.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps"
+  },
+  {
+    "id": "pera-cafe",
+    "name": "Pera Cafe",
+    "address": "62 Nassau St, Toronto",
+    "neighborhood": "",
+    "lat": 43.655384399999996,
+    "lng": -79.4020393,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4020393,
+        43.655384399999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJpUj35B01K4gRwiuM9mvnF6M",
+    "website": "https://www.peracafe.ca/"
+  },
+  {
+    "id": "trinity-common",
+    "name": "Trinity Common",
+    "address": "303 Augusta Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6565747,
+    "lng": -79.4025781,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4025781,
+        43.6565747
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJJ4L74sE0K4gRtFm4xvCQff4",
+    "website": "http://trinitycommon.ca/"
+  },
+  {
+    "id": "the-harbord-house",
+    "name": "The Harbord House",
+    "address": "124 Harbord St, Toronto",
+    "neighborhood": "",
+    "lat": 43.662790699999995,
+    "lng": -79.40439769999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.40439769999999,
+        43.662790699999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJewUL4pQ0K4gRIx0bmE5fTl8",
+    "website": "http://harbordhouse.ca/"
+  },
+  {
+    "id": "conejo-negro",
+    "name": "Conejo Negro",
+    "address": "838 College St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6545044,
+    "lng": -79.4230819,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4230819,
+        43.6545044
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJi-naIhY1K4gRXs1SwgDmCWk",
+    "website": "http://conejonegrotoronto.com/"
+  },
+  {
+    "id": "soco-kitchen-bar",
+    "name": "SOCO Kitchen + Bar",
+    "address": "75 Lower Simcoe St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6429974,
+    "lng": -79.383788,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.383788,
+        43.6429974
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJExALTdQ0K4gRbpnB-LrBIYc",
+    "website": "https://www.socokitchenandbar.ca/"
+  },
+  {
+    "id": "bernhardts",
+    "name": "Bernhardt's",
+    "address": "202 Dovercourt Rd, Toronto",
+    "neighborhood": "",
+    "lat": 43.6469585,
+    "lng": -79.4240098,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4240098,
+        43.6469585
+      ]
+    ],
+    "tags": [],
+    "popularity": 4,
+    "place_id": "ChIJzRkxK5Q1K4gRQfJRIRujIbw",
+    "website": "http://bernhardtstoronto.com/"
+  },
+  {
+    "id": "smoque-n-bones",
+    "name": "SmoQue N' Bones",
+    "address": "30 Baldwin St, Toronto",
+    "neighborhood": "",
+    "lat": 43.656115299999996,
+    "lng": -79.39374389999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39374389999999,
+        43.656115299999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJpytUh1M1K4gRgzxh4yqmbpg",
+    "website": "https://smoquenbones.com/"
+  },
+  {
+    "id": "mother-tongue",
+    "name": "Mother Tongue",
+    "address": "348 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6473654,
+    "lng": -79.3932983,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3932983,
+        43.6473654
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJ7xc6xQY1K4gRJR9xWpskwUo",
+    "website": "http://mothertongue.ca/"
+  },
+  {
+    "id": "ace-hotel-toronto",
+    "name": "Ace Hotel Toronto",
+    "address": "51 Camden St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6467366,
+    "lng": -79.3981354,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3981354,
+        43.6467366
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJMQFGybY1K4gR2O_N2BB9e0U",
+    "website": "http://acehotel.com/toronto/?utm_source=google&utm_medium=organic&utm_campaign=gbp"
+  },
+  {
+    "id": "the-parlour",
+    "name": "The Parlour",
+    "address": "642 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.644303199999996,
+    "lng": -79.4014218,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4014218,
+        43.644303199999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJ__8vON40K4gRrdSTtnF6X78",
+    "website": "http://www.theparlourrestaurants.com/"
+  },
+  {
+    "id": "bymark",
+    "name": "Bymark",
+    "address": "66 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.647318899999995,
+    "lng": -79.3817116,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3817116,
+        43.647318899999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJHwpJxNI0K4gRrppsWwsqd-M",
+    "website": "http://mcewangroup.ca/bymark/"
+  },
+  {
+    "id": "1-hotel-toronto",
+    "name": "1 Hotel Toronto",
+    "address": "550 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6430423,
+    "lng": -79.40161839999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.40161839999999,
+        43.6430423
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJtVVuA0A1K4gRvpFVah4kFdQ",
+    "website": "https://www.1hotels.com/toronto?utm_source=google-gbp&utm_medium=organic&utm_campaign=gbp"
+  },
+  {
+    "id": "soho-house-toronto",
+    "name": "Soho House Toronto",
+    "address": "Bishop's Building, 192 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.648941699999995,
+    "lng": -79.38648719999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38648719999999,
+        43.648941699999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJYSHz9tE0K4gRAQYATdeRpRw",
+    "website": "https://www.sohohouse.com/houses/soho-house-toronto?utm_source=google&utm_medium=organic&utm_campaign=googlemybusiness"
+  },
+  {
+    "id": "the-rabbit-hole",
+    "name": "The Rabbit Hole",
+    "address": "Scotia Plaza Tower, 21 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.649894599999996,
+    "lng": -79.3798738,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3798738,
+        43.649894599999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJyVgftzLL1IkRURpr-91tptc",
+    "website": "http://therabbitholepub.ca/"
+  },
+  {
+    "id": "alder",
+    "name": "Alder",
+    "address": "51 Camden St, Toronto",
+    "neighborhood": "",
+    "lat": 43.646735899999996,
+    "lng": -79.3981335,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3981335,
+        43.646735899999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJsa03siE1K4gR9YforP5OcnU",
+    "website": "https://www.aldertoronto.com/"
+  },
+  {
+    "id": "luma",
+    "name": "Luma",
+    "address": "350 King Street West 2nd Floor REITMAN SQUARE, Toronto",
+    "neighborhood": "",
+    "lat": 43.646589299999995,
+    "lng": -79.3901977,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901977,
+        43.646589299999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJA1AA7NA0K4gRRp-dJUOEpbM",
+    "website": "http://www.lumarestaurant.com/"
+  },
+  {
+    "id": "shangri-la-lobby-lounge-and-bar",
+    "name": "Shangri-La Lobby Lounge and Bar",
+    "address": "188 University Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.649416099999996,
+    "lng": -79.38623679999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.38623679999999,
+        43.649416099999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJA6Bf_tE0K4gRymc6da_mEbQ",
+    "website": "http://www.shangri-la.com/toronto/shangrila/dining/bars-lounges/lobby-lounges/"
+  },
+  {
+    "id": "la-fenice-tuscan-grill",
+    "name": "La Fenice Tuscan Grill",
+    "address": "319-A King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6462795,
+    "lng": -79.3907215,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3907215,
+        43.6462795
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJ2dkIvdA0K4gR_4KttKqK-Zc",
+    "website": "https://www.lafenice.ca/"
+  },
+  {
+    "id": "the-dorset",
+    "name": "The Dorset",
+    "address": "457 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.64313,
+    "lng": -79.3973199,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3973199,
+        43.64313
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJ1z7kIuY1K4gRkxJ0AJtrSlc",
+    "website": "https://www.thedorsetwellington.com/"
+  },
+  {
+    "id": "oandb-canteen",
+    "name": "O&B Canteen",
+    "address": "Festival Tower, 330 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.646645899999996,
+    "lng": -79.3900269,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3900269,
+        43.646645899999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJA1AA7NA0K4gR4X3XNuLiFCM",
+    "website": "http://www.obcanteen.com/"
+  },
+  {
+    "id": "last-temptation",
+    "name": "Last Temptation",
+    "address": "12 Kensington Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6531786,
+    "lng": -79.4002398,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4002398,
+        43.6531786
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJCQt3_8I0K4gRL6_1ft5-53w"
+  },
+  {
+    "id": "joni-restaurant",
+    "name": "Joni Restaurant",
+    "address": "4 Avenue Rd, Toronto",
+    "neighborhood": "",
+    "lat": 43.66950730000001,
+    "lng": -79.3948249,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3948249,
+        43.66950730000001
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJeZfBY1Q1K4gRGbtg23p64Zo",
+    "website": "https://www.jonirestaurant.com/"
+  },
+  {
+    "id": "bridgette-bar-toronto",
+    "name": "Bridgette Bar Toronto",
+    "address": "423 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6435702,
+    "lng": -79.39565499999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39565499999999,
+        43.6435702
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJYznwHtk0K4gRxMNqIuqFxfo",
+    "website": "http://www.bridgettebar.com/toronto"
+  },
+  {
+    "id": "embassy-bar",
+    "name": "Embassy Bar",
+    "address": "223 Augusta Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.6543488,
+    "lng": -79.40179049999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.40179049999999,
+        43.6543488
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJgR4LbMI0K4gRjnyNXnaiIdU"
+  },
+  {
+    "id": "collective-arts-toronto-taproom",
+    "name": "Collective Arts Toronto Taproom",
+    "address": "777 Dundas St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6519121,
+    "lng": -79.4073451,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4073451,
+        43.6519121
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJL9I-zQQ1K4gRQ8Y4p8IlW-c",
+    "website": "https://collectiveartscreativity.com/pages/toronto-taproom"
+  },
+  {
+    "id": "epoch-bar-and-kitchen-terrace",
+    "name": "EPOCH Bar and Kitchen Terrace",
+    "address": "181 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6453201,
+    "lng": -79.3871017,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3871017,
+        43.6453201
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJk0TdYQc1K4gRfqX81FL_DJQ",
+    "website": "https://epochtoronto.com//?scid=feed67b0-9a2f-4de1-8df6-114544116108"
+  },
+  {
+    "id": "proof-bar-and-patio",
+    "name": "Proof Bar & Patio",
+    "address": "220 Bloor St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.66844,
+    "lng": -79.3965489,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3965489,
+        43.66844
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJX3r9Qrs0K4gR1XZePI0nty0",
+    "website": "https://www.sonesta.com/royal-sonesta/on/toronto/yorkville-royal-sonesta-hotel-toronto#hoteldetails_dining_proof-bar-and-patio"
+  },
+  {
+    "id": "flora-lounge",
+    "name": "Flora Lounge",
+    "address": "550 Wellington St W Suite D, Toronto",
+    "neighborhood": "",
+    "lat": 43.6429757,
+    "lng": -79.4017181,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4017181,
+        43.6429757
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJpaYLPcM1K4gR7JHGnBTz_EY",
+    "website": "https://www.1hotels.com/toronto/taste/flora-lounge?utm_source=google-gbp&utm_medium=organic&utm_campaign=gbp"
+  },
+  {
+    "id": "the-beverley-hotel",
+    "name": "The Beverley Hotel",
+    "address": "335 Queen St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6495465,
+    "lng": -79.3920941,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3920941,
+        43.6495465
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJ5ckdpto0K4gRy_vh682Diic",
+    "website": "http://www.beverleyhotels.com/"
+  },
+  {
+    "id": "paradise-grotto",
+    "name": "Paradise Grotto",
+    "address": "270 Adelaide St W #101, Toronto",
+    "neighborhood": "",
+    "lat": 43.648077199999996,
+    "lng": -79.3898332,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3898332,
+        43.648077199999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJPzezugU1K4gROTtnZsFBbGk",
+    "website": "http://paradisegrotto.com/"
+  },
+  {
+    "id": "char-no-5-whisky-and-cocktail-lounge",
+    "name": "Char No.5 Whisky & Cocktail Lounge",
+    "address": "75 Lower Simcoe St, Toronto",
+    "neighborhood": "",
+    "lat": 43.6429859,
+    "lng": -79.384006,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.384006,
+        43.6429859
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJm7lDW9Q0K4gR1lkhfibPAjo",
+    "website": "https://www.charfive.com/"
+  },
+  {
+    "id": "mister-c",
+    "name": "Mister C.",
+    "address": "80 Blue Jays Way, Toronto",
+    "neighborhood": "",
+    "lat": 43.645284499999995,
+    "lng": -79.3921958,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3921958,
+        43.645284499999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 3,
+    "place_id": "ChIJO9xn-Nk0K4gRaP1rZ7rseYU",
+    "website": "https://misterctoronto.com/"
+  },
+  {
+    "id": "portland-square-toronto",
+    "name": "Portland Square Toronto",
+    "address": "600 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6445933,
+    "lng": -79.3998668,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3998668,
+        43.6445933
+      ]
+    ],
+    "tags": [],
+    "popularity": 2,
+    "place_id": "ChIJ0eQZORw1K4gRylq9ZDePOGs",
+    "website": "https://portlandsquareto.com/"
+  },
+  {
+    "id": "malaparte",
+    "name": "Malaparte",
+    "address": "Festival Tower, 350 King St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.646706599999995,
+    "lng": -79.3904175,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3904175,
+        43.646706599999995
+      ]
+    ],
+    "tags": [],
+    "popularity": 2,
+    "place_id": "ChIJ1W76lNA0K4gRXrw1aRRpDIg",
+    "website": "https://www.oliverbonacini.com/event-venues/malaparte/"
+  },
+  {
+    "id": "the-lobby-bar-at-ace-hotel-toronto",
+    "name": "The lobby bar at Ace Hotel Toronto",
+    "address": "51 Camden St, Toronto",
+    "neighborhood": "",
+    "lat": 43.646735899999996,
+    "lng": -79.3981335,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3981335,
+        43.646735899999996
+      ]
+    ],
+    "tags": [],
+    "popularity": 2,
+    "place_id": "ChIJw23l82g1K4gR35Rh92oZ_x0",
+    "website": "https://acehotel.com/toronto/eat-drink/the-lobby/"
+  },
+  {
+    "id": "rooftop-lounge",
+    "name": "Rooftop Lounge",
+    "address": "550 Wellington St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.643073,
+    "lng": -79.40184789999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.40184789999999,
+        43.643073
+      ]
+    ],
+    "tags": [],
+    "popularity": 2,
+    "place_id": "ChIJO3jfR6I1K4gRhb1zs1rs06E",
+    "website": "http://www.thompsonhotels.com/hotels/thompson-toronto/eat-and-drink/rooftop-lounge?src=agn_sabre_prop_seo_yyzth_gmb_rooftoplounge"
   }
 ]
