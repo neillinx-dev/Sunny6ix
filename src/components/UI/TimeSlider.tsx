@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useAppStore, type HourlyCloud } from '../../store/useAppStore'
 import { wmoEmoji } from '../../hooks/useWeather'
 
@@ -52,33 +52,67 @@ export default function TimeSlider() {
   }, [hourlyCloud, selectedDayOffset])
 
   const currentHour = currentTime.getHours() + currentTime.getMinutes() / 60
-  const clampedHour = Math.max(BAR_OPEN, Math.min(BAR_CLOSE, currentHour))
+  const storeClampedHour = Math.max(BAR_OPEN, Math.min(BAR_CLOSE, currentHour))
+
+  // Local mirror of the slider position. Updates IMMEDIATELY on every
+  // touchmove so the thumb + label stay glued to the finger. Heavy work
+  // (shadow render, sun-status recompute) reads from the store's currentTime
+  // which is rAF-throttled below — that's where the lag was coming from.
+  const [localHour, setLocalHour] = useState(storeClampedHour)
+  // Keep localHour in sync if store changes from elsewhere (e.g. NOW button,
+  // day tab change, live ticker), but ignore re-syncs while user is actively
+  // dragging — otherwise the thumb snaps backward mid-gesture.
+  const draggingRef = useRef(false)
+  useEffect(() => {
+    if (!draggingRef.current) setLocalHour(storeClampedHour)
+  }, [storeClampedHour])
+
+  const clampedHour = localHour
   const isOutsideHours = currentHour < BAR_OPEN || currentHour > BAR_CLOSE
 
-  // rAF-coalesce slider updates so dragging doesn't queue more work than one
-  // commit per frame. Without this, shadow + sun recomputation piles up and
-  // drag feels laggy; this caps to ~60Hz.
+  // rAF-coalesce store commits — at most one setCurrentTime per frame even
+  // if onChange fires 100x/s during a fast drag.
   const rafRef = useRef<number | null>(null)
   const pendingHourRef = useRef<number | null>(null)
-  const handleSliderChange = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      pendingHourRef.current = parseFloat(e.target.value)
-      if (rafRef.current !== null) return
-      rafRef.current = requestAnimationFrame(() => {
-        rafRef.current = null
-        const hour = pendingHourRef.current
-        if (hour === null) return
-        const newTime = new Date()
-        newTime.setDate(newTime.getDate() + selectedDayOffset)
-        const h = Math.floor(hour)
-        const m = Math.round((hour - h) * 60)
-        newTime.setHours(h, m, 0, 0)
-        setCurrentTime(newTime)
-        setIsLiveTime(false)
-      })
+  const commitToStore = useCallback(
+    (hour: number) => {
+      const newTime = new Date()
+      newTime.setDate(newTime.getDate() + selectedDayOffset)
+      const h = Math.floor(hour)
+      const m = Math.round((hour - h) * 60)
+      newTime.setHours(h, m, 0, 0)
+      setCurrentTime(newTime)
+      setIsLiveTime(false)
     },
     [selectedDayOffset, setCurrentTime, setIsLiveTime]
   )
+
+  const handleSliderChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      const hour = parseFloat(e.target.value)
+      // Update visual state instantly — no batching, no waiting.
+      setLocalHour(hour)
+      // Coalesce store commits to one per animation frame.
+      pendingHourRef.current = hour
+      if (rafRef.current !== null) return
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = null
+        const next = pendingHourRef.current
+        if (next !== null) commitToStore(next)
+      })
+    },
+    [commitToStore]
+  )
+
+  // Touch/pointer hooks let the heavy computation skip while the user is
+  // actively dragging. We commit only on release for the final sun-status
+  // recompute — slider scrub stays buttery.
+  const onPointerDown = useCallback(() => { draggingRef.current = true }, [])
+  const onPointerUp = useCallback(() => {
+    draggingRef.current = false
+    // Force a final commit on release so the rendering catches up.
+    if (pendingHourRef.current !== null) commitToStore(pendingHourRef.current)
+  }, [commitToStore])
 
   const handleNowClick = useCallback(() => {
     setCurrentTime(new Date())
@@ -162,7 +196,11 @@ export default function TimeSlider() {
             step={0.1}
             value={clampedHour}
             onChange={handleSliderChange}
+            onPointerDown={onPointerDown}
+            onPointerUp={onPointerUp}
+            onPointerCancel={onPointerUp}
             className="w-full"
+            style={{ touchAction: 'pan-x' }}
           />
 
           {/* Hourly weather row: emoji + temp + precip% + hour label (always all 4) */}

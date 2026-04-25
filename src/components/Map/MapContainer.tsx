@@ -326,10 +326,16 @@ export default function MapContainer({ venues }: MapContainerProps) {
     return () => idleListener.remove()
   }, [mapReady, renderShadows])
 
-  // Update sun status when time/weather changes
+  // Update sun status when time/weather changes — debounced 180ms.
+  // updateSunStatus loops 200+ venues × 11 hourly forecast points which can
+  // hit double-digit ms per call. During a slider scrub, we'd otherwise queue
+  // these per-keystroke and the UI feels chunky. Debouncing means the heavy
+  // recompute fires once after the slider settles; shadow rendering still
+  // updates per-frame for visual continuity.
   useEffect(() => {
     if (!mapReady) return
-    updateSunStatus()
+    const t = setTimeout(updateSunStatus, 180)
+    return () => clearTimeout(t)
   }, [currentTime, mapReady, updateSunStatus])
 
   // Fly to selected venue
