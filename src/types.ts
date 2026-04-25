@@ -22,6 +22,7 @@ export interface Venue {
   tags: string[]
   website?: string
   manualSunWindows?: SunWindow[] // manually researched direct-sun hour ranges; empty [] = never gets sun
+  popularity?: number // 1-5 hand-curated tier for sort order in Sunny Now list (5 = iconic, 3 = solid, 1 = lesser-known); undefined treated as 2
 }
 
 export interface VenueSunStatus {

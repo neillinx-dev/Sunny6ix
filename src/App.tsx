@@ -6,6 +6,7 @@ import Header from './components/UI/Header'
 import TimeSlider from './components/UI/TimeSlider'
 import FilterBar from './components/UI/FilterBar'
 import VenueDetailCard from './components/UI/VenueDetailCard'
+import SunnyList from './components/UI/SunnyList'
 import venueData from './data/venues.json'
 import type { Venue } from './types'
 
@@ -30,6 +31,7 @@ function App() {
       <MapContainer venues={venues} />
       <Header />
       <FilterBar venues={venues} />
+      <SunnyList venues={venues} />
       <VenueDetailCard venues={venues} />
       <TimeSlider />
     </div>

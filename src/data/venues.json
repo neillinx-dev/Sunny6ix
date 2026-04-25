@@ -48,7 +48,8 @@
         43.6497592
       ]
     ],
-    "patioSource": "osm"
+    "patioSource": "osm",
+    "popularity": 3
   },
   {
     "id": "bellwoods-brewery",
@@ -93,7 +94,8 @@
         -79.4202964,
         43.6470677
       ]
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "amsterdam-brewhouse",
@@ -147,7 +149,8 @@
         -79.3851765,
         43.6384284
       ]
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "king-taps",
@@ -193,7 +196,8 @@
         -79.3817671,
         43.6487751
       ]
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-rex",
@@ -239,7 +243,8 @@
         -79.388582,
         43.65063
       ]
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "the-drake",
@@ -285,7 +290,8 @@
         -79.424621,
         43.643218
       ]
-    ]
+    ],
+    "popularity": 5
   },
   {
     "id": "bar-hop",
@@ -330,7 +336,8 @@
         -79.393213,
         43.64569
       ]
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "wvrst",
@@ -376,7 +383,8 @@
         -79.400789,
         43.644126
       ]
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-rivoli",
@@ -404,7 +412,8 @@
       "cocktails",
       "pub"
     ],
-    "website": "https://rivolitoronto.com"
+    "website": "https://rivolitoronto.com",
+    "popularity": 4
   },
   {
     "id": "sneaky-dees",
@@ -432,7 +441,8 @@
       "beer",
       "dive-bar"
     ],
-    "website": "https://sneakydees.com"
+    "website": "https://sneakydees.com",
+    "popularity": 4
   },
   {
     "id": "baro",
@@ -487,7 +497,8 @@
         43.6454262
       ]
     ],
-    "patioSource": "osm"
+    "patioSource": "osm",
+    "popularity": 4
   },
   {
     "id": "el-catrin",
@@ -533,7 +544,8 @@
         -79.3588581,
         43.6503744
       ]
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "broadview-hotel-rooftop",
@@ -561,7 +573,8 @@
       "cocktails",
       "views"
     ],
-    "website": "https://thebroadviewhotel.ca"
+    "website": "https://thebroadviewhotel.ca",
+    "popularity": 5
   },
   {
     "id": "harriets-rooftop",
@@ -599,7 +612,8 @@
         "start": 9,
         "end": 20
       }
-    ]
+    ],
+    "popularity": 5
   },
   {
     "id": "lavelle",
@@ -627,7 +641,8 @@
       "cocktails",
       "pool"
     ],
-    "website": "https://chezlavelle.com"
+    "website": "https://chezlavelle.com",
+    "popularity": 5
   },
   {
     "id": "gusto-101",
@@ -655,7 +670,8 @@
       "wine-bar",
       "retractable-roof"
     ],
-    "website": "https://gusto101.com"
+    "website": "https://gusto101.com",
+    "popularity": 5
   },
   {
     "id": "wheat-sheaf",
@@ -683,7 +699,8 @@
       "beer",
       "historic"
     ],
-    "website": "https://wheatsheaftavern.com"
+    "website": "https://wheatsheaftavern.com",
+    "popularity": 3
   },
   {
     "id": "cest-what",
@@ -721,7 +738,8 @@
         "start": 11,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "bar-raval",
@@ -754,7 +772,8 @@
       "michelin-bib"
     ],
     "website": "https://www.thisisbarraval.com",
-    "manualSunWindows": []
+    "manualSunWindows": [],
+    "popularity": 5
   },
   {
     "id": "birreria-volo",
@@ -791,7 +810,8 @@
         "start": 11,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "handlebar",
@@ -818,7 +838,8 @@
       "cocktails",
       "brunch",
       "backyard"
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "earls-king-west",
@@ -846,7 +867,8 @@
       "cocktails",
       "casual-dining"
     ],
-    "website": "https://earls.ca/locations/king-west/"
+    "website": "https://earls.ca/locations/king-west/",
+    "popularity": 4
   },
   {
     "id": "boxcar-social-harbourfront",
@@ -874,7 +896,8 @@
       "cocktails",
       "waterfront"
     ],
-    "website": "https://boxcarsocial.ca/pages/harbourfront"
+    "website": "https://boxcarsocial.ca/pages/harbourfront",
+    "popularity": 4
   },
   {
     "id": "the-horseshoe-tavern",
@@ -911,7 +934,8 @@
         "start": 12,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "rendezviews",
@@ -939,7 +963,8 @@
       "open-air",
       "social"
     ],
-    "website": "https://rendezviews.ca"
+    "website": "https://rendezviews.ca",
+    "popularity": 4
   },
   {
     "id": "bar-isabel",
@@ -977,7 +1002,8 @@
         "start": 12,
         "end": 17
       }
-    ]
+    ],
+    "popularity": 5
   },
   {
     "id": "the-cameron-house",
@@ -1014,7 +1040,8 @@
         "start": 12,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "get-well",
@@ -1052,7 +1079,8 @@
         "start": 11,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-fifth-social-club",
@@ -1090,7 +1118,8 @@
         "start": 11,
         "end": 19
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "kost",
@@ -1129,7 +1158,8 @@
         "start": 8,
         "end": 20
       }
-    ]
+    ],
+    "popularity": 5
   },
   {
     "id": "terroni-adelaide",
@@ -1167,7 +1197,8 @@
         "start": 12,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "cibo-wine-bar",
@@ -1204,7 +1235,8 @@
         "start": 14,
         "end": 20
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "paupers-pub",
@@ -1242,7 +1274,8 @@
         "start": 11,
         "end": 19
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "sweaty-bettys",
@@ -1274,7 +1307,8 @@
       "dog-friendly"
     ],
     "website": "https://sweatybettysbar.com",
-    "manualSunWindows": []
+    "manualSunWindows": [],
+    "popularity": 3
   },
   {
     "id": "pennylick",
@@ -1309,7 +1343,8 @@
         "start": 12,
         "end": 17
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-harbord-room",
@@ -1347,7 +1382,8 @@
         "start": 11,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "the-emmet-ray",
@@ -1384,7 +1420,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "eastbound-brewing",
@@ -1421,7 +1458,8 @@
         "start": 11,
         "end": 17
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "left-field-brewery",
@@ -1458,7 +1496,8 @@
         "start": 11,
         "end": 18
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "bandit-brewery",
@@ -1495,7 +1534,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "blood-brothers-brewing",
@@ -1532,7 +1572,8 @@
         "start": 10,
         "end": 17
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "henderson-brewing",
@@ -1570,7 +1611,8 @@
         "start": 10,
         "end": 14
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "radical-road-brewing",
@@ -1607,7 +1649,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "aloette-spadina",
@@ -1644,7 +1687,8 @@
         "start": 13,
         "end": 19
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "beso-by-patria",
@@ -1681,7 +1725,8 @@
         "start": 12,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "miss-things",
@@ -1718,7 +1763,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "reposado",
@@ -1756,7 +1802,8 @@
         "start": 12,
         "end": 15
       }
-    ]
+    ],
+    "popularity": 4
   },
   {
     "id": "supermarket-kensington",
@@ -1793,7 +1840,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "northern-belle",
@@ -1830,7 +1878,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-dock-ellis",
@@ -1867,7 +1916,8 @@
         "start": 11,
         "end": 16
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "bettys-east",
@@ -1905,7 +1955,8 @@
         "start": 11,
         "end": 17
       }
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "chamberlains-pony-bar",
@@ -1969,7 +2020,8 @@
         -79.399635,
         43.644312
       ]
-    ]
+    ],
+    "popularity": 3
   },
   {
     "id": "the-porch",
@@ -1989,7 +2041,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "bar-poet",
@@ -2009,7 +2062,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "cabana-pool-bar",
@@ -2029,7 +2083,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 5
   },
   {
     "id": "soluna",
@@ -2049,7 +2104,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "writers-room",
@@ -2069,7 +2125,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "evangeline",
@@ -2112,7 +2169,8 @@
         43.6468839
       ]
     ],
-    "patioSource": "osm"
+    "patioSource": "osm",
+    "popularity": 3
   },
   {
     "id": "valerie",
@@ -2132,7 +2190,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "broadview-hotel-rooftop",
@@ -2152,7 +2211,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 5
   },
   {
     "id": "aera",
@@ -2172,7 +2232,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "grey-gardens",
@@ -2192,7 +2253,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "bar-piquette",
@@ -2212,7 +2274,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "le-swan",
@@ -2232,7 +2295,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 5
   },
   {
     "id": "la-palma",
@@ -2252,7 +2316,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 5
   },
   {
     "id": "rasa",
@@ -2272,7 +2337,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "enoteca-sociale",
@@ -2292,7 +2358,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "cluny-bistro",
@@ -2312,7 +2379,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "chubby-s-jamaican",
@@ -2332,7 +2400,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "giulietta",
@@ -2352,7 +2421,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "maison-selby",
@@ -2372,7 +2442,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "paris-paris",
@@ -2392,7 +2463,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "bar-vendetta",
@@ -2412,7 +2484,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "union",
@@ -2432,7 +2505,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "c-te-de-b-uf",
@@ -2452,7 +2526,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "foxley",
@@ -2472,7 +2547,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "oddseoul",
@@ -2492,7 +2568,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "dakota-tavern",
@@ -2512,7 +2589,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "archive",
@@ -2532,7 +2610,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "ronnie-s-local",
@@ -2552,7 +2631,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "superpoint",
@@ -2572,7 +2652,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "paradise-grapevine",
@@ -2592,7 +2673,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "el-rey",
@@ -2612,7 +2694,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "little-jerry",
@@ -2632,7 +2715,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "civil-liberties",
@@ -2652,7 +2736,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "maison-t",
@@ -2672,7 +2757,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 4
   },
   {
     "id": "public-gardens",
@@ -2692,7 +2778,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "crack-burger",
@@ -2712,7 +2799,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "nom-nom-nom-poutine",
@@ -2732,7 +2820,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "trinity-market",
@@ -2752,7 +2841,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "the-black-bull",
@@ -2772,7 +2862,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "belfast-love",
@@ -2792,7 +2883,8 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   },
   {
     "id": "milou",
@@ -2812,6 +2904,7 @@
       ]
     ],
     "tags": [],
-    "website": ""
+    "website": "",
+    "popularity": 3
   }
 ]

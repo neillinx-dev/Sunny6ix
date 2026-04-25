@@ -20,6 +20,8 @@ export default function FilterBar({ venues }: FilterBarProps) {
   const sunStatuses = useAppStore((s) => s.sunStatuses)
   const showShadows = useAppStore((s) => s.showShadows)
   const toggleShowShadows = useAppStore((s) => s.toggleShowShadows)
+  const showSunnyList = useAppStore((s) => s.showSunnyList)
+  const toggleShowSunnyList = useAppStore((s) => s.toggleShowSunnyList)
 
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement | null>(null)
@@ -54,7 +56,8 @@ export default function FilterBar({ venues }: FilterBarProps) {
     (filters.sunnyOnly ? 1 : 0) +
     (filters.rooftopOnly ? 1 : 0) +
     (filters.neighborhood ? 1 : 0) +
-    (showShadows ? 0 : 1) // counting "shadows hidden" as a setting being changed
+    (showShadows ? 0 : 1) + // shadows-hidden counts as a setting flipped from default
+    (showSunnyList ? 1 : 0)
 
   return (
     <div ref={rootRef} className="absolute top-5 left-5 sm:top-[84px] z-20">
@@ -146,6 +149,14 @@ export default function FilterBar({ venues }: FilterBarProps) {
               active={showShadows}
               onToggle={toggleShowShadows}
               accent="navy"
+              compact
+            />
+            <FilterRow
+              label="Show sunny list"
+              sub="Ranks patios by sun + popularity"
+              active={showSunnyList}
+              onToggle={toggleShowSunnyList}
+              accent="yellow"
               compact
             />
           </div>
