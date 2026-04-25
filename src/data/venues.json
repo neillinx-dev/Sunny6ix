@@ -3360,5 +3360,343 @@
     ],
     "website": "https://www.leftfieldbrewery.ca/",
     "popularity": 3
+  },
+  {
+    "id": "petty-cash",
+    "name": "Petty Cash",
+    "address": "487 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6455072,
+    "lng": -79.4007677,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4007677,
+        43.6455072
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://pettycashtoronto.com/?utm_source=GMBlisting&utm_medium=organic",
+    "popularity": 3
+  },
+  {
+    "id": "belfast-love-public-house",
+    "name": "Belfast Love Public House",
+    "address": "548 King St W, Toronto",
+    "neighborhood": "King West",
+    "lat": 43.6449145,
+    "lng": -79.3984479,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3984479,
+        43.6449145
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://www.freehouse.co/locations/belfast-love?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "popularity": 4
+  },
+  {
+    "id": "gabbys-king-west",
+    "name": "Gabby's - King West",
+    "address": "309 King St W, Toronto",
+    "neighborhood": "King West",
+    "lat": 43.646348599999996,
+    "lng": -79.39045449999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39045449999999,
+        43.646348599999996
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://gabbys.ca/",
+    "popularity": 3
+  },
+  {
+    "id": "la-carnita",
+    "name": "La Carnita",
+    "address": "106 John St, Toronto",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6471367,
+    "lng": -79.39013,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39013,
+        43.6471367
+      ]
+    ],
+    "tags": [
+      "restaurant"
+    ],
+    "website": "http://lacarnita.com/",
+    "popularity": 4
+  },
+  {
+    "id": "fox-on-john",
+    "name": "Fox on John",
+    "address": "106 John St #3, Toronto",
+    "neighborhood": "Entertainment District",
+    "lat": 43.647479999999995,
+    "lng": -79.3904136,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3904136,
+        43.647479999999995
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant",
+      "cocktails",
+      "wine-bar"
+    ],
+    "website": "https://www.foxonjohn.ca/",
+    "popularity": 5
+  },
+  {
+    "id": "melrose-on-adelaide",
+    "name": "Melrose On Adelaide",
+    "address": "270 Adelaide St W #300, Toronto",
+    "neighborhood": "",
+    "lat": 43.6480015,
+    "lng": -79.3901023,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901023,
+        43.6480015
+      ]
+    ],
+    "tags": [
+      "bar",
+      "cocktails",
+      "wine-bar"
+    ],
+    "website": "http://www.melroseonadelaide.com/",
+    "popularity": 4
+  },
+  {
+    "id": "piccolo-caffe-e-vino",
+    "name": "Piccolo Caffe E Vino",
+    "address": "111 John St, Toronto",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6480563,
+    "lng": -79.3901581,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901581,
+        43.6480563
+      ]
+    ],
+    "tags": [
+      "restaurant",
+      "cafe"
+    ],
+    "website": "http://piccolocaffe.ca/",
+    "popularity": 3
+  },
+  {
+    "id": "saint-johns-tavern",
+    "name": "Saint John's Tavern",
+    "address": "117 John St, Toronto",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6481345,
+    "lng": -79.3901668,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901668,
+        43.6481345
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://www.saintjohnstavern.com/",
+    "popularity": 3
+  },
+  {
+    "id": "town-crier",
+    "name": "Town Crier",
+    "address": "115 John St, Toronto",
+    "neighborhood": "Entertainment District",
+    "lat": 43.6480332,
+    "lng": -79.3901554,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3901554,
+        43.6480332
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "http://towncrierpub.ca/",
+    "popularity": 4
+  },
+  {
+    "id": "hooters-downtown-toronto",
+    "name": "Hooters Downtown Toronto",
+    "address": "280 Adelaide St W, Toronto",
+    "neighborhood": "",
+    "lat": 43.6480465,
+    "lng": -79.39060270000002,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.39060270000002,
+        43.6480465
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://www.hooters.to/downtown-toronto",
+    "popularity": 3
+  },
+  {
+    "id": "soluna-toronto",
+    "name": "Soluna Toronto",
+    "address": "314 Queen St W, Toronto",
+    "neighborhood": "King West",
+    "lat": 43.649457999999996,
+    "lng": -79.3942659,
+    "patioType": "rooftop",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.3942659,
+        43.649457999999996
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant",
+      "nightlife"
+    ],
+    "website": "http://www.solunatoronto.com/",
+    "popularity": 4
+  },
+  {
+    "id": "pennies-bellwoods",
+    "name": "Pennies Bellwoods",
+    "address": "127 Strachan Ave, Toronto",
+    "neighborhood": "",
+    "lat": 43.64328,
+    "lng": -79.41211899999999,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.41211899999999,
+        43.64328
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://pennies.bar/",
+    "popularity": 4
+  },
+  {
+    "id": "pennies-little-italy",
+    "name": "Pennies Little Italy",
+    "address": "667 College St, Toronto",
+    "neighborhood": "Little Italy",
+    "lat": 43.654996700000005,
+    "lng": -79.4168428,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4168428,
+        43.654996700000005
+      ]
+    ],
+    "tags": [
+      "bar"
+    ],
+    "website": "https://www.pennies.bar/",
+    "popularity": 3
+  },
+  {
+    "id": "village-idiot-pub",
+    "name": "Village Idiot Pub",
+    "address": "126 McCaul St, Toronto",
+    "neighborhood": "",
+    "lat": 43.654446199999995,
+    "lng": -79.391616,
+    "patioType": "sidewalk",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.391616,
+        43.654446199999995
+      ]
+    ],
+    "tags": [
+      "bar",
+      "restaurant"
+    ],
+    "website": "https://www.villagegeniuspub.com/",
+    "popularity": 4
   }
 ]
