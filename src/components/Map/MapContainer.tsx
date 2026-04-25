@@ -171,11 +171,11 @@ export default function MapContainer({ venues }: MapContainerProps) {
           title: v.name,
           icon: {
             path: google.maps.SymbolPath.CIRCLE,
-            scale: 10,
+            scale: 7.5,
             fillColor: '#0D1B2A',
             fillOpacity: 1,
             strokeColor: '#ffffff',
-            strokeWeight: 3,
+            strokeWeight: 2.25,
           },
         })
         marker.set('venueId', v.id)
@@ -259,8 +259,10 @@ export default function MapContainer({ venues }: MapContainerProps) {
       if (pct >= 60) color = '#FFC72C'
       else if (pct >= 20) color = '#7EC8E3'
 
-      const scale = venueId === selectedVenueId ? 14 : 10
-      const strokeWeight = venueId === selectedVenueId ? 4 : 3
+      // 75% of original sizes (10→7.5, 14→10.5) — denser map after the
+      // 214-venue jump benefits from smaller dots.
+      const scale = venueId === selectedVenueId ? 10.5 : 7.5
+      const strokeWeight = venueId === selectedVenueId ? 3 : 2.25
       const strokeColor = venueId === selectedVenueId ? '#FFC72C' : '#ffffff'
 
       marker.setIcon({
