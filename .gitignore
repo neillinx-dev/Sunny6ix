@@ -27,3 +27,4 @@ dist-ssr
 # Large raw data (regenerable from city open data)
 data-raw/shapefile_outer/
 .claude/worktrees/
+data-raw/discovered.json

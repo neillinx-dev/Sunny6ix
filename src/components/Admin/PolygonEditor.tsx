@@ -35,6 +35,7 @@ export default function PolygonEditor({
   const polyRef = useRef<google.maps.Polygon | null>(null)
   const [drawing, setDrawing] = useState(false)
   const [hasPoly, setHasPoly] = useState(!!initialPolygon?.length)
+  const [mapType, setMapType] = useState<'satellite' | 'roadmap'>('satellite')
 
   useEffect(() => {
     const el = containerRef.current
@@ -166,6 +167,12 @@ export default function PolygonEditor({
     onChange(null)
   }
 
+  function toggleMapType() {
+    const next = mapType === 'satellite' ? 'roadmap' : 'satellite'
+    setMapType(next)
+    mapRef.current?.setMapTypeId(next)
+  }
+
   return (
     <div>
       <div className="flex items-center gap-2 mb-2">
@@ -186,10 +193,17 @@ export default function PolygonEditor({
             Clear
           </button>
         )}
-        <span className="text-[11px] text-[#0D1B2A]/55">
-          Click on the satellite view to outline the patio. 4–8 points usually plenty.
-        </span>
+        <button
+          type="button"
+          onClick={toggleMapType}
+          className="ml-auto px-3 py-1.5 text-[12px] font-semibold rounded-full bg-[#0D1B2A]/8 text-[#0D1B2A]/70 hover:bg-[#0D1B2A]/15"
+        >
+          {mapType === 'satellite' ? '🗺️ Map' : '🛰️ Satellite'}
+        </button>
       </div>
+      <span className="block text-[11px] text-[#0D1B2A]/55 mb-2">
+        Click on the map to outline the patio. 4–8 points usually plenty.
+      </span>
       <div
         ref={containerRef}
         style={{ width: '100%', height: 320, borderRadius: 12, overflow: 'hidden' }}
