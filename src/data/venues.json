@@ -574,7 +574,42 @@
       "views"
     ],
     "website": "https://thebroadviewhotel.ca",
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.3501382,
+        43.6589623
+      ],
+      [
+        -79.3501181,
+        43.6589138
+      ],
+      [
+        -79.35,
+        43.6589381
+      ],
+      [
+        -79.350051,
+        43.659072
+      ],
+      [
+        -79.3500912,
+        43.6591603
+      ],
+      [
+        -79.3501288,
+        43.6591545
+      ],
+      [
+        -79.3500617,
+        43.6589963
+      ],
+      [
+        -79.3501489,
+        43.6589856
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "harriets-rooftop",
@@ -862,7 +897,54 @@
     ],
     "website": "https://www.thisisbarraval.com",
     "manualSunWindows": [],
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.4098539,
+        43.6558979
+      ],
+      [
+        -79.4098565,
+        43.6559153
+      ],
+      [
+        -79.4099343,
+        43.6559017
+      ],
+      [
+        -79.4099987,
+        43.6558833
+      ],
+      [
+        -79.4100309,
+        43.6558629
+      ],
+      [
+        -79.4099799,
+        43.6557271
+      ],
+      [
+        -79.4099652,
+        43.6557145
+      ],
+      [
+        -79.4099397,
+        43.6557251
+      ],
+      [
+        -79.4099732,
+        43.6558202
+      ],
+      [
+        -79.4099866,
+        43.655862
+      ],
+      [
+        -79.4099451,
+        43.6558794
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "birreria-volo",
@@ -986,7 +1068,26 @@
       "waterfront"
     ],
     "website": "https://boxcarsocial.ca/pages/harbourfront",
-    "popularity": 4
+    "popularity": 4,
+    "patioPolygon": [
+      [
+        -79.3824883,
+        43.6385213
+      ],
+      [
+        -79.3827659,
+        43.6384651
+      ],
+      [
+        -79.3827538,
+        43.6384165
+      ],
+      [
+        -79.3824548,
+        43.6384786
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "the-horseshoe-tavern",
@@ -1053,7 +1154,26 @@
       "social"
     ],
     "website": "https://rendezviews.ca",
-    "popularity": 4
+    "popularity": 4,
+    "patioPolygon": [
+      [
+        -79.3902402,
+        43.649126
+      ],
+      [
+        -79.3900471,
+        43.6486602
+      ],
+      [
+        -79.3895241,
+        43.6487689
+      ],
+      [
+        -79.3897065,
+        43.6492541
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "bar-isabel",
@@ -1092,7 +1212,26 @@
         "end": 17
       }
     ],
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.4208587,
+        43.6547057
+      ],
+      [
+        -79.4208554,
+        43.6546867
+      ],
+      [
+        -79.4207601,
+        43.6547086
+      ],
+      [
+        -79.4207662,
+        43.6547217
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "the-cameron-house",
@@ -3226,7 +3365,46 @@
       "restaurant"
     ],
     "website": "https://www.thelandinggroup.ca/en/locations/on/toronto/123-front-st.-w",
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.3828545,
+        43.6450781
+      ],
+      [
+        -79.3827982,
+        43.6451043
+      ],
+      [
+        -79.3826453,
+        43.6450548
+      ],
+      [
+        -79.3825514,
+        43.6450102
+      ],
+      [
+        -79.3825702,
+        43.6449985
+      ],
+      [
+        -79.3826466,
+        43.6450364
+      ],
+      [
+        -79.3827392,
+        43.6450694
+      ],
+      [
+        -79.3827982,
+        43.6450558
+      ],
+      [
+        -79.3828451,
+        43.6450538
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "jack-astors-bar-and-grill-front-street",
@@ -3322,7 +3500,38 @@
       "pizza"
     ],
     "website": "https://bostonpizza.com/en/locations/front-and-john.html",
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.3886651,
+        43.6442361
+      ],
+      [
+        -79.3886383,
+        43.64424
+      ],
+      [
+        -79.3886061,
+        43.6441585
+      ],
+      [
+        -79.3884908,
+        43.6441827
+      ],
+      [
+        -79.3884667,
+        43.6441526
+      ],
+      [
+        -79.3886115,
+        43.6441235
+      ],
+      [
+        -79.388637,
+        43.6441643
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "lulu-bar-toronto",
@@ -3519,7 +3728,50 @@
       "restaurant"
     ],
     "website": "http://www.brazenhead.ca/",
-    "popularity": 5
+    "popularity": 5,
+    "patioPolygon": [
+      [
+        -79.4173184,
+        43.63847
+      ],
+      [
+        -79.4173224,
+        43.6384894
+      ],
+      [
+        -79.4172178,
+        43.6385098
+      ],
+      [
+        -79.4171548,
+        43.6385263
+      ],
+      [
+        -79.4171092,
+        43.6385243
+      ],
+      [
+        -79.4170529,
+        43.6384603
+      ],
+      [
+        -79.4170623,
+        43.6384166
+      ],
+      [
+        -79.4170985,
+        43.6384389
+      ],
+      [
+        -79.4171159,
+        43.6385
+      ],
+      [
+        -79.4171347,
+        43.6385059
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "local-public-eatery-liberty-village",
@@ -3647,7 +3899,26 @@
       "restaurant"
     ],
     "website": "https://www.freehouse.co/locations/belfast-love?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-    "popularity": 4
+    "popularity": 4,
+    "patioPolygon": [
+      [
+        -79.3985069,
+        43.6449748
+      ],
+      [
+        -79.3984848,
+        43.6449796
+      ],
+      [
+        -79.3984378,
+        43.6448898
+      ],
+      [
+        -79.3984741,
+        43.6448811
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "gabbys-king-west",
@@ -3745,7 +4016,26 @@
       "wine-bar"
     ],
     "website": "http://www.melroseonadelaide.com/",
-    "popularity": 4
+    "popularity": 4,
+    "patioPolygon": [
+      [
+        -79.3901096,
+        43.6479733
+      ],
+      [
+        -79.3901056,
+        43.6479544
+      ],
+      [
+        -79.3900091,
+        43.6479762
+      ],
+      [
+        -79.3900151,
+        43.6479971
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "piccolo-caffe-e-vino",
@@ -3793,7 +4083,26 @@
       "restaurant"
     ],
     "website": "http://www.saintjohnstavern.com/",
-    "popularity": 3
+    "popularity": 3,
+    "patioPolygon": [
+      [
+        -79.390274,
+        43.6481787
+      ],
+      [
+        -79.390221,
+        43.6481884
+      ],
+      [
+        -79.3901882,
+        43.6481069
+      ],
+      [
+        -79.3902479,
+        43.6480957
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "town-crier",
@@ -3890,7 +4199,50 @@
       "restaurant"
     ],
     "website": "https://pennies.bar/",
-    "popularity": 4
+    "popularity": 4,
+    "patioPolygon": [
+      [
+        -79.4122415,
+        43.6432349
+      ],
+      [
+        -79.4122804,
+        43.6432291
+      ],
+      [
+        -79.4122938,
+        43.6432912
+      ],
+      [
+        -79.4122817,
+        43.6433251
+      ],
+      [
+        -79.4121999,
+        43.6433436
+      ],
+      [
+        -79.4119934,
+        43.6433814
+      ],
+      [
+        -79.411984,
+        43.6433465
+      ],
+      [
+        -79.4121395,
+        43.6433183
+      ],
+      [
+        -79.4122321,
+        43.6433009
+      ],
+      [
+        -79.4122549,
+        43.6432824
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "pennies-little-italy",
@@ -4003,7 +4355,26 @@
     "tags": [],
     "popularity": 5,
     "place_id": "ChIJk3f-0co0K4gRLptE9VtASRo",
-    "website": "https://jackastors.com/?locationId=922"
+    "website": "https://jackastors.com/?locationId=922",
+    "patioPolygon": [
+      [
+        -79.380147,
+        43.6566312
+      ],
+      [
+        -79.3801618,
+        43.6565924
+      ],
+      [
+        -79.3799137,
+        43.6565371
+      ],
+      [
+        -79.3799056,
+        43.6565681
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "cactus-club-cafe",
@@ -4025,7 +4396,50 @@
     "tags": [],
     "popularity": 5,
     "place_id": "ChIJE65wodI0K4gRGHR5w5d4YPI",
-    "website": "https://www.cactusclubcafe.com/locations/first-canadian-place/"
+    "website": "https://www.cactusclubcafe.com/locations/first-canadian-place/",
+    "patioPolygon": [
+      [
+        -79.3818204,
+        43.6495651
+      ],
+      [
+        -79.3818003,
+        43.649503
+      ],
+      [
+        -79.3816983,
+        43.6495262
+      ],
+      [
+        -79.3816608,
+        43.6494758
+      ],
+      [
+        -79.3814019,
+        43.6495301
+      ],
+      [
+        -79.3814113,
+        43.6496087
+      ],
+      [
+        -79.3814167,
+        43.6496514
+      ],
+      [
+        -79.3814315,
+        43.6496864
+      ],
+      [
+        -79.3817775,
+        43.6496126
+      ],
+      [
+        -79.3818378,
+        43.649599
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "rodney-s-oyster-house",
@@ -4223,7 +4637,26 @@
     "tags": [],
     "popularity": 4,
     "place_id": "ChIJe56zxIw1K4gRtP5JWO98q9Y",
-    "website": "https://www.oretta.to/kingwest/home"
+    "website": "https://www.oretta.to/kingwest/home",
+    "patioPolygon": [
+      [
+        -79.401867,
+        43.6440208
+      ],
+      [
+        -79.4018563,
+        43.6439932
+      ],
+      [
+        -79.4016806,
+        43.6440296
+      ],
+      [
+        -79.4016913,
+        43.6440587
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "bisha-a-luxury-collection-hotel-toronto",
@@ -4882,7 +5315,26 @@
     "tags": [],
     "popularity": 4,
     "place_id": "ChIJIVSL3sY1K4gRhANM6Wrwzrc",
-    "website": "http://www.laissezfairetoronto.com/"
+    "website": "http://www.laissezfairetoronto.com/",
+    "patioPolygon": [
+      [
+        -79.400364,
+        43.6443311
+      ],
+      [
+        -79.4003499,
+        43.6442976
+      ],
+      [
+        -79.4002171,
+        43.6443262
+      ],
+      [
+        -79.4002332,
+        43.6443616
+      ]
+    ],
+    "patioSource": "manual"
   },
   {
     "id": "hey-lucy",
@@ -5902,5 +6354,29 @@
     "popularity": 2,
     "place_id": "ChIJO3jfR6I1K4gRhb1zs1rs06E",
     "website": "http://www.thompsonhotels.com/hotels/thompson-toronto/eat-and-drink/rooftop-lounge?src=agn_sabre_prop_seo_yyzth_gmb_rooftoplounge"
+  },
+  {
+    "id": "bar-pompette",
+    "name": "Bar Pompette",
+    "address": "607 College St, Toronto",
+    "neighborhood": "Little Italy",
+    "lat": 43.654994300000006,
+    "lng": -79.4143309,
+    "patioType": "backyard",
+    "covered": false,
+    "patioFloor": 0,
+    "orientation": 180,
+    "samplePoints": [
+      [
+        -79.4143309,
+        43.654994300000006
+      ]
+    ],
+    "tags": [
+      "bar",
+      "cocktails"
+    ],
+    "website": "https://www.pompette.ca/barpompette",
+    "popularity": 5
   }
 ]
