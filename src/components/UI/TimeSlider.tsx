@@ -34,6 +34,7 @@ export default function TimeSlider() {
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
   const searchQuery = useAppStore((s) => s.searchQuery)
   const setSearchQuery = useAppStore((s) => s.setSearchQuery)
+  const setShowSunnyList = useAppStore((s) => s.setShowSunnyList)
 
   // Build a per-hour weather lookup for the selected day.
   // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24.
@@ -191,6 +192,7 @@ export default function TimeSlider() {
                 type="search"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onFocus={() => setShowSunnyList(true)}
                 placeholder="Search"
                 aria-label="Search patios"
                 className="flex-1 min-w-0 bg-transparent outline-none border-none text-[13px] font-medium text-[#0D1B2A] placeholder:text-[#0D1B2A]/40"

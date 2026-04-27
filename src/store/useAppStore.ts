@@ -62,6 +62,7 @@ interface AppState {
   setPatioType: (t: string | null) => void
   toggleShowShadows: () => void
   toggleShowSunnyList: () => void
+  setShowSunnyList: (v: boolean) => void
   setSearchQuery: (q: string) => void
 }
 
@@ -108,5 +109,6 @@ export const useAppStore = create<AppState>((set) => ({
     set((state) => ({ filters: { ...state.filters, patioType: t } })),
   toggleShowShadows: () => set((state) => ({ showShadows: !state.showShadows })),
   toggleShowSunnyList: () => set((state) => ({ showSunnyList: !state.showSunnyList })),
+  setShowSunnyList: (v) => set({ showSunnyList: v }),
   setSearchQuery: (q) => set({ searchQuery: q }),
 }))
