@@ -32,6 +32,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
   const selectedDayOffset = useAppStore((s) => s.selectedDayOffset)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
   const showShadows = useAppStore((s) => s.showShadows)
+  const searchQuery = useAppStore((s) => s.searchQuery)
 
   const getCloudForTime = useCallback((time: Date): { cloud: number; raining: boolean } => {
     if (!hourlyCloud || hourlyCloud.length === 0) {
@@ -238,6 +239,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
   // Update marker colors when sun status changes
   useEffect(() => {
     if (!mapReady) return
+    const q = searchQuery.trim().toLowerCase()
 
     markersRef.current.forEach((marker) => {
       const venueId = marker.get('venueId') as string
@@ -251,6 +253,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
       if (filters.sunnyOnly && pct < 20) visible = false
       if (filters.rooftopOnly && venue.patioType !== 'rooftop') visible = false
       if (filters.neighborhood && venue.neighborhood !== filters.neighborhood) visible = false
+      if (q && !venue.name.toLowerCase().includes(q) && !venue.neighborhood.toLowerCase().includes(q)) visible = false
 
       marker.setVisible(visible)
 
@@ -274,7 +277,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
         strokeWeight,
       })
     })
-  }, [sunStatuses, filters, selectedVenueId, venues, mapReady])
+  }, [sunStatuses, filters, selectedVenueId, venues, mapReady, searchQuery])
 
   // Render building shadows (viewport-filtered, single flat canvas)
   const renderShadows = useCallback(() => {

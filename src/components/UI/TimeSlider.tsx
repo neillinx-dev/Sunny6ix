@@ -32,6 +32,8 @@ export default function TimeSlider() {
   const setSelectedDayOffset = useAppStore((s) => s.setSelectedDayOffset)
   const dailyForecast = useAppStore((s) => s.dailyForecast)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
+  const searchQuery = useAppStore((s) => s.searchQuery)
+  const setSearchQuery = useAppStore((s) => s.setSearchQuery)
 
   // Build a per-hour weather lookup for the selected day.
   // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24.
@@ -164,19 +166,49 @@ export default function TimeSlider() {
         </div>
 
         <div className="px-6 py-4">
-          <div className="flex items-center justify-between mb-4">
-            <div>
+          {/* Three pills, all h-9 so the row reads as a single bar. Time is
+              text-only on a tint, search has icon + input + clear, LIVE is
+              the brand-yellow accent. */}
+          <div className="flex items-center gap-2 mb-4 h-9">
+            <div className="shrink-0 h-9 flex items-center px-3.5 rounded-full bg-[#0D1B2A]/5">
               {isOutsideHours && selectedDayOffset === 0 ? (
-                <span className="text-[15px] font-medium text-[#0D1B2A]/40">Patios closed</span>
+                <span className="text-[13px] font-semibold text-[#0D1B2A]/45 leading-none">Closed</span>
               ) : (
-                <span className="text-[23px] font-bold text-[#0D1B2A] tabular-nums tracking-tight leading-none">
+                <span className="text-[15px] font-bold text-[#0D1B2A] tabular-nums tracking-tight leading-none">
                   {formatTime(clampedHour)}
                 </span>
               )}
             </div>
+
+            {/* Search — flex-1 so it eats remaining width, min-w-0 to allow
+                shrinking instead of pushing LIVE off-screen. */}
+            <div className="flex-1 min-w-0 h-9 flex items-center gap-1.5 px-3 rounded-full bg-[#0D1B2A]/5 focus-within:bg-white focus-within:ring-2 focus-within:ring-[#FFC72C]/40 transition-all">
+              <svg className="w-3.5 h-3.5 text-[#0D1B2A]/45 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="m20 20-3.5-3.5" />
+              </svg>
+              <input
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search"
+                aria-label="Search patios"
+                className="flex-1 min-w-0 bg-transparent outline-none border-none text-[13px] font-medium text-[#0D1B2A] placeholder:text-[#0D1B2A]/40"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  aria-label="Clear search"
+                  className="shrink-0 w-4 h-4 flex items-center justify-center rounded-full bg-[#0D1B2A]/15 hover:bg-[#0D1B2A]/30 text-white text-[10px] leading-none"
+                >
+                  ×
+                </button>
+              )}
+            </div>
+
             <button
               onClick={handleNowClick}
-              className={`flex items-center gap-1.5 text-[13px] px-3.5 py-1.5 rounded-full font-semibold transition-all ${
+              className={`shrink-0 h-9 flex items-center gap-1.5 text-[13px] px-3.5 rounded-full font-semibold transition-all ${
                 isLiveTime && selectedDayOffset === 0
                   ? 'bg-[#FFC72C] text-[#0D1B2A] shadow-sm live-pulse'
                   : 'bg-[#0D1B2A]/5 text-[#0D1B2A]/55 hover:bg-[#FFC72C]/15 hover:text-[#0D1B2A]'

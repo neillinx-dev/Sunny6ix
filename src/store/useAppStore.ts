@@ -45,6 +45,7 @@ interface AppState {
   }
   showShadows: boolean
   showSunnyList: boolean
+  searchQuery: string
 
   setSelectedVenue: (id: string | null) => void
   setCurrentTime: (time: Date) => void
@@ -61,6 +62,7 @@ interface AppState {
   setPatioType: (t: string | null) => void
   toggleShowShadows: () => void
   toggleShowSunnyList: () => void
+  setSearchQuery: (q: string) => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -80,6 +82,7 @@ export const useAppStore = create<AppState>((set) => ({
   },
   showShadows: true,
   showSunnyList: false,
+  searchQuery: '',
 
   setSelectedVenue: (id) => set({ selectedVenueId: id }),
   setCurrentTime: (time) => set({ currentTime: time }),
@@ -105,4 +108,5 @@ export const useAppStore = create<AppState>((set) => ({
     set((state) => ({ filters: { ...state.filters, patioType: t } })),
   toggleShowShadows: () => set((state) => ({ showShadows: !state.showShadows })),
   toggleShowSunnyList: () => set((state) => ({ showSunnyList: !state.showSunnyList })),
+  setSearchQuery: (q) => set({ searchQuery: q }),
 }))
