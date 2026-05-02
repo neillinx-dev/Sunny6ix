@@ -1,5 +1,6 @@
 import { useAppStore } from '../../store/useAppStore'
 import { getSunStatusColor, getSunStatusLabel, getGeometricExposure } from '../../lib/sunExposure'
+import { supabase } from '../../lib/supabase'
 import HourlySunChart from '../Charts/HourlySunChart'
 import type { Venue } from '../../types'
 
@@ -13,6 +14,11 @@ export default function VenueDetailCard({ venues }: VenueDetailCardProps) {
   const sunStatuses = useAppStore((s) => s.sunStatuses)
   const weather = useAppStore((s) => s.weather)
   const currentTime = useAppStore((s) => s.currentTime)
+  const user = useAppStore((s) => s.user)
+  const favorites = useAppStore((s) => s.favorites)
+  const addFavorite = useAppStore((s) => s.addFavorite)
+  const removeFavorite = useAppStore((s) => s.removeFavorite)
+  const setAuthModalOpen = useAppStore((s) => s.setAuthModalOpen)
 
   if (!selectedVenueId) return null
 
@@ -25,6 +31,28 @@ export default function VenueDetailCard({ venues }: VenueDetailCardProps) {
   const label = getSunStatusLabel(sunPct)
 
   const patioLabel = venue.patioType.charAt(0).toUpperCase() + venue.patioType.slice(1)
+  const isFavorited = favorites.has(venue.id)
+
+  const toggleFavorite = async () => {
+    if (!user) {
+      setAuthModalOpen(true)
+      return
+    }
+    if (isFavorited) {
+      removeFavorite(venue.id)
+      const { error } = await supabase
+        .from('favorites')
+        .delete()
+        .match({ user_id: user.id, venue_id: venue.id })
+      if (error) addFavorite(venue.id) // revert on failure
+    } else {
+      addFavorite(venue.id)
+      const { error } = await supabase
+        .from('favorites')
+        .insert({ user_id: user.id, venue_id: venue.id })
+      if (error) removeFavorite(venue.id)
+    }
+  }
 
   return (
     <div className="absolute bottom-20 left-3 right-3 z-20 flex justify-center pointer-events-none">
@@ -36,6 +64,23 @@ export default function VenueDetailCard({ venues }: VenueDetailCardProps) {
           <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
             <path d="M18 6L6 18M6 6l12 12" />
           </svg>
+        </button>
+
+        <button
+          onClick={toggleFavorite}
+          aria-label={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
+          aria-pressed={isFavorited}
+          className="absolute top-3 right-12 w-7 h-7 flex items-center justify-center rounded-full bg-[#0D1B2A]/5 hover:bg-[#FFC72C]/25 transition-all z-10"
+        >
+          {isFavorited ? (
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="#FFC72C" stroke="#FFC72C" strokeWidth="1.5" strokeLinejoin="round">
+              <path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z" />
+            </svg>
+          ) : (
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="#0D1B2A" strokeOpacity="0.4" strokeWidth="2" strokeLinejoin="round">
+              <path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10z" />
+            </svg>
+          )}
         </button>
 
         {/* Sun status accent bar — Sunny6ix palette */}

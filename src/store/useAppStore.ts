@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import type { User } from '@supabase/supabase-js'
 import type { VenueSunStatus } from '../types'
 
 export interface WeatherData {
@@ -42,10 +43,16 @@ interface AppState {
     rooftopOnly: boolean
     neighborhood: string | null
     patioType: string | null
+    favoritesOnly: boolean
   }
   showShadows: boolean
   showSunnyList: boolean
   searchQuery: string
+
+  // Auth + favorites
+  user: User | null
+  favorites: Set<string>
+  authModalOpen: boolean
 
   setSelectedVenue: (id: string | null) => void
   setCurrentTime: (time: Date) => void
@@ -58,12 +65,19 @@ interface AppState {
   setHourlyCloud: (hourly: HourlyCloud[] | null) => void
   toggleSunnyOnly: () => void
   toggleRooftopOnly: () => void
+  toggleFavoritesOnly: () => void
   setNeighborhood: (n: string | null) => void
   setPatioType: (t: string | null) => void
   toggleShowShadows: () => void
   toggleShowSunnyList: () => void
   setShowSunnyList: (v: boolean) => void
   setSearchQuery: (q: string) => void
+
+  setUser: (u: User | null) => void
+  setFavorites: (f: Set<string>) => void
+  addFavorite: (venueId: string) => void
+  removeFavorite: (venueId: string) => void
+  setAuthModalOpen: (v: boolean) => void
 }
 
 export const useAppStore = create<AppState>((set) => ({
@@ -80,10 +94,15 @@ export const useAppStore = create<AppState>((set) => ({
     rooftopOnly: false,
     neighborhood: null,
     patioType: null,
+    favoritesOnly: false,
   },
   showShadows: true,
   showSunnyList: false,
   searchQuery: '',
+
+  user: null,
+  favorites: new Set<string>(),
+  authModalOpen: false,
 
   setSelectedVenue: (id) => set({ selectedVenueId: id }),
   setCurrentTime: (time) => set({ currentTime: time }),
@@ -103,6 +122,8 @@ export const useAppStore = create<AppState>((set) => ({
     set((state) => ({ filters: { ...state.filters, sunnyOnly: !state.filters.sunnyOnly } })),
   toggleRooftopOnly: () =>
     set((state) => ({ filters: { ...state.filters, rooftopOnly: !state.filters.rooftopOnly } })),
+  toggleFavoritesOnly: () =>
+    set((state) => ({ filters: { ...state.filters, favoritesOnly: !state.filters.favoritesOnly } })),
   setNeighborhood: (n) =>
     set((state) => ({ filters: { ...state.filters, neighborhood: n } })),
   setPatioType: (t) =>
@@ -111,4 +132,20 @@ export const useAppStore = create<AppState>((set) => ({
   toggleShowSunnyList: () => set((state) => ({ showSunnyList: !state.showSunnyList })),
   setShowSunnyList: (v) => set({ showSunnyList: v }),
   setSearchQuery: (q) => set({ searchQuery: q }),
+
+  setUser: (u) => set({ user: u }),
+  setFavorites: (f) => set({ favorites: f }),
+  addFavorite: (venueId) =>
+    set((state) => {
+      const next = new Set(state.favorites)
+      next.add(venueId)
+      return { favorites: next }
+    }),
+  removeFavorite: (venueId) =>
+    set((state) => {
+      const next = new Set(state.favorites)
+      next.delete(venueId)
+      return { favorites: next }
+    }),
+  setAuthModalOpen: (v) => set({ authModalOpen: v }),
 }))

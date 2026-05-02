@@ -206,6 +206,51 @@ export default function adminPlugin(): Plugin {
         }
       })
 
+      server.middlewares.use('/__api/subscribe', async (req, res) => {
+        if (req.method !== 'POST') {
+          res.statusCode = 405
+          res.end('POST only')
+          return
+        }
+        try {
+          const resendKey = process.env.RESEND_API_KEY
+          const audienceId = process.env.RESEND_AUDIENCE_ID
+          if (!resendKey || !audienceId) {
+            throw new Error('RESEND_API_KEY / RESEND_AUDIENCE_ID not configured')
+          }
+          const body = (await readJson(req)) as { email?: unknown }
+          const email = body?.email
+          if (typeof email !== 'string' || !email.includes('@')) {
+            res.statusCode = 400
+            res.setHeader('Content-Type', 'application/json')
+            res.end(JSON.stringify({ error: 'email is required' }))
+            return
+          }
+          const r = await fetch(`https://api.resend.com/audiences/${audienceId}/contacts`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${resendKey}`,
+            },
+            body: JSON.stringify({ email, unsubscribed: false }),
+          })
+          if (!r.ok) {
+            const text = await r.text()
+            res.statusCode = r.status
+            res.setHeader('Content-Type', 'application/json')
+            res.end(JSON.stringify({ error: `Resend ${r.status}: ${text}` }))
+            return
+          }
+          const data = await r.json()
+          res.setHeader('Content-Type', 'application/json')
+          res.end(JSON.stringify({ ok: true, data }))
+        } catch (err) {
+          res.statusCode = 500
+          res.setHeader('Content-Type', 'application/json')
+          res.end(JSON.stringify({ error: (err as Error).message }))
+        }
+      })
+
       server.middlewares.use('/__api/save', async (req, res) => {
         if (req.method !== 'POST') {
           res.statusCode = 405

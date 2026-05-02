@@ -17,11 +17,14 @@ export default function FilterBar({ venues }: FilterBarProps) {
   const toggleSunnyOnly = useAppStore((s) => s.toggleSunnyOnly)
   const setNeighborhood = useAppStore((s) => s.setNeighborhood)
   const toggleRooftopOnly = useAppStore((s) => s.toggleRooftopOnly)
+  const toggleFavoritesOnly = useAppStore((s) => s.toggleFavoritesOnly)
   const sunStatuses = useAppStore((s) => s.sunStatuses)
   const showShadows = useAppStore((s) => s.showShadows)
   const toggleShowShadows = useAppStore((s) => s.toggleShowShadows)
   const showSunnyList = useAppStore((s) => s.showSunnyList)
   const toggleShowSunnyList = useAppStore((s) => s.toggleShowSunnyList)
+  const user = useAppStore((s) => s.user)
+  const favorites = useAppStore((s) => s.favorites)
 
   const [open, setOpen] = useState(false)
   const rootRef = useRef<HTMLDivElement | null>(null)
@@ -55,6 +58,7 @@ export default function FilterBar({ venues }: FilterBarProps) {
   const activeCount =
     (filters.sunnyOnly ? 1 : 0) +
     (filters.rooftopOnly ? 1 : 0) +
+    (filters.favoritesOnly ? 1 : 0) +
     (filters.neighborhood ? 1 : 0) +
     (showShadows ? 0 : 1) + // shadows-hidden counts as a setting flipped from default
     (showSunnyList ? 1 : 0)
@@ -105,6 +109,15 @@ export default function FilterBar({ venues }: FilterBarProps) {
             active={filters.rooftopOnly}
             onToggle={toggleRooftopOnly}
             accent="sky"
+          />
+          {/* Favorites */}
+          <FilterRow
+            label="My Favorites only"
+            sub={user ? `${favorites.size} saved` : 'Sign in to use favorites'}
+            active={filters.favoritesOnly}
+            onToggle={toggleFavoritesOnly}
+            accent="yellow"
+            disabled={!user}
           />
 
           {/* Neighborhood */}
@@ -173,9 +186,10 @@ interface FilterRowProps {
   onToggle: () => void
   accent: 'yellow' | 'sky' | 'navy'
   compact?: boolean
+  disabled?: boolean
 }
 
-function FilterRow({ label, sub, active, onToggle, accent, compact }: FilterRowProps) {
+function FilterRow({ label, sub, active, onToggle, accent, compact, disabled }: FilterRowProps) {
   const trackOn =
     accent === 'yellow' ? 'bg-[#FFC72C]'
     : accent === 'sky' ? 'bg-[#7EC8E3]'
@@ -183,8 +197,12 @@ function FilterRow({ label, sub, active, onToggle, accent, compact }: FilterRowP
 
   return (
     <button
-      onClick={onToggle}
-      className={`w-full flex items-center justify-between gap-3 px-2 ${compact ? 'py-1.5' : 'py-2'} rounded-lg hover:bg-[#0D1B2A]/4 transition-colors text-left`}
+      onClick={disabled ? undefined : onToggle}
+      disabled={disabled}
+      title={disabled ? 'Sign in to use favorites' : undefined}
+      className={`w-full flex items-center justify-between gap-3 px-2 ${compact ? 'py-1.5' : 'py-2'} rounded-lg transition-colors text-left ${
+        disabled ? 'opacity-50 cursor-not-allowed' : 'hover:bg-[#0D1B2A]/4'
+      }`}
       role="switch"
       aria-checked={active}
     >

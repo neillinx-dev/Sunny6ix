@@ -33,6 +33,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
   const showShadows = useAppStore((s) => s.showShadows)
   const searchQuery = useAppStore((s) => s.searchQuery)
+  const favorites = useAppStore((s) => s.favorites)
 
   const getCloudForTime = useCallback((time: Date): { cloud: number; raining: boolean } => {
     if (!hourlyCloud || hourlyCloud.length === 0) {
@@ -252,6 +253,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
       let visible = true
       if (filters.sunnyOnly && pct < 20) visible = false
       if (filters.rooftopOnly && venue.patioType !== 'rooftop') visible = false
+      if (filters.favoritesOnly && !favorites.has(venueId)) visible = false
       if (filters.neighborhood && venue.neighborhood !== filters.neighborhood) visible = false
       if (q && !venue.name.toLowerCase().includes(q) && !venue.neighborhood.toLowerCase().includes(q)) visible = false
 
@@ -277,7 +279,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
         strokeWeight,
       })
     })
-  }, [sunStatuses, filters, selectedVenueId, venues, mapReady, searchQuery])
+  }, [sunStatuses, filters, selectedVenueId, venues, mapReady, searchQuery, favorites])
 
   // Render building shadows (viewport-filtered, single flat canvas)
   const renderShadows = useCallback(() => {

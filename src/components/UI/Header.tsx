@@ -1,3 +1,5 @@
+import ProfileButton from '../Auth/ProfileButton'
+
 /**
  * Slim header. Brand mark is hidden on mobile (< sm) to free up screen real
  * estate; weather has been removed entirely since the time slider already
@@ -19,6 +21,11 @@ export default function Header() {
               Chase the sun
             </span>
           </div>
+        </div>
+
+        {/* Profile / sign-in */}
+        <div className="ml-auto">
+          <ProfileButton />
         </div>
       </div>
     </header>

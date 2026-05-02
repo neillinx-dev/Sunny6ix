@@ -24,11 +24,13 @@ export default function SunnyList({ venues }: SunnyListProps) {
   const setSelectedVenue = useAppStore((s) => s.setSelectedVenue)
   const filters = useAppStore((s) => s.filters)
   const searchQuery = useAppStore((s) => s.searchQuery)
+  const favorites = useAppStore((s) => s.favorites)
 
   const ranked = useMemo(() => {
     const q = searchQuery.trim().toLowerCase()
     const filtered = venues.filter((v) => {
       if (filters.rooftopOnly && v.patioType !== 'rooftop') return false
+      if (filters.favoritesOnly && !favorites.has(v.id)) return false
       if (filters.neighborhood && v.neighborhood !== filters.neighborhood) return false
       const pct = sunStatuses.get(v.id)?.sunPercentage ?? 0
       if (filters.sunnyOnly && pct < 20) return false
@@ -49,7 +51,7 @@ export default function SunnyList({ venues }: SunnyListProps) {
         if (a.pop !== b.pop) return b.pop - a.pop
         return a.v.name.localeCompare(b.v.name)
       })
-  }, [venues, sunStatuses, filters, searchQuery])
+  }, [venues, sunStatuses, filters, searchQuery, favorites])
 
   if (!showSunnyList) return null
 
