@@ -50,11 +50,22 @@ function App() {
       if (u) loadFavorites(u.id)
     })
 
-    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: sub } = supabase.auth.onAuthStateChange((event, session) => {
       const u = session?.user ?? null
       setUser(u)
       if (u) {
         loadFavorites(u.id)
+        // On Google (or other OAuth) sign-in, mirror the email into Resend
+        // audience. AuthModal already does this for email/password signups,
+        // so we only fire here for non-email providers. Resend's POST is
+        // idempotent (returns 422 on duplicates) so safe to call twice.
+        if (event === 'SIGNED_IN' && u.app_metadata?.provider !== 'email' && u.email) {
+          fetch('/__api/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: u.email }),
+          }).catch(() => { /* fire-and-forget */ })
+        }
       } else {
         setFavorites(new Set())
       }
