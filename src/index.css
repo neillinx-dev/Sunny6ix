@@ -49,8 +49,9 @@ body[data-route="app"], body[data-route="app"] #root {
   overflow: hidden;
   height: 100%;
 }
-body[data-route="landing"] { overflow-x: hidden; }
-body[data-route="landing"] #root { height: auto; min-height: 100%; }
+html:has(body[data-route="landing"]) { overflow-x: hidden; }
+body[data-route="landing"] { overflow-x: hidden; max-width: 100vw; }
+body[data-route="landing"] #root { height: auto; min-height: 100%; max-width: 100vw; overflow-x: hidden; }
 
 /* ── Landing page typography + primary CTAs ── */
 .font-display { font-family: var(--font-display); letter-spacing: -0.015em; }

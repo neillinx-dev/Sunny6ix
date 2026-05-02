@@ -113,7 +113,7 @@ export default function LandingPage() {
           Pro Chrome window. Mobile/tablet reduces hero font ~25% to
           keep the headline + CTA together. */}
       <section className="relative">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-14 lg:pt-16 pb-20 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-10 lg:pt-16 pb-12 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-8">
             <p className="font-display text-[11px] font-medium tracking-[0.24em] uppercase opacity-50 flex items-center gap-2.5">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-brand-yellow)]" />
