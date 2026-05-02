@@ -25,6 +25,10 @@ function launchApp() {
   window.location.href = '/app'
 }
 
+function launchSignIn() {
+  window.location.href = '/app?auth=signin'
+}
+
 export default function LandingPage() {
   const [now, setNow] = useState(() => new Date())
 
@@ -96,40 +100,51 @@ export default function LandingPage() {
           </nav>
           <button
             onClick={launchApp}
-            className="font-display text-[13px] font-medium opacity-80 hover:opacity-100 transition flex items-center gap-1.5"
+            className="font-display font-extrabold text-[13px] tracking-tight bg-[var(--color-brand-yellow)] hover:brightness-105 active:brightness-95 text-[var(--color-brand-navy)] rounded-full px-5 py-2.5 shadow-[0_2px_10px_rgba(255,199,44,0.4)] hover:shadow-[0_4px_16px_rgba(255,199,44,0.55)] transition-all flex items-center gap-1.5"
           >
             Open app <span aria-hidden>→</span>
           </button>
         </div>
       </header>
 
-      {/* ── HERO ── */}
+      {/* ── HERO ──
+          Tightened spacing so the primary CTA sits above the fold on
+          iPhone 15-class viewports (≈700pt visible) AND a 13" MacBook
+          Pro Chrome window. Mobile/tablet reduces hero font ~25% to
+          keep the headline + CTA together. */}
       <section className="relative">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-24 lg:pt-36 pb-32 lg:pb-44 grid lg:grid-cols-12 gap-12 items-start">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-8 lg:pt-16 pb-24 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-8">
             <p className="font-display text-[11px] font-medium tracking-[0.24em] uppercase opacity-50 flex items-center gap-2.5">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-brand-yellow)]" />
               Toronto · {sun.isDay ? 'Sun is up' : 'After hours'}
             </p>
 
-            <h1 className="mt-10 font-display font-medium tracking-[-0.035em] leading-[0.98] text-[clamp(3.2rem,8.5vw,7.5rem)]">
+            <h1 className="mt-5 lg:mt-7 font-display font-medium tracking-[-0.035em] leading-[0.98] text-[clamp(2.6rem,7.5vw,6.4rem)]">
               Find the sunniest <span className="font-serif-italic font-light text-[var(--color-brand-yellow)]">patios</span> in Toronto.
             </h1>
 
-            <p className="mt-10 max-w-[44ch] text-[1.05rem] leading-[1.6] opacity-65">
+            <p className="mt-5 lg:mt-7 max-w-[44ch] text-[1rem] lg:text-[1.05rem] leading-[1.55] opacity-65">
               Sunny6ix tracks the sun in real-time so you always know where to sit, sip, and soak it up. No more guessing which patio is in the shade by 4 pm.
             </p>
 
-            <div className="mt-12 flex items-center gap-6">
+            <div className="mt-7 lg:mt-9 flex items-center gap-3 flex-wrap">
               <button onClick={launchApp} className="btn-min">
                 Find a Sunny Patio
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="ml-1">
                   <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
-              <a href="#how" className="font-display text-sm font-medium opacity-70 hover:opacity-100 transition">
-                How it works
-              </a>
+              <button
+                onClick={launchSignIn}
+                className="font-display font-extrabold text-[13px] tracking-tight bg-white hover:bg-[#FFF8E5] text-[var(--color-brand-navy)] border border-[rgba(13,27,42,0.12)] rounded-full px-5 py-3 transition-colors flex items-center gap-1.5"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="8" r="4" />
+                  <path d="M4 21a8 8 0 0 1 16 0" />
+                </svg>
+                Sign in
+              </button>
             </div>
           </div>
 

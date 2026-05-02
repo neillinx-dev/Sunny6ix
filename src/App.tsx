@@ -19,8 +19,23 @@ function App() {
   const setCurrentTime = useAppStore((s) => s.setCurrentTime)
   const setUser = useAppStore((s) => s.setUser)
   const setFavorites = useAppStore((s) => s.setFavorites)
+  const setAuthModalOpen = useAppStore((s) => s.setAuthModalOpen)
 
   useWeather()
+
+  // Landing page can deep-link us straight to the sign-in modal via
+  // /app?auth=signin. Open it on first paint, then strip the query so
+  // it doesn't re-trigger on a back-button.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('auth') === 'signin') {
+      setAuthModalOpen(true)
+      params.delete('auth')
+      const qs = params.toString()
+      const next = window.location.pathname + (qs ? `?${qs}` : '') + window.location.hash
+      window.history.replaceState(null, '', next)
+    }
+  }, [setAuthModalOpen])
 
   // Live time update
   const liveTimerRef = useRef<ReturnType<typeof setInterval> | undefined>(undefined)
