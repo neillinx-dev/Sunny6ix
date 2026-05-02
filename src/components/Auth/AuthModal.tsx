@@ -156,7 +156,7 @@ export default function AuthModal() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl bg-[#F2F4F7] text-[14px] text-[#0D1B2A] font-medium outline-none focus:ring-2 focus:ring-[#FFC72C]"
+              className="w-full px-3 py-2.5 rounded-xl bg-[#F2F4F7] text-[16px] sm:text-[14px] text-[#0D1B2A] font-medium outline-none focus:ring-2 focus:ring-[#FFC72C]"
               placeholder="you@example.com"
             />
             {tab === 'signup' && (
@@ -176,7 +176,7 @@ export default function AuthModal() {
               minLength={6}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2.5 rounded-xl bg-[#F2F4F7] text-[14px] text-[#0D1B2A] font-medium outline-none focus:ring-2 focus:ring-[#FFC72C]"
+              className="w-full px-3 py-2.5 rounded-xl bg-[#F2F4F7] text-[16px] sm:text-[14px] text-[#0D1B2A] font-medium outline-none focus:ring-2 focus:ring-[#FFC72C]"
               placeholder="••••••••"
             />
           </div>
