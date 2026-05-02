@@ -107,10 +107,19 @@ export function CNTower({ className = '' }: Props) {
   )
 }
 
-/** Subtle Toronto skyline strip (brand element) */
+/** Subtle Toronto skyline strip (brand element).
+ * The SVG must explicitly be 100% wide + display:block so it doesn't
+ * fall back to its viewBox-derived natural width (1440px) and force
+ * horizontal overflow when zoomed out on mobile. */
 export function SkylineStrip({ className = '' }: Props) {
   return (
-    <svg viewBox="0 0 1440 60" className={className} preserveAspectRatio="none" aria-hidden>
+    <svg
+      viewBox="0 0 1440 60"
+      className={className}
+      preserveAspectRatio="none"
+      style={{ width: '100%', display: 'block' }}
+      aria-hidden
+    >
       <path
         d="M0 60 L0 42 L40 42 L40 36 L80 36 L80 44 L120 44 L120 30 L150 30 L150 38 L180 38 L180 22 L220 22 L220 32 L260 32 L260 28 L300 28 L300 36 L340 36 L340 18 L380 18 L380 30 L420 30 L420 24 L460 24 L460 38 L500 38 L500 28 L540 28 L540 16 L560 16 L560 8 L568 8 L572 0 L576 8 L584 8 L584 16 L600 16 L600 30 L640 30 L640 24 L680 24 L680 34 L720 34 L720 20 L760 20 L760 32 L800 32 L800 26 L840 26 L840 38 L880 38 L880 28 L920 28 L920 32 L960 32 L960 22 L1000 22 L1000 34 L1040 34 L1040 28 L1080 28 L1080 38 L1120 38 L1120 24 L1160 24 L1160 32 L1200 32 L1200 28 L1240 28 L1240 36 L1280 36 L1280 30 L1320 30 L1320 38 L1360 38 L1360 32 L1400 32 L1400 40 L1440 40 L1440 60 Z"
         fill="#0D1B2A"

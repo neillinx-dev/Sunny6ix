@@ -86,7 +86,7 @@ export default function LandingPage() {
   }, [])
 
   return (
-    <div className="min-h-full w-full bg-[var(--color-brand-cream)] text-[var(--color-brand-navy)] selection:bg-[var(--color-brand-yellow)] selection:text-[var(--color-brand-navy)]">
+    <div className="min-h-full w-full overflow-x-hidden bg-[var(--color-brand-cream)] text-[var(--color-brand-navy)] selection:bg-[var(--color-brand-yellow)] selection:text-[var(--color-brand-navy)]">
       {/* ── NAV ── */}
       <header className="border-b border-[rgba(13,27,42,0.08)]">
         <div className="max-w-[1180px] mx-auto px-6 lg:px-10 h-[78px] flex items-center justify-between">
@@ -183,7 +183,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── FEATURED PATIOS ── */}
-      <section id="patios" className="border-t border-[rgba(13,27,42,0.08)] relative">
+      <section id="patios" className="border-t border-[rgba(13,27,42,0.08)] relative overflow-hidden">
         {/* faint Toronto skyline as a backdrop motif */}
         <SkylineStrip className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none" />
 
