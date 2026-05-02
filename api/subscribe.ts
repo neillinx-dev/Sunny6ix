@@ -1,59 +1,38 @@
 /**
- * Vercel serverless: POST { email } -> Resend Audiences contact create.
- * Reads RESEND_API_KEY + RESEND_AUDIENCE_ID from process.env.
+ * Vercel Edge function: POST { email } -> Resend Audiences contact create.
+ * Edge runtime uses Web standard Request/Response — no Node types required.
+ * Reads RESEND_API_KEY + RESEND_AUDIENCE_ID from environment.
  */
-import type { IncomingMessage, ServerResponse } from 'node:http'
 
-interface VercelRequest extends IncomingMessage {
-  body?: unknown
-  method?: string
-}
-interface VercelResponse extends ServerResponse {
-  status: (code: number) => VercelResponse
-  json: (body: unknown) => void
-}
+export const config = { runtime: 'edge' }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+// Vercel Edge exposes env vars on globalThis.process.env. We read it via
+// a typed shim so the file builds cleanly without @types/node.
+const env: Record<string, string | undefined> =
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ((globalThis as any).process?.env as Record<string, string | undefined>) ?? {}
+
+export default async function handler(req: Request): Promise<Response> {
   if (req.method !== 'POST') {
-    res.status(405).json({ error: 'POST only' })
-    return
+    return json({ error: 'POST only' }, 405)
   }
 
-  const apiKey = process.env.RESEND_API_KEY
-  const audienceId = process.env.RESEND_AUDIENCE_ID
+  const apiKey = env.RESEND_API_KEY
+  const audienceId = env.RESEND_AUDIENCE_ID
   if (!apiKey || !audienceId) {
-    res.status(500).json({ error: 'Resend env vars missing' })
-    return
+    return json({ error: 'Resend env vars missing' }, 500)
   }
 
-  let body: unknown = req.body
-  if (typeof body === 'string') {
-    try { body = JSON.parse(body) } catch { /* fallthrough */ }
-  }
-  // If body wasn't parsed by the platform, try reading the stream.
-  if (!body || typeof body !== 'object') {
-    try {
-      body = await new Promise((resolveJson, reject) => {
-        const chunks: Buffer[] = []
-        req.on('data', (c: Buffer) => chunks.push(c))
-        req.on('end', () => {
-          try {
-            const txt = Buffer.concat(chunks).toString('utf-8')
-            resolveJson(txt ? JSON.parse(txt) : {})
-          } catch (e) { reject(e) }
-        })
-        req.on('error', reject)
-      })
-    } catch {
-      res.status(400).json({ error: 'Invalid JSON body' })
-      return
-    }
+  let body: unknown
+  try {
+    body = await req.json()
+  } catch {
+    return json({ error: 'Invalid JSON body' }, 400)
   }
 
-  const email = (body as { email?: unknown }).email
+  const email = (body as { email?: unknown } | null)?.email
   if (typeof email !== 'string' || !email.includes('@')) {
-    res.status(400).json({ error: 'email is required' })
-    return
+    return json({ error: 'email is required' }, 400)
   }
 
   try {
@@ -67,12 +46,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     })
     if (!r.ok) {
       const text = await r.text()
-      res.status(r.status).json({ error: `Resend ${r.status}: ${text}` })
-      return
+      return json({ error: `Resend ${r.status}: ${text}` }, r.status)
     }
     const data = await r.json()
-    res.status(200).json({ ok: true, data })
+    return json({ ok: true, data }, 200)
   } catch (err) {
-    res.status(500).json({ error: (err as Error).message })
+    return json({ error: (err as Error).message }, 500)
   }
+}
+
+function json(body: unknown, status: number): Response {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { 'Content-Type': 'application/json' },
+  })
 }
