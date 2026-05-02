@@ -33,35 +33,31 @@ export default function TimeSlider() {
   const dailyForecast = useAppStore((s) => s.dailyForecast)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
   // Build a per-hour weather lookup for the selected day.
-  // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24 — but
-  // dayOfMonth wraps at month boundaries (May 31 → June 1 jumps from 31
-  // back to 1) which used to silently drop a day's hourly data. We now
-  // match by walking the array sequentially and segmenting on hour-resets.
+  // Open-Meteo returns hourly data starting from midnight of the first
+  // requested day, in strict 1-hour ascending order. With forecast_days=4
+  // we get exactly 96 entries: 24 per day. Slice by offset and index by
+  // position — simplest and bulletproof. Falls back to the old encoded
+  // h.hour math if the array isn't 24-aligned for some reason.
   const hourlyByHour = useMemo(() => {
     const map = new Map<number, HourlyCloud>()
     if (!hourlyCloud || hourlyCloud.length === 0) return map
 
-    // Group entries into per-day buckets, ordered by their natural array
-    // sequence. Open-Meteo returns hourly data in ascending time order,
-    // so a "new day" starts whenever the encoded hour-of-day rolls back.
-    const daysBuckets: HourlyCloud[][] = []
-    let current: HourlyCloud[] = []
-    let lastHourOfDay = -1
-    for (const h of hourlyCloud) {
-      const hourOfDay = ((h.hour % 24) + 24) % 24
-      if (hourOfDay <= lastHourOfDay && current.length) {
-        daysBuckets.push(current)
-        current = []
+    if (hourlyCloud.length >= (selectedDayOffset + 1) * 24) {
+      const start = selectedDayOffset * 24
+      for (let h = 0; h < 24; h++) {
+        map.set(h, hourlyCloud[start + h])
       }
-      current.push(h)
-      lastHourOfDay = hourOfDay
+      return map
     }
-    if (current.length) daysBuckets.push(current)
 
-    const bucket = daysBuckets[selectedDayOffset]
-    if (!bucket) return map
-    for (const h of bucket) {
-      map.set(((h.hour % 24) + 24) % 24, h)
+    // Fallback: original encoding.
+    const target = new Date()
+    target.setDate(target.getDate() + selectedDayOffset)
+    const day = target.getDate()
+    for (const h of hourlyCloud) {
+      const hour = h.hour - day * 24
+      if (hour < 0 || hour > 23) continue
+      map.set(hour, h)
     }
     return map
   }, [hourlyCloud, selectedDayOffset])
