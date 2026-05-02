@@ -32,10 +32,6 @@ export default function TimeSlider() {
   const setSelectedDayOffset = useAppStore((s) => s.setSelectedDayOffset)
   const dailyForecast = useAppStore((s) => s.dailyForecast)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
-  const searchQuery = useAppStore((s) => s.searchQuery)
-  const setSearchQuery = useAppStore((s) => s.setSearchQuery)
-  const setShowSunnyList = useAppStore((s) => s.setShowSunnyList)
-
   // Build a per-hour weather lookup for the selected day.
   // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24.
   const hourlyByHour = useMemo(() => {
@@ -181,32 +177,7 @@ export default function TimeSlider() {
               )}
             </div>
 
-            {/* Search — flex-1 so it eats remaining width, min-w-0 to allow
-                shrinking instead of pushing LIVE off-screen. */}
-            <div className="flex-1 min-w-0 h-9 flex items-center gap-1.5 px-3 rounded-full bg-[#0D1B2A]/5 focus-within:bg-white focus-within:ring-2 focus-within:ring-[#FFC72C]/40 transition-all">
-              <svg className="w-3.5 h-3.5 text-[#0D1B2A]/45 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="7" />
-                <path d="m20 20-3.5-3.5" />
-              </svg>
-              <input
-                type="search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                onFocus={() => setShowSunnyList(true)}
-                placeholder="Search"
-                aria-label="Search patios"
-                className="flex-1 min-w-0 bg-transparent outline-none border-none text-[13px] font-medium text-[#0D1B2A] placeholder:text-[#0D1B2A]/40"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery('')}
-                  aria-label="Clear search"
-                  className="shrink-0 w-4 h-4 flex items-center justify-center rounded-full bg-[#0D1B2A]/15 hover:bg-[#0D1B2A]/30 text-white text-[10px] leading-none"
-                >
-                  ×
-                </button>
-              )}
-            </div>
+            <SearchPill />
 
             <button
               onClick={handleNowClick}
@@ -283,6 +254,90 @@ export default function TimeSlider() {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+/**
+ * Search pill — visually elevated (white bg + subtle shadow always-on) so
+ * it reads as the primary action in the row. While the input is empty and
+ * unfocused, the placeholder rotates through hint phrases every 3.2s with
+ * a soft fade — teaches users what they can search for without being noisy.
+ */
+const SEARCH_HINTS = [
+  'Search 200+ patios',
+  'Try "rooftop"',
+  'Try "Bellwoods"',
+  'Try "Kensington"',
+  'Search bars or areas',
+]
+
+function SearchPill() {
+  const searchQuery = useAppStore((s) => s.searchQuery)
+  const setSearchQuery = useAppStore((s) => s.setSearchQuery)
+  const setShowSunnyList = useAppStore((s) => s.setShowSunnyList)
+
+  const [hintIndex, setHintIndex] = useState(0)
+  const [hintVisible, setHintVisible] = useState(true)
+  const [focused, setFocused] = useState(false)
+
+  // Rotate the hint while idle (no query, not focused). Fade-out → swap →
+  // fade-in to avoid jarring text snap.
+  useEffect(() => {
+    if (focused || searchQuery) return
+    const tick = setInterval(() => {
+      setHintVisible(false)
+      setTimeout(() => {
+        setHintIndex((i) => (i + 1) % SEARCH_HINTS.length)
+        setHintVisible(true)
+      }, 220)
+    }, 3200)
+    return () => clearInterval(tick)
+  }, [focused, searchQuery])
+
+  return (
+    <div
+      className={`flex-1 min-w-0 h-9 flex items-center gap-1.5 px-3 rounded-full transition-all ${
+        focused
+          ? 'bg-white ring-2 ring-[#FFC72C]/45 shadow-md'
+          : 'bg-white shadow-[0_2px_8px_rgba(13,27,42,0.08)] hover:shadow-[0_3px_12px_rgba(13,27,42,0.14)]'
+      }`}
+    >
+      <svg className="w-3.5 h-3.5 text-[#0D1B2A]/55 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-3.5-3.5" />
+      </svg>
+      <div className="relative flex-1 min-w-0">
+        <input
+          type="search"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onFocus={() => { setFocused(true); setShowSunnyList(true) }}
+          onBlur={() => setFocused(false)}
+          aria-label="Search patios"
+          className="w-full bg-transparent outline-none border-none text-[13px] font-medium text-[#0D1B2A] placeholder:text-transparent"
+        />
+        {/* Custom placeholder layer so we can fade between hints. */}
+        {!searchQuery && (
+          <span
+            aria-hidden
+            className={`pointer-events-none absolute inset-y-0 left-0 flex items-center text-[13px] font-medium text-[#0D1B2A]/45 transition-opacity duration-200 ${
+              hintVisible ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            {SEARCH_HINTS[hintIndex]}
+          </span>
+        )}
+      </div>
+      {searchQuery && (
+        <button
+          onClick={() => setSearchQuery('')}
+          aria-label="Clear search"
+          className="shrink-0 w-4 h-4 flex items-center justify-center rounded-full bg-[#0D1B2A]/15 hover:bg-[#0D1B2A]/30 text-white text-[10px] leading-none"
+        >
+          ×
+        </button>
+      )}
     </div>
   )
 }
