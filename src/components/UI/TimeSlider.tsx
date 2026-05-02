@@ -327,7 +327,10 @@ function SearchPill() {
           onFocus={() => { setFocused(true); setShowSunnyList(true) }}
           onBlur={() => setFocused(false)}
           aria-label="Search patios"
-          className="w-full bg-transparent outline-none border-none text-[13px] font-medium text-[#0D1B2A] placeholder:text-transparent"
+          /* iOS Safari auto-zooms any input whose computed font-size is
+             below 16px on focus. Force >=16px on mobile, drop back down
+             on sm+ where the layout has more breathing room. */
+          className="w-full bg-transparent outline-none border-none text-[16px] sm:text-[13px] font-medium text-[#0D1B2A] placeholder:text-transparent leading-none"
         />
         {/* Custom placeholder layer so we can fade between hints. */}
         {!searchQuery && (
