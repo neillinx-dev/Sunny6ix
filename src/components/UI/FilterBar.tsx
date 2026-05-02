@@ -65,10 +65,12 @@ export default function FilterBar({ venues }: FilterBarProps) {
 
   return (
     <div ref={rootRef} className="absolute top-5 left-5 sm:top-[84px] z-20">
-      {/* Trigger */}
+      {/* Trigger — icon-only on mobile, icon+label on desktop. Same h-9 as
+          the slider's three pills + the profile/banner so the row feels
+          like one bar. */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className={`pointer-events-auto flex items-center gap-2 px-3.5 py-2 rounded-full text-[13px] font-semibold transition-all ${
+        className={`pointer-events-auto relative flex items-center justify-center gap-2 h-9 w-9 sm:w-auto sm:px-3.5 rounded-full text-[13px] font-semibold transition-all ${
           open
             ? 'bg-[#0D1B2A] text-white shadow-md shadow-[#0D1B2A]/30'
             : 'glass-card text-[#0D1B2A]/80 hover:text-[#0D1B2A]'
@@ -79,12 +81,10 @@ export default function FilterBar({ venues }: FilterBarProps) {
         <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M3 5h18M6 12h12M10 19h4" />
         </svg>
-        Filters
+        <span className="hidden sm:inline">Filters</span>
         {activeCount > 0 && (
           <span
-            className={`min-w-[18px] h-[18px] px-1 rounded-full text-[10px] font-bold flex items-center justify-center ${
-              open ? 'bg-[#FFC72C] text-[#0D1B2A]' : 'bg-[#FFC72C] text-[#0D1B2A]'
-            }`}
+            className="absolute -top-1 -right-1 sm:static min-w-[18px] h-[18px] px-1 rounded-full text-[10px] font-bold flex items-center justify-center bg-[#FFC72C] text-[#0D1B2A] shadow-sm"
           >
             {activeCount}
           </span>

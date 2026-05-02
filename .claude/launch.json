@@ -4,13 +4,15 @@
     {
       "name": "dev",
       "runtimeExecutable": "/Users/appleuser/node-v22.14.0-darwin-arm64/bin/node",
-      "runtimeArgs": ["./node_modules/.bin/vite", "--port", "5173"],
+      "runtimeArgs": ["./node_modules/.bin/vite"],
+      "autoPort": true,
       "port": 5173
     },
     {
       "name": "preview",
       "runtimeExecutable": "/Users/appleuser/node-v22.14.0-darwin-arm64/bin/node",
-      "runtimeArgs": ["./node_modules/.bin/vite", "preview", "--port", "4173"],
+      "runtimeArgs": ["./node_modules/.bin/vite", "preview"],
+      "autoPort": true,
       "port": 4173
     }
   ]

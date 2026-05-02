@@ -30,9 +30,15 @@ export default function ProfileButton() {
     return (
       <button
         onClick={() => setAuthModalOpen(true)}
-        className="pointer-events-auto px-4 py-2 rounded-full bg-[#FFC72C] hover:bg-[#FFD65A] text-[#0D1B2A] font-extrabold text-[13px] tracking-tight shadow-md transition-colors"
+        aria-label="Sign in"
+        title="Sign in"
+        className="pointer-events-auto w-9 h-9 sm:w-auto sm:h-auto sm:px-4 sm:py-2 rounded-full bg-[#FFC72C] hover:bg-[#FFD65A] text-[#0D1B2A] font-extrabold text-[13px] tracking-tight shadow-md transition-colors flex items-center justify-center gap-1.5"
       >
-        Sign in
+        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21a8 8 0 0 1 16 0" />
+        </svg>
+        <span className="hidden sm:inline">Sign in</span>
       </button>
     )
   }
@@ -65,7 +71,7 @@ export default function ProfileButton() {
     <div ref={rootRef} className="relative pointer-events-auto">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="w-10 h-10 rounded-full bg-[#0D1B2A] text-white font-extrabold text-[13px] tracking-tight shadow-md hover:bg-[#1a2d44] transition-colors flex items-center justify-center"
+        className="w-9 h-9 rounded-full bg-[#0D1B2A] text-white font-extrabold text-[12px] tracking-tight shadow-md hover:bg-[#1a2d44] transition-colors flex items-center justify-center"
         aria-label="Profile menu"
       >
         {initials}

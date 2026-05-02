@@ -171,7 +171,7 @@ export default function TimeSlider() {
               text-only on a tint, search has icon + input + clear, LIVE is
               the brand-yellow accent. */}
           <div className="flex items-center gap-2 mb-4 h-9">
-            <div className="shrink-0 h-9 flex items-center px-3.5 rounded-full bg-[#0D1B2A]/5">
+            <div className="shrink-0 h-9 min-w-[78px] flex items-center justify-center px-3 rounded-full bg-[#0D1B2A]/5">
               {isOutsideHours && selectedDayOffset === 0 ? (
                 <span className="text-[13px] font-semibold text-[#0D1B2A]/45 leading-none">Closed</span>
               ) : (

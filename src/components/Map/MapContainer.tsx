@@ -380,7 +380,7 @@ export default function MapContainer({ venues }: MapContainerProps) {
       */}
       {banner && (
         <div
-          className="absolute top-5 left-[125px] right-3 z-[15] flex items-center gap-2 rounded-full px-4 py-2 sm:top-[22px] sm:left-1/2 sm:-translate-x-1/2 sm:right-auto sm:px-5 sm:py-2.5 sm:gap-[9px]"
+          className="absolute top-5 left-[68px] right-[68px] h-9 z-[15] flex items-center justify-center gap-2 rounded-full px-4 sm:top-5 sm:left-1/2 sm:-translate-x-1/2 sm:right-auto sm:h-auto sm:px-5 sm:py-2.5 sm:gap-[9px]"
           style={{
             background: banner.bg,
             color: '#FFFFFF',

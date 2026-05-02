@@ -9,8 +9,11 @@ import ProfileButton from '../Auth/ProfileButton'
 export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-20 pointer-events-none">
+      {/* Brand stays in the normal header padding so its drop-shadow card
+          looks anchored to the top edge. Profile button is absolutely
+          positioned to top-5 right-5 on mobile so it lines up exactly with
+          the Filters icon (also top-5) and the centered banner. */}
       <div className="flex items-start justify-between px-5 py-4 gap-3">
-        {/* Brand — hidden on small screens */}
         <div className="pointer-events-auto glass-card rounded-2xl px-4 py-2.5 flex items-center gap-3 hidden sm:flex">
           <Sunny6ixMark className="w-9 h-9" />
           <div className="flex flex-col">
@@ -22,11 +25,10 @@ export default function Header() {
             </span>
           </div>
         </div>
+      </div>
 
-        {/* Profile / sign-in */}
-        <div className="ml-auto">
-          <ProfileButton />
-        </div>
+      <div className="absolute top-5 right-5 sm:top-5 sm:right-5">
+        <ProfileButton />
       </div>
     </header>
   )
