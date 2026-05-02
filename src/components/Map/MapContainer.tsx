@@ -12,6 +12,20 @@ const TORONTO_LAT = 43.65
 const TORONTO_LNG = -79.396
 const GOOGLE_MAPS_KEY = import.meta.env.VITE_GOOGLE_MAPS_KEY as string
 
+/** Great-circle distance in km between two lat/lng pairs. Used to decide
+ * whether the user's geolocation is close enough to Toronto to bother
+ * recentering on. */
+function haversineKm(lat1: number, lng1: number, lat2: number, lng2: number): number {
+  const R = 6371
+  const toRad = (d: number) => (d * Math.PI) / 180
+  const dLat = toRad(lat2 - lat1)
+  const dLng = toRad(lng2 - lng1)
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2
+  return 2 * R * Math.asin(Math.min(1, Math.sqrt(a)))
+}
+
 interface MapContainerProps { venues: Venue[] }
 
 export default function MapContainer({ venues }: MapContainerProps) {
@@ -163,6 +177,27 @@ export default function MapContainer({ venues }: MapContainerProps) {
       })
 
       mapRef.current = map
+
+      // Try to recenter on the user's current location. We start at the
+      // Toronto default for an instant render, then pan once geolocation
+      // resolves. If the user denies, the map just stays in Toronto. If
+      // they're more than ~50 km from downtown Toronto (eg. visiting from
+      // out of town), we also stay put — recentering on Calgary makes no
+      // sense for a Toronto patio app.
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            const { latitude, longitude } = pos.coords
+            const dKm = haversineKm(latitude, longitude, TORONTO_LAT, TORONTO_LNG)
+            if (dKm <= 50 && mapRef.current) {
+              mapRef.current.panTo({ lat: latitude, lng: longitude })
+              mapRef.current.setZoom(15)
+            }
+          },
+          () => { /* user denied or timed out — keep Toronto default */ },
+          { enableHighAccuracy: false, timeout: 6000, maximumAge: 5 * 60 * 1000 },
+        )
+      }
 
       // Add venue markers
       const newMarkers: google.maps.Marker[] = []
