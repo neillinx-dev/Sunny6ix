@@ -143,15 +143,16 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 0 0 3px rgba(255, 199, 44, 0.18);
 }
 
-/* ── Glass card surfaces (app UI) ── */
+/* ── Glass card surfaces (app UI) ──
+   Now fully opaque white so the slider, filters, and header pills sit
+   solidly over the map without any see-through tint. The drop-shadow
+   alone provides the depth. */
 .glass-card {
-  background: var(--color-surface);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: var(--color-surface-solid);
+  border: 1px solid rgba(13, 27, 42, 0.06);
   box-shadow:
-    0 4px 24px rgba(13, 27, 42, 0.08),
-    0 1px 3px rgba(13, 27, 42, 0.05);
+    0 6px 28px rgba(13, 27, 42, 0.12),
+    0 1px 3px rgba(13, 27, 42, 0.06);
 }
 
 /* ── Animations ── */

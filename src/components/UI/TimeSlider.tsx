@@ -33,19 +33,35 @@ export default function TimeSlider() {
   const dailyForecast = useAppStore((s) => s.dailyForecast)
   const hourlyCloud = useAppStore((s) => s.hourlyCloud)
   // Build a per-hour weather lookup for the selected day.
-  // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24.
+  // HourlyCloud.hour is encoded as hourOfDay + dayOfMonth * 24 — but
+  // dayOfMonth wraps at month boundaries (May 31 → June 1 jumps from 31
+  // back to 1) which used to silently drop a day's hourly data. We now
+  // match by walking the array sequentially and segmenting on hour-resets.
   const hourlyByHour = useMemo(() => {
-    if (!hourlyCloud) return new Map<number, HourlyCloud>()
-    const target = new Date()
-    target.setDate(target.getDate() + selectedDayOffset)
-    const day = target.getDate()
     const map = new Map<number, HourlyCloud>()
+    if (!hourlyCloud || hourlyCloud.length === 0) return map
+
+    // Group entries into per-day buckets, ordered by their natural array
+    // sequence. Open-Meteo returns hourly data in ascending time order,
+    // so a "new day" starts whenever the encoded hour-of-day rolls back.
+    const daysBuckets: HourlyCloud[][] = []
+    let current: HourlyCloud[] = []
+    let lastHourOfDay = -1
     for (const h of hourlyCloud) {
-      const hour = h.hour - day * 24
-      if (hour < 0 || hour > 23) continue
-      if (h.hour >= day * 24 && h.hour < (day + 1) * 24) {
-        map.set(hour, h)
+      const hourOfDay = ((h.hour % 24) + 24) % 24
+      if (hourOfDay <= lastHourOfDay && current.length) {
+        daysBuckets.push(current)
+        current = []
       }
+      current.push(h)
+      lastHourOfDay = hourOfDay
+    }
+    if (current.length) daysBuckets.push(current)
+
+    const bucket = daysBuckets[selectedDayOffset]
+    if (!bucket) return map
+    for (const h of bucket) {
+      map.set(((h.hour % 24) + 24) % 24, h)
     }
     return map
   }, [hourlyCloud, selectedDayOffset])
