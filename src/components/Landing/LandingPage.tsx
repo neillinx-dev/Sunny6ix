@@ -113,7 +113,7 @@ export default function LandingPage() {
           Pro Chrome window. Mobile/tablet reduces hero font ~25% to
           keep the headline + CTA together. */}
       <section className="relative">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-32 lg:pt-16 pb-28 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-14 lg:pt-16 pb-20 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-8">
             <p className="font-display text-[11px] font-medium tracking-[0.24em] uppercase opacity-50 flex items-center gap-2.5">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-brand-yellow)]" />
@@ -172,7 +172,7 @@ export default function LandingPage() {
       </section>
 
       {/* ── HOW IT WORKS ── */}
-      <section id="how" className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-32 lg:pt-44 pb-32 lg:pb-44">
+      <section id="how" className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-20 lg:pt-44 pb-20 lg:pb-44">
         <SectionLabel kicker="How it works" title={<>Three steps to <span className="font-serif-italic font-light text-[var(--color-brand-yellow)]">vitamin D</span>.</>} />
 
         <div className="mt-20 grid md:grid-cols-3 gap-y-14 md:gap-x-16 lg:gap-x-24">
@@ -187,7 +187,7 @@ export default function LandingPage() {
         {/* faint Toronto skyline as a backdrop motif */}
         <SkylineStrip className="absolute bottom-0 left-0 right-0 h-16 pointer-events-none" />
 
-        <div className="relative max-w-[1180px] mx-auto px-6 lg:px-10 pt-32 lg:pt-44 pb-32 lg:pb-44">
+        <div className="relative max-w-[1180px] mx-auto px-6 lg:px-10 pt-20 lg:pt-44 pb-20 lg:pb-44">
           <div className="flex items-end justify-between gap-6 flex-wrap">
             <div className="flex items-start gap-5">
               <PatioIcon className="hidden md:block w-12 h-12 mt-2 shrink-0 opacity-90" />
@@ -224,7 +224,7 @@ export default function LandingPage() {
 
       {/* ── ABOUT / TONE OF VOICE ── */}
       <section id="about" className="border-t border-[rgba(13,27,42,0.08)]">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-32 lg:pt-44 pb-32 lg:pb-44 grid lg:grid-cols-12 gap-12">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-20 lg:pt-44 pb-20 lg:pb-44 grid lg:grid-cols-12 gap-12">
           <div className="lg:col-span-5">
             <p className="font-display text-[11px] font-medium tracking-[0.24em] uppercase opacity-50">About</p>
             <div className="mt-8 hidden lg:block">
@@ -243,7 +243,7 @@ export default function LandingPage() {
 
       {/* ── BIG CTA ── */}
       <section className="border-t border-[rgba(13,27,42,0.08)]">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-32 lg:pt-44 pb-32 lg:pb-44 text-center">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-20 lg:pt-44 pb-20 lg:pb-44 text-center">
           <div className="flex justify-center">
             <LogoMark className="w-16 h-16 opacity-90" />
           </div>
