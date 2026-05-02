@@ -113,7 +113,7 @@ export default function LandingPage() {
           Pro Chrome window. Mobile/tablet reduces hero font ~25% to
           keep the headline + CTA together. */}
       <section className="relative">
-        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-8 lg:pt-16 pb-24 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
+        <div className="max-w-[1180px] mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-28 lg:pb-36 grid lg:grid-cols-12 gap-8 items-start">
           <div className="lg:col-span-8">
             <p className="font-display text-[11px] font-medium tracking-[0.24em] uppercase opacity-50 flex items-center gap-2.5">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-[var(--color-brand-yellow)]" />
@@ -128,7 +128,7 @@ export default function LandingPage() {
               Sunny6ix tracks the sun in real-time so you always know where to sit, sip, and soak it up. No more guessing which patio is in the shade by 4 pm.
             </p>
 
-            <div className="mt-7 lg:mt-9 flex items-center gap-3 flex-wrap">
+            <div className="mt-9 lg:mt-10 flex items-center gap-3 flex-wrap">
               <button onClick={launchApp} className="btn-min">
                 Find a Sunny Patio
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="ml-1">
@@ -137,9 +137,9 @@ export default function LandingPage() {
               </button>
               <button
                 onClick={launchSignIn}
-                className="font-display font-extrabold text-[13px] tracking-tight bg-white hover:bg-[#FFF8E5] text-[var(--color-brand-navy)] border border-[rgba(13,27,42,0.12)] rounded-full px-5 py-3 transition-colors flex items-center gap-1.5"
+                className="font-display font-medium text-[0.95rem] tracking-[-0.005em] bg-white hover:bg-[#FFF8E5] text-[var(--color-brand-navy)] border border-[rgba(13,27,42,0.12)] rounded-full px-[1.6rem] py-[0.95rem] transition-colors inline-flex items-center gap-2"
               >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="w-[14px] h-[14px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="8" r="4" />
                   <path d="M4 21a8 8 0 0 1 16 0" />
                 </svg>
